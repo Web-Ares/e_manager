@@ -180,25 +180,24 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 81px 20px 50px;
-    background: #000;
+    padding: 48px 0 50px;
+    background: #cbf1f1;
+    color: #435a65;
+    font-size: 14px;
+    text-align: center;
+}
+.site__footer .btn {
+    margin-bottom: 32px;
+}
+.site__footer-made {
+    display: block;
 }
 .site__centered{
     position: relative;
     z-index: 1;
-    max-width: 1200px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
-}
-.site__footer-logo {
-    text-align: center;
-    margin-bottom: 61px;
-}
-.site__footer-txt {
-    font-size: 16px;
-    color: rgb( 255, 255, 255 );
-    line-height: 1.6;
-    text-align: center;
 }
 .site__title{
     position: relative;
@@ -350,37 +349,22 @@
 .footer-menu {
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    margin-bottom: 34px;
 }
-.footer-menu dl {
-    margin-bottom: 69px;
+.footer-menu li {
+    margin-bottom: 22px;
 }
-.footer-menu dl:last-child {
-    margin-bottom: 0;
-}
-.footer-menu dd {
-    margin-bottom: 24px;
-}
-.footer-menu dd:last-child {
+.footer-menu li:last-child {
     margin-bottom: 0;
 }
 .footer-menu__link {
     display: inline-block;
-    color: #fff;
-    font-size: 16px;
+    color: #435a65;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 .footer-menu__link:hover {
-    color: #ffdc1a;
-}
-.footer-menu dt {
-    display: block;
-    margin-bottom: 55px;
-    color: #fff;
-    font-family: 'Montserrat Slab', serif;
-    font-weight: 700;
-    font-size: 20px;
+    color: #ff7777;
 }
 /* ------------ /footer-menu ------------ */
 
@@ -774,16 +758,24 @@
     width: 100%;
     height: auto;
 }
-.logo_footer {
+/* --------------- /logo --------------- */
+
+/* ------------ logo-footer ------------ */
+.logo-footer {
     display: inline-block;
     position: relative;
     top: auto;
     left: auto;
-    width: 146px;
-    height: 33px;
-    margin: 0 auto 51px;
+    width: 294px;
+    height: 56px;
+    margin: 0 auto 28px;
 }
-/* --------------- /logo --------------- */
+.logo-footer img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* ------------ /logo-footer ------------ */
 
 /* --------------- header-menu --------------- */
 .header-menu{
@@ -2632,20 +2624,16 @@ input.subscribe__email{
         height: 78px;
     }
     .site__footer {
-        padding: 95px 71px 50px;
-    }
-    .site__footer-logo {
-        margin-bottom: 101px;
-    }
-    .site__footer-txt {
-        font-size: 20px;
-        line-height: 1.8;
+        padding: 97px 71px 50px;
     }
     .site__title{
         padding: 0 0 28px;
         margin: 0 0 32px;
         font-size: 50px;
         line-height: 52px;
+    }
+    .site__footer .btn {
+        margin-bottom: 68px;
     }
     .site__title_small{
         padding: 0 0 22px;
@@ -2699,19 +2687,16 @@ input.subscribe__email{
 
     /* ------------ footer-menu ------------ */
     .footer-menu {
-        text-align: justify;
+        margin-bottom: 28px;
+        text-align: center;
     }
-    .footer-menu:after {
-        display: inline-block;
-        width: 100%;
-        content: '';
-    }
-    .footer-menu dl {
+    .footer-menu li {
         display: inline-block;
         vertical-align: top;
-        margin-bottom: 0;
-        max-width: 32%;
-        text-align: left;
+        margin-left: 20px;
+    }
+    .footer-menu li:first-child {
+        margin-left: 0;
     }
     /* ------------ /footer-menu ------------ */
 
@@ -2722,10 +2707,15 @@ input.subscribe__email{
         width: 213px;
         height: 40px;
     }
-    .logo_footer {
-        margin-bottom: 48px;
-    }
     /* ------------ /logo ------------ */
+
+    /* ------------ logo-footer ------------ */
+    .logo-footer {
+        width: 406px;
+        height: 77px;
+        margin-bottom: 52px;
+    }
+    /* ------------ /logo-footer ------------ */
 
     /* ------------ menu-btn ------------ */
     .menu-btn {
@@ -3600,16 +3590,6 @@ input.subscribe__email{
         width: 100%;
         content: '';
     }
-    .site__footer-logo {
-        display: inline-block;
-        vertical-align: top;
-        width: 27%;
-        text-align: left;
-    }
-    .site__footer-txt {
-        padding-left: 0;
-        text-align: left;
-    }
     .site__title{
         padding: 0 0 30px;
         margin: 0 0 33px;
@@ -3671,14 +3651,17 @@ input.subscribe__email{
     .logo {
         left: 1px;
     }
-    .logo_footer {
+    /* --------------- /logo --------------- */
+
+    /* ------------ logo-footer ------------ */
+    .logo-footer {
         top: auto;
         left: auto;
         width: 145px;
         height: 45px;
         margin-bottom: 36px;
     }
-    /* --------------- /logo --------------- */
+    /* ------------ /logo-footer ------------ */
 
     /* --------------- header-menu --------------- */
     .header-menu{
@@ -4482,5 +4465,3 @@ input.subscribe__email{
     /*------------/instagramm-pics----------*/
 
 }
-
-
