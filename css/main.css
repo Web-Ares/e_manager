@@ -180,7 +180,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 48px 0 50px;
+    padding: 48px 0 37px;
     background: #cbf1f1;
     color: #435a65;
     font-size: 14px;
@@ -191,6 +191,7 @@
 }
 .site__footer-made {
     display: block;
+    color: rgba( 67, 90, 101, 0.4 );
 }
 .site__centered{
     position: relative;
@@ -2650,7 +2651,7 @@ input.subscribe__email{
         height: 86px;
     }
     .site__footer {
-        padding: 97px 71px 50px;
+        padding: 97px 71px 36px;
     }
     .site__title{
         /* padding: 0 0 28px; */
@@ -3618,15 +3619,11 @@ input.subscribe__email{
 
     /* --------------- site --------------- */
     .site__footer {
-        padding: 80px 71px 50px;
+        padding: 97px 0 20px;
     }
     .site__footer .site__centered {
-        text-align: justify;
     }
     .site__footer .site__centered:after {
-        display: inline-block;
-        width: 100%;
-        content: '';
     }
     .site__title{
         /* padding: 0 0 30px; */
@@ -3675,10 +3672,6 @@ input.subscribe__email{
 
     /* ------------ footer-menu ------------ */
     .footer-menu {
-        display: inline-block;
-        vertical-align: top;
-        width: 59.5%;
-        margin-top: 16px;
     }
     .footer-menu dl {
         max-width: none;
@@ -3694,11 +3687,7 @@ input.subscribe__email{
 
     /* ------------ logo-footer ------------ */
     .logo-footer {
-        top: auto;
-        left: auto;
-        width: 145px;
-        height: 45px;
-        margin-bottom: 36px;
+        /* margin-bottom: 36px; */
     }
     /* ------------ /logo-footer ------------ */
 
