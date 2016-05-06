@@ -8,6 +8,10 @@ $(function(){
             new Page ( $( this ) )
         } );
 
+        $.each( $( '.hero' ), function() {
+            new HeroSlider ( $( this ) )
+        } );
+
         $.each( $( '.header-menu' ), function() {
             new Menu ( $( this ) );
         } );
@@ -45,6 +49,41 @@ $(function(){
         } );
 
     });
+
+    var HeroSlider = function( obj ) {
+
+        var _self = this,
+            _obj = obj,
+            _swiper,
+            _swiperContainer = _obj.find( '.swiper-container' ),
+            _swiperBtnNext = _obj.find( '.swiper-button-next' ),
+            _swiperBtnprev = _obj.find( '.swiper-button-prev' );
+
+        var _addEvents = function() {
+
+
+            },
+            _createSwiper = function(){
+
+                _swiper = new Swiper( _swiperContainer, {
+                    nextButton: _swiperBtnNext,
+                    prevButton: _swiperBtnprev,
+                    slidesPerView: 1,
+                    paginationClickable: false
+                });
+
+            },
+
+            _init = function() {
+                _createSwiper();
+                _addEvents();
+                _obj[ 0 ].obj = _self;
+
+            };
+
+        _init();
+
+    };
 
     var Page = function( obj ) {
 

@@ -158,7 +158,7 @@
     transition: transform 500ms ease-in-out;
 }
 .site__header .site__centered {
-    padding: 0;
+    /* padding: 0; */
 }
 .site__header_hidden{
     -webkit-transform: translateY( -90px );
@@ -167,9 +167,9 @@
 .site__header-top{
     height: 60px;
     background: #fff;
-    border-bottom: 2px solid rgba(255,255,255,0.1);
-    -webkit-transition: background 0.1s ease;
-    transition: background 0.1s ease;
+    /* border-bottom: 2px solid rgba(255,255,255,0.1); */
+    /* -webkit-transition: background 0.1s ease; */
+    /* transition: background 0.1s ease; */
 }
 .site__header.fixed .site__header-top{
     /* background: #000; */
@@ -201,12 +201,12 @@
 }
 .site__title{
     position: relative;
-    padding: 0 0 27px;
+    /* padding: 0 0 27px; */
     margin: 0 0 19px;
     font-size: 36px;
     line-height: 38px;
     color: #435965;
-    font-family: 'Montserrat Slab', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -226,10 +226,10 @@
     /* transform: translateX(-50%); */
 }
 .site__title_big{
-    padding: 0 0 21px;
-    margin: 0 0 19px;
-    font-size: 37px;
-    line-height: 38px;
+    /* padding: 0 0 21px; */
+    margin: 0 0 21px;
+    font-size: 43px;
+    line-height: 49px;
 }
 .site__title_1:after{
     background: #fff;
@@ -374,7 +374,7 @@
     vertical-align: top;
     position: relative;
     overflow: hidden;
-    width: 170px;
+    width: 220px;
     height: 47px;
     padding: 13px 10px;
     text-align: center;
@@ -397,10 +397,10 @@
     box-shadow: 0 5px 20px 0 rgba( 255, 119, 119, 0);
 }
 .btn_1{
-    width: 231px;
-    height: 54px;
-    padding: 17px 10px;
-    font-size: 18px;
+    width: 216px;
+    height: 64px;
+    padding: 23px 10px;
+    font-size: 19px;
     line-height: 18px;
 }
 .btn_2 {
@@ -748,10 +748,10 @@
 .logo {
     position: absolute;
     z-index: 3;
-    top: 15px;
-    left: 20px;
-    width: 106px;
-    height: 33px;
+    top: 11px;
+    left: 16px;
+    width: 213px;
+    /* height: 33px; */
 }
 .logo img {
     display: block;
@@ -818,7 +818,7 @@
     position: relative;
     color: #435965;
     text-transform: uppercase;
-    padding: 17px 9.7px;
+    padding: 8px 9.7px;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
@@ -862,7 +862,7 @@
 .menu-btn span{
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 8px;
     right: 10px;
     display: block;
     height: 3px;
@@ -884,12 +884,12 @@
     transition: transform 0.3s, background .3s;
 }
 .menu-btn span:after {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
 }
 .menu-btn span:before {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
 }
 .menu-btn:hover span,
 .menu-btn:hover span:before,
@@ -917,8 +917,8 @@
 .hero{
     text-align: center;
     color: #435a65;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     background-color: #f9f9f9;
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
@@ -927,7 +927,31 @@
 .hero__layout{
     position: relative;
     z-index: 1;
-    padding: 114px 0 26px;
+    padding: 88px 0 0;
+}
+.hero__slider {
+    margin: 0 -15px;
+
+}
+.hero__slider .swiper-button-next,
+.hero__slider .swiper-button-prev {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -11.5px;
+    width: 42px;
+    height: 23px;
+    background: url(../img/slider-arrow.png) no-repeat;
+    background-size: contain;
+}
+.hero__slider .swiper-button-prev {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.hero__slider .swiper-slide {
+    padding-bottom: 100px;
+    background-position: center bottom;
+    background-size: cover;
 }
 .hero_slider .hero__layout{
     padding: 114px 0 13px;
@@ -962,9 +986,9 @@
     padding: 0 0 28px;
 }
 .time-schedule__pic{
-    width: 94px;
-    height: 94px;
-    margin: 0 auto 28px;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
 }
 .time-schedule__pic img{
     display: block;
@@ -973,17 +997,18 @@
 }
 .time-schedule__place{
     display: block;
-    margin: 0 15px 34px;
+    margin: 0 8px 10px;
+}
+.time-schedule__text {
+    margin-bottom: 80px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.5px;
 }
 .time-schedule__save{
-    /* display: flex; */
-    /* width: 268px; */
     margin: 0 auto;
     text-align: center;
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    align-items: center;
-    align-content: center;
     font-size: 16px;
     line-height: 20px;
 }
@@ -992,17 +1017,12 @@
     vertical-align: middle;
     padding: 3px 0 0 4px;
 }
-.time-schedule__save div{
-    /* display: inline-block; */
-    /* vertical-align: middle; */
-}
 .time-schedule__save a{
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 12px;
     width: 36px;
     height: 36px;
-    /* border: 2px solid rgba(255,255,255,0.3); */
     color: #687c83;
     background: #fff;
     border-radius: 50%;
@@ -1014,8 +1034,7 @@
     margin-left: 0;
 }
 .time-schedule__save a:hover{
-    background: #ffdc1a;
-    border-color: #ffdc1a;
+    background: #d7d9da;
 }
 .time-schedule__save a i{
     display: block;
@@ -1029,7 +1048,7 @@
     color: #000;
 }
 .time-schedule .btn{
-    margin: 0 0 57px;
+    margin: 0 0 32px;
 }
 /* --------------- /time-schedule --------------- */
 
@@ -1062,15 +1081,20 @@
 
 /* --------------- countdown-timer --------------- */
 .countdown-timer{
-    color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* color: #000; */
     font-size: 11px;
     line-height: 11px;
     text-align: center;
     text-transform: uppercase;
-    background: #ffee8d;
+    background: #cbf1f1;
+    /* background: #ffee8d; */
     background: -moz-linear-gradient(left,  #ffee8d 50%, #ffdc1a 50%);
-    background: -webkit-linear-gradient(left,  #ffee8d 50%,#ffdc1a 50%);
-    background: linear-gradient(to right,  #ffee8d 50%,#ffdc1a 50%);
+    /* background: -webkit-linear-gradient(left,  #ffee8d 50%,#ffdc1a 50%); */
+    /* background: linear-gradient(to right,  #ffee8d 50%,#ffdc1a 50%); */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffee8d', endColorstr='#ffdc1a',GradientType=1 );
 }
 .countdown-timer>div{
@@ -1083,22 +1107,24 @@
 }
 .countdown-timer>div>div{
     width: 25%;
-    height: 78px;
-    padding: 16px 0;
+    height: 97px;
+    padding: 25px 0 16px;
+    color: #fff;
 }
 .countdown-timer>div>div:nth-child(2){
-    background: #ffe75f;
+    /* background: #ffe75f; */
 }
 .countdown-timer>div>div:nth-child(3){
-    background: #ffe031;
+    /* background: #ffe031; */
 }
 .countdown-timer span{
     display: block;
-    margin: 0 0 3px;
-    font-size: 32px;
+    margin: 0 0 7px;
+    font-size: 35px;
     line-height: 32px;
-    font-family: 'Montserrat Slab', serif;
+    font-family: 'Montserrat', serif;
     font-weight: 700;
+    color: #5b6f76;
 }
 /* --------------- /countdown-timer --------------- */
 
@@ -2541,16 +2567,16 @@ input.subscribe__email{
     /* ------------ btn ------------ */
     .btn{
         width: 282px;
-        height: 73px;
-        padding: 19px 10px;
-        font-size: 36px;
-        line-height: 36px;
+        /* height: 73px; */
+        /* padding: 19px 10px; */
+        /* font-size: 36px; */
+        /* line-height: 36px; */
     }
     .btn_1 {
-        width: 231px;
-        height: 54px;
-        padding: 17px 10px;
-        font-size: 18px;
+        width: 217px;
+        height: 64px;
+        padding: 23px 10px;
+        font-size: 19px;
         line-height: 18px;
     }
     .btn_2 {
@@ -2621,13 +2647,13 @@ input.subscribe__email{
 
     /* --------------- site --------------- */
     .site__header-top{
-        height: 78px;
+        height: 86px;
     }
     .site__footer {
         padding: 97px 71px 50px;
     }
     .site__title{
-        padding: 0 0 28px;
+        /* padding: 0 0 28px; */
         margin: 0 0 32px;
         font-size: 50px;
         line-height: 52px;
@@ -2644,10 +2670,12 @@ input.subscribe__email{
         height: 6px;
     }
     .site__title_big{
-        padding: 0 0 33px;
-        margin: 0 0 32px;
-        font-size: 54px;
-        line-height: 62px;
+        /* padding: 0 0 33px; */
+        /* padding: 0; */
+        margin: 0 0 10px;
+        font-size: 57px;
+        line-height: 56px;
+        letter-spacing: 1px;
     }
     .site__title_2{
         margin: 0 0 63px;
@@ -2703,7 +2731,7 @@ input.subscribe__email{
     /* ------------ logo ------------ */
     .logo {
         top: 20px;
-        left: 24px;
+        left: 22px;
         width: 213px;
         height: 40px;
     }
@@ -2719,8 +2747,8 @@ input.subscribe__email{
 
     /* ------------ menu-btn ------------ */
     .menu-btn {
-        top: 38px;
-        right: 19px;
+        top: 34px;
+        right: 17px;
         width: 41px;
         height: 18px;
     }
@@ -2728,15 +2756,9 @@ input.subscribe__email{
 
     /* ------------ header-menu ------------ */
     .header-menu{
-        top: 90px;
+        top: 86px;
     }
-    .header-menu li {
-        font-size: 36px;
-        line-height: 36px;
-    }
-    .header-menu__item {
-        padding: 35px 10.3px 28px;
-    }
+
     .header-menu__sub-items li a{
         padding: 28px 16px;
     }
@@ -2763,11 +2785,19 @@ input.subscribe__email{
 
     /* ------------ hero ------------ */
     .hero {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 23px;
+        line-height: 24px;
     }
     .hero__layout{
-        padding: 141px 0 16px;
+        padding: 173px 0 0;
+    }
+    .hero__slider {
+
+    }
+    .hero__slider .swiper-slide {
+
+        padding-bottom: 117px;
+
     }
     .hero_slider .hero__layout{
         padding: 223px 0 10px;
@@ -2789,14 +2819,17 @@ input.subscribe__email{
 
     /* ------------ time-schedule ------------ */
     .time-schedule{
-        margin: -12px 0 0;
+        /* margin: -12px 0 0; */
     }
     .time-schedule__pic {
-        width: 124px;
-        height: 124px;
+        /* width: 124px; */
+        /* height: 124px; */
+        width: 81px;
+        height: 81px;
+        margin: 0 auto 21px;
     }
     .time-schedule__place {
-        margin: 0 5px 51px;
+        margin: 0 5px 32px;
     }
     .time-schedule__save {
         /* width: 342px; */
@@ -2810,8 +2843,13 @@ input.subscribe__email{
     .time-schedule__save a:first-child{
         margin-left: 0;
     }
+    .time-schedule__text {
+        /* font-size: 20px; */
+        /* line-height: 30px; */
+        margin-bottom: 27px;
+    }
     .time-schedule .btn {
-        margin: 0 0 53px;
+        margin: 0 0 56px;
     }
     .hero_slider .time-schedule .btn {
         margin: 0 0 123px;
@@ -2823,7 +2861,7 @@ input.subscribe__email{
 
     /* ------------ countdown-timer ------------ */
     .countdown-timer{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 16px;
     }
     .countdown-timer>div {
@@ -2831,12 +2869,12 @@ input.subscribe__email{
         margin: 0 auto;
     }
     .countdown-timer>div>div {
-        height: 110px;
-        padding: 17px 0;
+        height: 115px;
+        padding: 23px 0 17px;
     }
     .countdown-timer span {
-        margin: 0 0 8px;
-        font-size: 50px;
+        margin: 0;
+        font-size: 40px;
         line-height: 50px;
     }
     /* ------------ /countdown-timer ------------ */
@@ -3513,11 +3551,11 @@ input.subscribe__email{
         line-height: 14px;
     }
     .btn_1 {
-        width: 231px;
-        height: 54px;
-        padding: 17px 10px;
-        font-size: 18px;
-        line-height: 18px;
+        width: 216px;
+        height: 64px;
+        padding: 22px 10px;
+        font-size: 19px;
+        line-height: 21px;
     }
     .btn_2 {
         height: 100%;
@@ -3591,13 +3629,14 @@ input.subscribe__email{
         content: '';
     }
     .site__title{
-        padding: 0 0 30px;
+        /* padding: 0 0 30px; */
         margin: 0 0 33px;
     }
     .site__title_big{
-        padding: 0 0 30px;
-        margin: 0 0 33px;
-        font-size: 64px;
+        /* padding: 0 0 30px; */
+        /* padding: 0; */
+        margin: 0 0 12px;
+        font-size: 63px;
         line-height: 62px;
     }
     .site__title_small{
@@ -3649,7 +3688,7 @@ input.subscribe__email{
 
     /* --------------- logo --------------- */
     .logo {
-        left: 1px;
+        /* left: 1px; */
     }
     /* --------------- /logo --------------- */
 
@@ -3700,10 +3739,9 @@ input.subscribe__email{
         margin: 0;
         font-size: 14px;
         line-height: 15px;
-        /* letter-spacing: 0.1px; */
     }
     .header-menu__item{
-        /* padding: 12px 10px; */
+        padding: 35px 10.3px 28px;
     }
     .header-menu__item:after {
         position: absolute;
@@ -3740,7 +3778,7 @@ input.subscribe__email{
         position: relative;
         top: 19px;
         margin: auto;
-        margin-right: 1px;
+        margin-right: -5px;
         /* font-weight: 400; */
     }
     .header-menu .header-menu__sub-items{
@@ -3812,7 +3850,7 @@ input.subscribe__email{
 
     /* --------------- hero --------------- */
     .hero__layout {
-        padding: 140px 0 14px;
+        padding: 131px 0 0;
     }
     .hero_slider .hero__layout{
         padding: 202px 0 14px;
@@ -3845,15 +3883,26 @@ input.subscribe__email{
         padding: 44px 0 24px;
     }
     .time-schedule__pic {
-        width: 139px;
-        height: 139px;
-        margin: 0 auto 43px;
+        width: 91px;
+        height: 91px;
+        margin: 0 auto 22px;
     }
     .time-schedule__place {
-        margin: 0 5px 50px;
+        margin: 0 5px 38px;
+    }
+    .time-schedule__text {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 35px;
     }
     .time-schedule .btn {
-        margin: 0 0 103px;
+        margin: 0 0 56px;
+    }
+    .hero__slider {
+
+    }
+    .hero__slider .swiper-slide {
+
     }
     .hero_slider .time-schedule .btn {
         margin: 0 0 102px;
@@ -4422,7 +4471,7 @@ input.subscribe__email{
 
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1200px) {
 
     /* --------------- tickets --------------- */
     .tickets__layout{
@@ -4447,6 +4496,13 @@ input.subscribe__email{
         width: 25%;
     }
     /* ------------ /social-feed ------------ */
+
+    /*--------------hero---------------*/
+    .hero__slider .swiper-button-next,
+    .hero__slider .swiper-button-prev {
+        display: block;
+    }
+    /*--------------/hero---------------*/
 
 }
 
