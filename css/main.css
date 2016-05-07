@@ -2383,8 +2383,8 @@ input.subscribe__email{
 /*-----------/instagramm-pics------------*/
 
 /*-----------facebook-content------------*/
-.facebook-content{
-    padding: 67px 0 60px;
+.facebook-content {
+    padding: 47px 0 33px;
     background-color: #f3f3f3;
     overflow: hidden;
 }
@@ -2394,26 +2394,31 @@ input.subscribe__email{
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+    text-align: center;
 }
 .facebook-content__number{
     display: block;
     color: #000;
-    font: 600 50px 'Montserrat Slab', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 .facebook-content__interested{
     position: relative;
-    width: 254px;
+    width: 260px;
     margin: 0 auto 13px;
-    padding: 18px 0 21px;
+    padding: 29px 0 21px;
     color: #d4d4d4;
     font-size: 24px;
     background-color: #fff;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .facebook-content__going{
     width: 254px;
     margin: 0 auto 13px;
-    padding: 18px 0 21px;
+    padding: 29px 0 21px;
     color: #d4d4d4;
     font-size: 24px;
     background-color: #fff;
@@ -2421,8 +2426,8 @@ input.subscribe__email{
 }
 .facebook-content__wrap{
     width: 254px;
-    margin: 0 auto 13px;
-    padding: 27px 23px 24px;
+    margin: 0 auto 28px;
+    padding: 25px 21px 24px;
     color: #b5b5b5;
     font-size: 16px;
     background-color: #fff;
@@ -2451,7 +2456,7 @@ input.subscribe__email{
     display: block;
     position: relative;
     width: 100%;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     padding-left: 20px;
     white-space: nowrap;
     overflow: hidden;
@@ -2474,10 +2479,11 @@ input.subscribe__email{
     align-items: center;
     -webkit-align-items: center;
     position: absolute;
-    top: -24px;
+    top: -23px;
     left: -21px;
     width: 46px;
     height: 46px;
+    padding-top: 3px;
     border-radius: 50%;
     font-size: 29px;
     color: #fff;
@@ -2487,6 +2493,9 @@ input.subscribe__email{
 }
 .facebook-content__icon:hover{
     opacity: .8;
+}
+.facebook-content__like {
+    display: inline-block;
 }
 /*-----------/facebook-content------------*/
 
@@ -3456,22 +3465,25 @@ input.subscribe__email{
     /*-------------/instagramm-pics-----------*/
 
     /*-----------facebook-content------------*/
+    .facebook-content {
+        padding: 43px 0 45px;
+    }
     .facebook-content__centered{
         display: flex;
         display: -webkit-flex;
         align-content: stretch;
         -webkit-align-content: stretch;
-        justify-content: space-between;
-        -webkit-justify-content: space-between;
+        justify-content: center;
+        -webkit-justify-content: center;
         width: 640px;
         padding: 0 10px 0 0;
     }
     .facebook-content__wrap{
-        width: 100%;
-        margin-left: 14px;
+        width: 260px;
+        margin: 0 0 0 14px;
     }
     .facebook-content__plugin{
-        width: 311px;
+        width: 100%;
     }
     .facebook-content__statistics{
         display: flex;
@@ -3483,6 +3495,10 @@ input.subscribe__email{
     .facebook-content__interested,
     .facebook-content__going{
         width: 260px;
+        margin-bottom: 0;
+    }
+    .facebook-content__like {
+        display: none;
     }
     /*-----------/facebook-content------------*/
 
@@ -4402,12 +4418,15 @@ input.subscribe__email{
     /*----------/instagramm-pics-----------*/
 
     /*-----------facebook-content------------*/
+    .facebook-content {
+        padding: 77px 0 50px;
+    }
     .facebook-content__centered{
         width: 845px;
         padding: 0;
     }
-    .facebook-content__plugin{
-        width: 520px;
+    .facebook-content__wrap {
+        width: 570px;
     }
     /*-----------/facebook-content------------*/
 
