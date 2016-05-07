@@ -524,23 +524,23 @@ $(function(){
 
                 _window.on({
 
-                    resize: function(){
-
-                        if( _window.width() + _getScrollWidth() >= 1000 ) {
-
-                            if ( !_isGallery ){
-                                _initGallery();
-                            }
-
-                        } else {
-
-                            if ( _isGallery ){
-                                _destroyGallery();
-                            }
-
-                        }
-
-                    }
+                    //resize: function(){
+                    //
+                    //    if( _window.width() + _getScrollWidth() >= 1000 ) {
+                    //
+                    //        if ( !_isGallery ){
+                    //            _initGallery();
+                    //        }
+                    //
+                    //    } else {
+                    //
+                    //        if ( _isGallery ){
+                    //            _destroyGallery();
+                    //        }
+                    //
+                    //    }
+                    //
+                    //}
 
                 });
 
@@ -623,9 +623,9 @@ $(function(){
             },
             _init = function () {
 
-                if( _window.width() + _getScrollWidth() >= 1000 ) {
+                //if( _window.width() + _getScrollWidth() >= 1000 ) {
                     _initGallery();
-                }
+                //}
 
                 _addEvents();
                 _obj[0].obj = _self;
@@ -644,16 +644,25 @@ $(function(){
                     type: "GET",
                     success: function ( msg ) {
 
-                        if( _window.width() + _getScrollWidth() < 1000 ) {
-                            _addGalleryContent( msg );
-                        } else {
+                        if( _window.width() + _getScrollWidth() >= 1000 ) {
                             _cover.height( _cover.height() );
-                            _destroyGallery();
-                            _addGalleryContent( msg );
-                            setTimeout( function(){
-                                _initGallery();
-                            }, 10 );
                         }
+                        _destroyGallery();
+                        _addGalleryContent( msg );
+                        setTimeout( function(){
+                            _initGallery();
+                        }, 10 );
+
+                        //if( _window.width() + _getScrollWidth() < 1000 ) {
+                        //    _addGalleryContent( msg );
+                        //} else {
+                        //    _cover.height( _cover.height() );
+                        //    _destroyGallery();
+                        //    _addGalleryContent( msg );
+                        //    setTimeout( function(){
+                        //        _initGallery();
+                        //    }, 10 );
+                        //}
 
                     },
                     error: function ( XMLHttpRequest ) {
@@ -1412,7 +1421,7 @@ $(function(){
         var _self = this,
             _obj = obj,
             _btnMore = _obj.find( '.social-feed__more' ),
-            _btnAction = _btnMore.data( 'action' ),
+            _btnAction = _btnMore.attr( 'href' ),
             _wrapper = _obj.find( '.social-feed__wrap' ),
             _request = new XMLHttpRequest();
 
@@ -1436,18 +1445,12 @@ $(function(){
                 $.each( msg.items, function() {
 
                     var newBlock = $( '<div class="social-feed__item hidden">'+
-                                        '<div class="social-feed__inner">' +
-                                            '<div class="social-feed__head">'+
+                                        '<a href="'+this.href+'" class="social-feed__inner">' +
                                             '<div class="social-feed__logo">'+
-                                            '<i class="fa fa-twitter"></i>'+
+                                                '<i class="fa fa-twitter"></i>'+
                                             '</div>'+
-                                            '<div class="social-feed__name">'+this.name+'</div>'+ this.login +
-                                            '</div>'+
-                                            '<div class="social-feed__txt">'+this.feed_txt+'</div>'+
-                                            '<div class="social-feed__hover">'+
-                                            '<a href="'+this.href+'" class="btn btn_11">VIEW ON TWITTER <i class="fa fa-long-arrow-right"></i></a>'+
-                                            '</div>' +
-                                        '</div>'+
+                                            '<div class="social-feed__txt">'+this.feed_txt+'</div>'+ this.login +
+                                        '</a>'+
                                     '</div>' );
 
                     _wrapper.append( newBlock );
