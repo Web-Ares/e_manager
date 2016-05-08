@@ -1586,20 +1586,23 @@
 
 /* ------------ sponsors ------------ */
 .sponsors{
-    padding: 77px 0 20px;
+    padding: 41px 0 20px;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
 }
-.sponsors p{
-    margin: 0 0 34px;
+.sponsors .site__title {
+
+    margin: 0 0 25px;
 }
+
 .sponsors__filters {
     max-width: 231px;
     margin: 0 auto 25px;
 }
 .sponsors__items{
-    text-align: left;
+    text-align: center;
+    padding-top: 16px;
 }
 .sponsors__item{
     padding: 0 0 23px;
@@ -1608,42 +1611,22 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    width: 88%;
-    padding-bottom: 40%;
-    margin: 0 auto 32px;
+    width: 66.3%;
+    max-width: 220px;
+    max-height: 100px;
+    padding-bottom: 28%;
+    margin: 0 auto 30px;
     overflow: hidden;
 }
-.sponsors__item_gold .sponsors__logo{
-    display: block;
-}
-.sponsors__item_gold .sponsors__logo div{
-    right: 0;
-    left: 0;
-}
-.sponsors__item_silver .sponsors__logo{
-    width: 49.3%;
-    padding-bottom: 21%;
-}
-.sponsors__item_silver .sponsors__logo div{
-    right: 5px;
-    left: 5px;
-}
-.sponsors__item_bronze .sponsors__logo{
-    width: 32.4%;
-    padding-bottom: 13%;
-}
-.sponsors__item_bronze .sponsors__logo div{
-    right: 6px;
-    left: 6px;
-}
+
 .sponsors__logo div{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
+    right: 5px;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
 }
 /* ------------ /sponsors ------------ */
 
@@ -1663,7 +1646,7 @@
     position: relative;
     width: 297px;
     margin: 0 auto 21px;
-    padding: 40px 31px 38px 22px;
+    padding: 40px 27px 38px 26px;
     background-color: #fff;
     text-align: left;
 }
@@ -2464,6 +2447,30 @@ input.subscribe__email{
 }
 /* ------------ /switcher ------------ */
 
+/* ------------ registration ------------ */
+.registration {
+    padding: 54px 0 104px 0;
+    background: #ff7777;
+}
+.registration .site__title {
+
+    color: #fff;
+
+    margin-bottom: 37px;
+}
+.registration__wrap {
+
+    margin-bottom: 33px;
+}
+.registration__text {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
+}
+/* ------------ /registration ------------ */
+
 @media (min-width: 460px) {
 
     /* ------------ media-gallery ------------ */
@@ -3092,51 +3099,36 @@ input.subscribe__email{
 
     /* ------------ sponsors ------------ */
     .sponsors{
-        padding: 82px 0 0;
+        padding: 42px 0 0;
         font-size: 20px;
         line-height: 42px;
     }
-    .sponsors p{
-        margin: 0 0 39px;
+    .sponsors .site__title {
+
     }
     .sponsors__filters{
         max-width: 724px;
-        margin: 0 auto 69px;
-        text-align: left;
+        margin: 0 auto 49px;
     }
     .sponsors__filters .ares-select{
-        margin-left: 10px;
+        margin: 0 auto;
     }
-    .sponsors__filters .ares-select:first-child{
-        margin-left: 0;
+    .sponsors__items {
+        text-align: justify;
     }
-    .sponsors__item{
-        padding: 0 0 33px;
+    .sponsors__items:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
     }
     .sponsors__logo{
-        width: 53%;
-        padding-bottom: 24.1%;
-        margin: 0 auto 40px;
+        width: 203px;
+        height: 77px;
+        padding: 0;
     }
-    .sponsors__item_gold .sponsors__logo div{
-        right: 0;
-        left: 0;
-    }
-    .sponsors__item_silver .sponsors__logo{
-        width: 32.4%;
-        padding-bottom: 12.5%;
-    }
-    .sponsors__item_silver .sponsors__logo div{
-        right: 18px;
-        left: 18px;
-    }
-    .sponsors__item_bronze .sponsors__logo{
-        width: 19.4%;
-        padding-bottom: 6.9%;
-    }
-    .sponsors__item_bronze .sponsors__logo div{
-        right: 16px;
-        left: 16px;
+    .sponsors__logo div {
+        left: 15px;
+        right: 15px;
     }
     /* ------------ /sponsors ------------ */
 
@@ -3387,6 +3379,29 @@ input.subscribe__email{
         margin: 0 0 54px;
     }
     /* ------------ /switcher ------------ */
+
+    /* ------------ registration ------------ */
+    .registration {
+
+        padding: 44px 0 80px 0;
+
+    }
+    .registration .site__title {
+
+        margin-bottom: 29px;
+
+    }
+    .registration__wrap {
+
+        margin-bottom: 0;
+
+    }
+    .registration__text {
+
+        line-height: 24px;
+
+    }
+    /* ------------ /registration ------------ */
 
 }
 
@@ -4049,41 +4064,29 @@ input.subscribe__email{
 
     /* ------------ sponsors ------------ */
     .sponsors{
-        padding: 93px 0 32px;
+        padding: 54px 0 19px;
     }
-    .sponsors p{
-        margin: 0 0 39px;
+    .sponsors__items {
+
+        text-align: center;
+
+        padding-top: 23px;
+
+        /* padding-right: 15px; */
     }
-    .sponsors__item{
-        padding: 0 27px 33px;
+    .sponsors .site__title {
+
     }
     .sponsors__logo{
-        width: 36%;
-        padding-bottom: 16.4%;
-        margin: 0 auto 40px;
+        width: 19.3%;
+        padding-bottom: 8.4%;
+        max-width: none;
+        max-height: none;
+        margin: 0 63px 43px;
     }
-    .sponsors__item_gold .sponsors__logo div{
+    .sponsors__logo div{
         right: 0;
         left: 0;
-    }
-    .sponsors__item_silver .sponsors__logo{
-        width: 32.4%;
-        padding-bottom: 9.5%;
-    }
-    .sponsors__item_silver .sponsors__logo div{
-        right: 61px;
-        left: 61px;
-    }
-    .sponsors__item_bronze {
-        padding: 0 56px 33px;
-    }
-    .sponsors__item_bronze .sponsors__logo{
-        width: 19.4%;
-        padding-bottom: 5.7%;
-    }
-    .sponsors__item_bronze .sponsors__logo div{
-        right: 34px;
-        left: 34px;
     }
     /* ------------ /sponsors ------------ */
 
@@ -4317,6 +4320,22 @@ input.subscribe__email{
     }
     /* ------------ /register-now ------------ */
 
+    /* ------------ registration ------------ */
+    .registration {
+        padding: 78px 0 96px 0;
+    }
+    .registration .site__title {
+        margin-bottom: 52px;
+    }
+    .registration__wrap {
+        max-width: 1141px;
+        margin: 0 auto;
+    }
+    .registration__text {
+        max-width: 680px;
+    }
+    /* ------------ /registration ------------ */
+
 }
 
 @media (min-width: 1200px) {
@@ -4402,6 +4421,9 @@ input.subscribe__email{
     .tickets__status{
         margin-bottom: 33px;
         font-size: 25px;
+    }
+    .tickets__list {
+        margin-bottom: 36px;
     }
     /* --------------- /tickets --------------- */
 }
