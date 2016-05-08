@@ -1084,11 +1084,20 @@ $(function(){
 
                 $.each( msg.items, function() {
 
-                    var newBlock = $( '<div class="speakers__item"><a href="' + this.href + '" class="speakers__person hidden ' + this.favorite + ' ">' +
-                        '<div class="speakers__photo" style="background-image:url( ' + this.picture +  ' )"></div>' +
-                        '<h3 class="speakers__name">' + this.name + '</h3>' +
-                        '<span class="speakers__post">' + this.post + '" </span>' +
-                        '</a></div>' );
+                    var newBlock = $( '' +
+                            '<div class="speakers__item">' +
+                                '<a href="' + this.href + '" class="speakers__person hidden ' + this.favorite + ' ">' +
+                                    '<div class="speakers__photo" style="background-image:url( ' + this.picture +  ' )"></div>' +
+                                    '<div class="speakers__info">' +
+                                        '<div>' +
+                                            '<h3 class="speakers__name">' + this.name + '</h3>' +
+                                            '<span class="speakers__post">' + this.post + '" </span>' +
+                                            '<i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>'+
+                                        '</div>'+
+                                    '</div>' +
+                                '</a>' +
+                            '</div>' +
+                                '' );
 
                     _wrapper.append( newBlock );
 
