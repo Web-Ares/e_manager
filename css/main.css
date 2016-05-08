@@ -193,11 +193,9 @@
     left: 0;
     z-index: 3;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
     -webkit-transition:  -webkit-transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
-}
-.site__header .site__centered {
-    /* padding: 0; */
 }
 .site__header_hidden{
     -webkit-transform: translateY( -90px );
@@ -206,12 +204,6 @@
 .site__header-top{
     height: 60px;
     background: #fff;
-    /* border-bottom: 2px solid rgba(255,255,255,0.1); */
-    /* -webkit-transition: background 0.1s ease; */
-    /* transition: background 0.1s ease; */
-}
-.site__header.fixed .site__header-top{
-    /* background: #000; */
 }
 .site__footer {
     z-index: 2;
@@ -282,22 +274,7 @@
 .site__title_white {
     color: #fff;
 }
-.site__title_green {
-    color: #435a65;
-}
-.site__title:after{
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 50%; */
-    /* width: 80px; */
-    /* height: 6px; */
-    /* background: #ffdc1a; */
-    /* content: ''; */
-    /* -webkit-transform: translateX(-50%); */
-    /* transform: translateX(-50%); */
-}
 .site__title_big{
-    /* padding: 0 0 21px; */
     margin: 0 0 21px;
     font-size: 43px;
     line-height: 49px;
@@ -461,6 +438,7 @@
     text-align: center;
     letter-spacing: 0.6px;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 20px;
     line-height: 1;
@@ -763,7 +741,6 @@
     top: 11px;
     left: 16px;
     width: 213px;
-    /* height: 33px; */
 }
 .logo img {
     display: block;
@@ -844,13 +821,6 @@
 .header-menu .btn{
     margin: 20px 0 0;
 }
-/*.header-menu .opened{*/
-/*background: #ffdc1a;*/
-/*}*/
-/*.header-menu .opened .header-menu__item{*/
-/*padding: 20px 10px;*/
-/*color: #000;*/
-/*}*/
 /* --------------- /header-menu --------------- */
 
 /* --------------- menu-btn --------------- */
@@ -932,9 +902,6 @@
     font-size: 18px;
     line-height: 22px;
     background-color: #f9f9f9;
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center bottom; */
 }
 .hero__layout{
     position: relative;
@@ -949,16 +916,22 @@
 .hero__slider .swiper-button-prev {
     display: none;
     position: absolute;
-    top: 50%;
-    margin-top: -11.5px;
+    margin-top: 0;
     width: 42px;
     height: 23px;
     background: url(../img/slider-arrow.png) no-repeat;
     background-size: contain;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
 }
 .hero__slider .swiper-button-prev {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    right: auto;
+}
+.hero__slider .swiper-button-next:hover,
+.hero__slider .swiper-button-prev:hover {
+    opacity: .8;
 }
 .hero__slider .swiper-slide {
     padding-bottom: 100px;
@@ -1017,6 +990,7 @@
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.5px;
+    font-family: 'Open Sans', sans-serif;
 }
 .time-schedule__save{
     margin: 0 auto;
@@ -1097,17 +1071,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    /* color: #000; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     line-height: 11px;
     text-align: center;
     text-transform: uppercase;
-    background: #cbf1f1;
-    /* background: #ffee8d; */
-    background: -moz-linear-gradient(left,  #ffee8d 50%, #ffdc1a 50%);
-    /* background: -webkit-linear-gradient(left,  #ffee8d 50%,#ffdc1a 50%); */
-    /* background: linear-gradient(to right,  #ffee8d 50%,#ffdc1a 50%); */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffee8d', endColorstr='#ffdc1a',GradientType=1 );
+    background-color: rgb( 203, 241, 241 );
+    box-shadow: 0 0 50px 0 rgb( 203, 241, 241 );
 }
 .countdown-timer>div{
     display: flex;
@@ -1123,12 +1093,6 @@
     padding: 25px 0 16px;
     color: #fff;
 }
-.countdown-timer>div>div:nth-child(2){
-    /* background: #ffe75f; */
-}
-.countdown-timer>div>div:nth-child(3){
-    /* background: #ffe031; */
-}
 .countdown-timer span{
     display: block;
     margin: 0 0 7px;
@@ -1139,55 +1103,6 @@
     color: #5b6f76;
 }
 /* --------------- /countdown-timer --------------- */
-
-/* --------------- description --------------- */
-.description{
-    padding: 93px 15px 70px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-}
-.description p {
-    margin: 0 0 43px;
-}
-.description p a {
-    border-bottom: 1px solid transparent;
-    color: #ffdc1a;
-    -webkit-transition: border .3s ease-in-out;
-    transition: border .3s ease-in-out;
-}
-.description p a:hover {
-    border-bottom: 1px solid #ffdc1a;
-}
-.description__watch-video{
-    padding: 0 60px 0 0;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 22px;
-    color: #000;
-}
-.description__watch-video i{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 39px;
-    height: 39px;
-    padding: 9px 0 9px 3px;
-    border-radius: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border: 2px solid #e3e3e3;
-    font-size: 16px;
-    line-height: 16px;
-    -webkit-transition: border .3s, background .3s, color .3s;
-    transition: border .3s, background .3s, color .3s;
-}
-.description__watch-video:hover i{
-    border-color: #ffdc1a;
-}
-/* --------------- /description --------------- */
 
 /* --------------- speakers --------------- */
 .speakers{
@@ -1216,7 +1131,6 @@
 .speakers-favorite:before{
     right: 0;
     top: 0;
-    border: solid transparent;
     content: " ";
     height: 0;
     width: 0;
@@ -1303,26 +1217,33 @@
 /* --------------- /speakers --------------- */
 
 /* --------------- get-touch --------------- */
-.get-touch{
-    padding: 50px 0 47px;
-    background: #34c2a6;
-    color: #fff;
+.get-touch {
+    padding: 36px 9px 35px;
+    background: #cbf1f1;
+    color: #b5b5b5;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 29px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
-.get-touch__title{
-    margin: 0 0 23px;
-    font-family: 'Montserrat Slab', serif;
+.get-touch .site__centered {
+    background: #fff;
+    padding-top: 8px;
+    padding-bottom: 18px;
+    box-shadow: 0 5px 30px 0 rgb( 203, 241, 241 );
+}
+.get-touch__title {
+    margin: 0 0 5px;
+    font-family: 'Montserrat', serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 37px;
+    color: #435a65;
     text-transform: uppercase;
 }
 .get-touch a{
-    font-weight: 700;
-    color: #ffdc1a;
-    border-bottom: 1px solid #ffdc1a;
+    color: #ff7777;
+    border-bottom: 1px solid #ff7777;
     -webkit-transition: border .3s;
     transition: border .3s;
 }
@@ -1663,36 +1584,52 @@
 /* ------------ /contact-us ------------ */
 
 /* ------------ register-now ------------ */
-.register-now{
-    height: 488px;
-    padding-top: 91px;
-    background: url("../img/bg-description-big.jpg") no-repeat 50% 0;
-    color: #fff;
+.register-now {
+    padding-top: 33px;
+    padding-bottom: 39px;
+    background: #c9f1f1;
+    color: #435a65;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 21px;
     text-align: center;
 }
+.register-now .site__centered {
+    padding: 50px 0 54px;
+    max-width: 1200px;
+    background-size: cover;
+    background-position: left center;
+    box-shadow: 0 5px 30px 0 rgb( 203, 241, 241 );
+}
+.register-now .site__title {
+    margin-bottom: 25px;
+    font-size: 37px;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+}
 .register-now p {
-    margin: 0 10px 55px;
+    margin: 0 45px 33px;
 }
 /* ------------ /register-now ------------ */
 
 /* ------------ sponsors ------------ */
 .sponsors{
-    padding: 77px 0 20px;
+    padding: 41px 0 20px;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
 }
-.sponsors p{
-    margin: 0 0 34px;
+.sponsors .site__title {
+
+    margin: 0 0 25px;
 }
+
 .sponsors__filters {
     max-width: 231px;
     margin: 0 auto 25px;
 }
 .sponsors__items{
-    text-align: left;
+    text-align: center;
+    padding-top: 16px;
 }
 .sponsors__item{
     padding: 0 0 23px;
@@ -1701,84 +1638,68 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    width: 88%;
-    padding-bottom: 40%;
-    margin: 0 auto 32px;
+    width: 66.3%;
+    max-width: 220px;
+    max-height: 100px;
+    padding-bottom: 28%;
+    margin: 0 auto 30px;
     overflow: hidden;
 }
-.sponsors__item_gold .sponsors__logo{
-    display: block;
-}
-.sponsors__item_gold .sponsors__logo div{
-    right: 0;
-    left: 0;
-}
-.sponsors__item_silver .sponsors__logo{
-    width: 49.3%;
-    padding-bottom: 21%;
-}
-.sponsors__item_silver .sponsors__logo div{
-    right: 5px;
-    left: 5px;
-}
-.sponsors__item_bronze .sponsors__logo{
-    width: 32.4%;
-    padding-bottom: 13%;
-}
-.sponsors__item_bronze .sponsors__logo div{
-    right: 6px;
-    left: 6px;
-}
+
 .sponsors__logo div{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
+    right: 5px;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
 }
 /* ------------ /sponsors ------------ */
 
 /* --------------- tickets --------------- */
-.tickets{
-    padding: 82px 0 30px;
-    background-color: #ffdc1a;
+.tickets {
+    padding: 52px 0 22px;
+    background-color: #f7f7f7;
     font-size: 16px;
     line-height: 25px;
     text-align: center;
     overflow: hidden;
 }
-.tickets p{
-    margin: 0 25px 37px;
+.tickets__layout {
+    padding: 16px 0 0;
 }
-.tickets__item{
+.tickets__item {
     position: relative;
     width: 297px;
-    margin: 0 auto 23px;
-    padding: 53px 40px 30px;
+    margin: 0 auto 21px;
+    padding: 40px 27px 38px 26px;
     background-color: #fff;
     text-align: left;
 }
 .tickets__price{
     display: block;
-    margin-bottom: 12px;
-    font-size: 42px;
-    font-family: 'Montserrat Slab', sans-serif;
-    font-weight: 600;
+    margin-bottom: 14px;
+    font-size: 51px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     line-height: 1;
+    text-align: center;
+    color: #435a65;
 }
 .tickets__status{
     display: block;
-    margin-bottom: 30px;
-    font-size: 20px;
+    margin-bottom: 48px;
+    font-size: 24px;
+    color: #ff7777;
+    text-align: center;
 }
 .tickets__list{
-    margin-bottom: 23px;
-    padding-top: 13px;
-    border-top: 2px solid #f5f5f5;
-    font-size: 13px;
-    line-height: 21px;
+    margin-bottom: 26px;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
 }
 .tickets__list li{
     position: relative;
@@ -1787,26 +1708,23 @@
 .tickets__list li:before{
     position: absolute;
     top: 2px;
-    left: -4px;
-    color: #ffdc1a;
+    left: -9px;
+    color: #ff7777;
     content: '•';
 }
 .tickets__item_disabled{
     opacity: .4;
 }
-.tickets__item_best:before{
-    position: absolute;
-    top: 50px;
-    right: 28px;
-    width: 60px;
-    height: 38px;
-    padding-top: 19px;
-    border-radius: 100px;
-    background-color: #ffdc1a;
-    color: #000;
-    font: italic 600 16px "Montserrat", sans-serif;
-    text-align: center;
-    content: 'Best!';
+.tickets__item_featured {
+    box-shadow: 0 0 30px 0 rgba( 0, 0, 0, .2 );
+}
+.tickets__item .btn {
+    display: block;
+    width: 152px;
+    height: 54px;
+    margin: 0 auto;
+    padding: 18px 10px;
+    font-size: 18px;
 }
 /* --------------- /tickets --------------- */
 
@@ -1936,38 +1854,35 @@
 
 /* ------------ features ------------ */
 .features {
-    background: #ffdc1a;
+    padding-top: 21px;
 }
 .features__item {
     display: block;
-    height: 180px;
-    padding-top: 35px;
+    height: 120px;
     text-align: center;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
+    color: #5b6f76;
 }
 .features__logo {
     display: inline-block;
     position: relative;
     width: 60px;
     height: 60px;
-    margin-bottom: 15px;
-    border-radius: 50%;
+    margin-bottom: 10px;
 }
 .features__logo span {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: #000;
     white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .features__logo span i {
     display: inline-block;
     vertical-align: top;
-    font-size: 30px;
+    font-size: 40px;
 }
 .features__logo i.fa-child {
     font-size: 24px;
@@ -1978,37 +1893,12 @@
 .features__title {
     display: block;
     font-size: 20px;
-    font-family: 'Montserrat Slab', sans-serif;
     font-weight: 700;
-    color: rgb( 0, 0, 0 );
     line-height: 1.636;
+    letter-spacing: 0.6px;
 }
-.features__item_light {
-    background:#ffee8d;
-}
-.features__item_light .features__logo {
-    background: #fff5bb;
-}
-.features__item_middle {
-    background:#ffe75f;
-}
-.features__item_middle .features__logo {
-    background: #fff19f;
-}
-.features__item_dark {
-    background:#ffdc1a;
-}
-.features__item_dark .features__logo {
-    background: #ffea76;
-}
-.features__item_light:hover {
-    background: #ffe681;
-}
-.features__item_middle:hover {
-    background: #ffdd4a;
-}
-.features__item_dark:hover {
-    background: #ffcf10;
+.features__item:hover {
+    background: #f7f7f7;
 }
 /* ------------ /features ------------ */
 
@@ -2117,19 +2007,6 @@ input.subscribe__email{
     display: none;
 }
 /* ------------ /media-gallery ------------ */
-
-.Rectangle_60 {
-    background-color: rgb( 203, 241, 241 );
-    opacity: 0.949;
-    box-shadow: 0px 0px 80px 0px rgb( 0, 0, 0 );
-    position: absolute;
-    left: 682px;
-    top: 11218px;
-    width: 80px;
-    height: 80px;
-    z-index: 42;
-}
-
 
 /* ------------ follow-us ------------ */
 .follow-us{
@@ -2564,7 +2441,6 @@ input.subscribe__email{
     width: 50%;
 }
 .switcher__check + .switcher__check {
-    /* margin-left: -6px; */
 }
 .switcher__check + .switcher__check label {
     border-left: none;
@@ -2597,6 +2473,30 @@ input.subscribe__email{
     background: rgba(255,255,255,0.3);
 }
 /* ------------ /switcher ------------ */
+
+/* ------------ registration ------------ */
+.registration {
+    padding: 54px 0 104px 0;
+    background: #ff7777;
+}
+.registration .site__title {
+
+    color: #fff;
+
+    margin-bottom: 37px;
+}
+.registration__wrap {
+
+    margin-bottom: 33px;
+}
+.registration__text {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
+}
+/* ------------ /registration ------------ */
 
 @media (min-width: 460px) {
 
@@ -2711,8 +2611,6 @@ input.subscribe__email{
         height: 6px;
     }
     .site__title_big{
-        /* padding: 0 0 33px; */
-        /* padding: 0; */
         margin: 0 0 10px;
         font-size: 57px;
         line-height: 56px;
@@ -2805,10 +2703,6 @@ input.subscribe__email{
     .header-menu{
         top: 86px;
     }
-
-    .header-menu__sub-items li a{
-        padding: 28px 16px;
-    }
     .header-menu .opened .header-menu__item{
         padding: 46px 10px;
         color: #000;
@@ -2838,13 +2732,8 @@ input.subscribe__email{
     .hero__layout{
         padding: 173px 0 0;
     }
-    .hero__slider {
-
-    }
     .hero__slider .swiper-slide {
-
         padding-bottom: 117px;
-
     }
     .hero_slider .hero__layout{
         padding: 223px 0 10px;
@@ -2858,31 +2747,19 @@ input.subscribe__email{
         font-size: 20px;
         line-height: 24px;
     }
-
     .hero__layout_profile {
         padding: 58px 0 13px !important;
     }
     /* ------------ /hero ------------ */
 
     /* ------------ time-schedule ------------ */
-    .time-schedule{
-        /* margin: -12px 0 0; */
-    }
     .time-schedule__pic {
-        /* width: 124px; */
-        /* height: 124px; */
         width: 81px;
         height: 81px;
         margin: 0 auto 21px;
     }
     .time-schedule__place {
         margin: 0 5px 32px;
-    }
-    .time-schedule__save {
-        /* width: 342px; */
-        /* padding: 4px 43px 4px 27px; */
-        /* border-left: 2px solid rgba(255,255,255,0.3); */
-        /* border-right: 2px solid rgba(255,255,255,0.3); */
     }
     .time-schedule__save a {
         margin: 0 0 0 11px;
@@ -2891,8 +2768,6 @@ input.subscribe__email{
         margin-left: 0;
     }
     .time-schedule__text {
-        /* font-size: 20px; */
-        /* line-height: 30px; */
         margin-bottom: 27px;
     }
     .time-schedule .btn {
@@ -2926,21 +2801,6 @@ input.subscribe__email{
     }
     /* ------------ /countdown-timer ------------ */
 
-    /* ------------ description ------------ */
-    .description {
-        padding: 129px 0 101px;
-        max-width: 700px;
-        font-size: 20px;
-        line-height: 38px;
-    }
-    .description p {
-        margin: 0 0 33px;
-    }
-    .description__watch-video {
-        padding: 0 52px 0 0;
-    }
-    /* ------------ /description ------------ */
-
     /* --------------- speakers --------------- */
     .speakers {
         padding: 85px 0 80px;
@@ -2968,23 +2828,26 @@ input.subscribe__email{
 
     /* --------------- get-touch --------------- */
     .get-touch{
-        padding: 54px 0 49px;
+        padding: 36px 36px 36px;
+        letter-spacing: 0.1px;
+    }
+    .get-touch .site__centered {
+        /* background: #fff; */
+        padding-top: 40px;
+        padding-bottom: 36px;
     }
     .get-touch__title{
-        margin: 0 0 8px;
+        margin: 0 0 -3px;
     }
     /* --------------- /get-touch --------------- */
 
     /* --------------- tickets --------------- */
     .tickets{
-        padding: 76px 0 39px;
-    }
-    .tickets p{
-        margin: -16px 0 37px;
-        font-size: 21px;
+        padding: 53px 0 29px;
     }
     .tickets__layout{
         width: 750px;
+        padding: 23px 0 0;
         margin: 0 auto;
         text-align: justify;
     }
@@ -2997,36 +2860,27 @@ input.subscribe__email{
         display: inline-block;
         vertical-align: top;
         width: 360px;
-        min-height: 457px;
-        padding: 64px 38px 30px 46px;
+        min-height: 436px;
+        padding: 40px 38px 35px 47px;
     }
     .tickets__price{
-        margin-bottom: 17px;
+        margin-bottom: 15px;
         font-size: 50px;
     }
     .tickets__status{
-        margin-bottom: 41px;
+        margin-bottom: 43px;
         font-size: 24px;
     }
     .tickets__list{
-        margin-bottom: 26px;
         padding-top: 15px;
-        font-size: 16px;
-        line-height: 26px;
+        padding-left: 8px;
     }
     .tickets__list li{
         padding-left: 11px;
     }
     .tickets__list li:before {
-        top: 3px;
-        left: -1px;
-    }
-    .tickets__item_best:before{
-        top: 60px;
-        width: 70px;
-        height: 46px;
-        padding-top: 25px;
-        font-size: 19px;
+        top: 0;
+        left: -3px;
     }
     /* --------------- /tickets --------------- */
 
@@ -3253,65 +3107,55 @@ input.subscribe__email{
 
     /* ------------ register-now ------------ */
     .register-now {
-        height: 500px;
-        padding-top: 123px;
+        padding-bottom: 32px;
         font-size: 20px;
         line-height: 42px;
-        background-size: cover;
+    }
+    .register-now .site__centered {
+        padding: 102px 0 88px;
+    }
+    .register-now .site__title {
+        margin-bottom: 14px;
+        font-size: 51px;
     }
     .register-now p {
-        margin: -21px 0 36px;
-        letter-spacing: 0.5px;
+        margin: 0 0 53px;
+        letter-spacing: 0.4px;
     }
     /* ------------ /register-now ------------ */
 
     /* ------------ sponsors ------------ */
     .sponsors{
-        padding: 82px 0 0;
+        padding: 42px 0 0;
         font-size: 20px;
         line-height: 42px;
     }
-    .sponsors p{
-        margin: 0 0 39px;
+    .sponsors .site__title {
+
     }
     .sponsors__filters{
         max-width: 724px;
-        margin: 0 auto 69px;
-        text-align: left;
+        margin: 0 auto 49px;
     }
     .sponsors__filters .ares-select{
-        margin-left: 10px;
+        margin: 0 auto;
     }
-    .sponsors__filters .ares-select:first-child{
-        margin-left: 0;
+    .sponsors__items {
+        text-align: justify;
     }
-    .sponsors__item{
-        padding: 0 0 33px;
+    .sponsors__items:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
     }
     .sponsors__logo{
-        width: 53%;
-        padding-bottom: 24.1%;
-        margin: 0 auto 40px;
+        width: 203px;
+        height: 77px;
+        padding: 0;
     }
-    .sponsors__item_gold .sponsors__logo div{
-        right: 0;
-        left: 0;
-    }
-    .sponsors__item_silver .sponsors__logo{
-        width: 32.4%;
-        padding-bottom: 12.5%;
-    }
-    .sponsors__item_silver .sponsors__logo div{
-        right: 18px;
-        left: 18px;
-    }
-    .sponsors__item_bronze .sponsors__logo{
-        width: 19.4%;
-        padding-bottom: 6.9%;
-    }
-    .sponsors__item_bronze .sponsors__logo div{
-        right: 16px;
-        left: 16px;
+    .sponsors__logo div {
+        left: 15px;
+        right: 15px;
     }
     /* ------------ /sponsors ------------ */
 
@@ -3378,11 +3222,25 @@ input.subscribe__email{
     /* ------------ /subscribe ------------ */
 
     /* ------------ features ------------ */
-    .features__item {
-        padding-top: 33px;
+    .features {
+        display: table;
+        width: 100%;
+        padding-top: 0;
     }
-    .features__logo {
-        margin-bottom: 14px;
+    .features__item {
+        display: table-cell;
+        width: 35.49%;
+        height: 185px;
+        padding-top: 35px;
+    }
+    .features__item:nth-child(2) {
+        width: auto;
+    }
+    .features__inner {
+        display: inline-block;
+        width: 100%;
+        max-width: 384px;
+        text-align: center;
     }
     /* ------------ /features ------------ */
 
@@ -3549,6 +3407,29 @@ input.subscribe__email{
     }
     /* ------------ /switcher ------------ */
 
+    /* ------------ registration ------------ */
+    .registration {
+
+        padding: 44px 0 80px 0;
+
+    }
+    .registration .site__title {
+
+        margin-bottom: 29px;
+
+    }
+    .registration__wrap {
+
+        margin-bottom: 0;
+
+    }
+    .registration__text {
+
+        line-height: 24px;
+
+    }
+    /* ------------ /registration ------------ */
+
 }
 
 @media (min-width: 930px) {
@@ -3632,6 +3513,9 @@ input.subscribe__email{
     /* ------------ /social ------------ */
 
     /* --------------- site --------------- */
+    .site__header-top {
+        height: 78px;
+    }
     .site__footer {
         padding: 97px 0 20px;
     }
@@ -3696,7 +3580,7 @@ input.subscribe__email{
 
     /* --------------- logo --------------- */
     .logo {
-        /* left: 1px; */
+        left: 18px;
     }
     /* --------------- /logo --------------- */
 
@@ -3733,7 +3617,7 @@ input.subscribe__email{
     .header-menu__layout>ul{
         display: inline-block;
         vertical-align: top;
-        margin: 0 17px 0 0;
+        margin: 0 19px 0 0;
         width: auto;
         text-align: left;
     }
@@ -3773,7 +3657,6 @@ input.subscribe__email{
     .header-menu__item:hover,
     .header-menu__item.active{
         color: #ff7777;
-        /* background: transparent; */
     }
     .header-menu__drop-down .header-menu__item:after{
         display: none;
@@ -3781,53 +3664,13 @@ input.subscribe__email{
     .header-menu .btn{
         position: relative;
         top: 19px;
+        width: 130px;
         margin: auto;
-        margin-right: -5px;
-        /* font-weight: 400; */
-    }
-    .header-menu .header-menu__sub-items{
-        display: block;
-        position: absolute;
-        top: 40px;
-        left: 50%;
-        width: 145px;
-        padding: 13px 14px 7px;
-        background: #ffdc1a;
-        -webkit-transform: translateX(-47%);
-        transform: translateX(-47%);
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transition: visibility 0.3s, opacity 0.3s;
-        transition: visibility 0.3s, opacity 0.3s;
-    }
-    .header-menu li:hover .header-menu__sub-items{
-        opacity: 1;
-        visibility: visible;
-    }
-    .header-menu__sub-items:after{
-        position: absolute;
-        top: -16px;
-        left: 50%;
-        border: 8px solid transparent;
-        border-bottom: 8px solid #ffdc1a;
-        -webkit-transform: translateX(-47%);
-        transform: translateX(-47%);
-        content: '';
-    }
-    .header-menu__sub-items li{
-        display: block;
-        border: none;
-    }
-    .header-menu__sub-items li a{
-        padding: 7px 16px;
-        margin: 0 0 1px;
-        color: #000;
-        -webkit-transition: background 0.3s;
-        transition: background 0.3s;
-    }
-    .header-menu__sub-items li .active,
-    .header-menu__sub-items li a:hover{
-        background: #ffee8d;
+        margin-right: -1px;
+        padding: 15px 5px;
+        font-size: 14px;
+        height: 44px;
+        letter-spacing: 0;
     }
     /* --------------- /header-menu --------------- */
 
@@ -3876,37 +3719,23 @@ input.subscribe__email{
     .hero__text {
         margin: 0 0 78px;
     }
-
     .hero__layout_profile {
         padding: 140px 0 14px !important;
     }
-    /* --------------- /hero --------------- */
-
-    /* --------------- time-schedule --------------- */
-    .time-schedule{
-        padding: 44px 0 24px;
-    }
-    .time-schedule__pic {
-        width: 91px;
-        height: 91px;
-        margin: 0 auto 22px;
-    }
-    .time-schedule__place {
-        margin: 0 5px 38px;
-    }
-    .time-schedule__text {
-        font-size: 20px;
-        line-height: 30px;
-        margin-bottom: 35px;
-    }
-    .time-schedule .btn {
-        margin: 0 0 56px;
-    }
-    .hero__slider {
-
+    .hero__centered {
+        position: absolute;
+        top: 45.9%;
+        left: 15px;
+        right: 15px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
     }
     .hero__slider .swiper-slide {
-
+        padding-bottom: 65px;
+    }
+    .hero__slider .swiper-button-next,
+    .hero__slider .swiper-button-prev {
+        display: block;
     }
     .hero_slider .time-schedule .btn {
         margin: 0 0 102px;
@@ -3936,7 +3765,48 @@ input.subscribe__email{
     .hero_video .time-schedule {
         padding-bottom: 23px;
     }
+    /* --------------- /hero --------------- */
+
+    /* --------------- time-schedule --------------- */
+    .time-schedule{
+        padding: 44px 0 24px;
+    }
+    .time-schedule__pic {
+        width: 91px;
+        height: 91px;
+        margin: 0 auto 22px;
+    }
+    .time-schedule__place {
+        margin: 0 5px 38px;
+    }
+    .time-schedule__text {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+    .time-schedule .btn {
+        margin: 0 0 56px;
+    }
     /* --------------- /time-schedule --------------- */
+
+    /*------------countdown-timer-----------*/
+    .countdown-timer {
+        width: 643px;
+        right: auto;
+        left: 50%;
+        bottom: -56px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin: 0 auto;
+        padding-right: 9px;
+    }
+    .countdown-timer>div>div {
+        width: 21.2%;
+        height: 116px;
+        padding: 25px 0 16px;
+        color: #fff;
+    }
+    /*------------/countdown-timer-----------*/
 
     /* --------------- main-slider --------------- */
     .main-slider .swiper-button-prev,
@@ -3998,22 +3868,12 @@ input.subscribe__email{
 
     /* --------------- get-touch --------------- */
     .get-touch{
-        padding: 53px 0 49px;
+        padding: 36px 0 36px;
+    }
+    .get-touch .site__centered {
+        max-width: 1200px;
     }
     /* --------------- /get-touch --------------- */
-
-    /* --------------- tickets --------------- */
-    .tickets{
-        padding: 86px 0 39px;
-    }
-    .tickets__item{
-        transition: box-shadow .3s ease;
-        -webkit-transition: box-shadow .3s ease;
-    }
-    .tickets__item:hover{
-        box-shadow: 0 0 30px rgba(0,0,0,.1);
-    }
-    /* --------------- tickets --------------- */
 
     /* --------------- schedule --------------- */
     .schedule__date-btns{
@@ -4231,41 +4091,29 @@ input.subscribe__email{
 
     /* ------------ sponsors ------------ */
     .sponsors{
-        padding: 93px 0 32px;
+        padding: 54px 0 19px;
     }
-    .sponsors p{
-        margin: 0 0 39px;
+    .sponsors__items {
+
+        text-align: center;
+
+        padding-top: 23px;
+
+        /* padding-right: 15px; */
     }
-    .sponsors__item{
-        padding: 0 27px 33px;
+    .sponsors .site__title {
+
     }
     .sponsors__logo{
-        width: 36%;
-        padding-bottom: 16.4%;
-        margin: 0 auto 40px;
+        width: 19.3%;
+        padding-bottom: 8.4%;
+        max-width: none;
+        max-height: none;
+        margin: 0 63px 43px;
     }
-    .sponsors__item_gold .sponsors__logo div{
+    .sponsors__logo div{
         right: 0;
         left: 0;
-    }
-    .sponsors__item_silver .sponsors__logo{
-        width: 32.4%;
-        padding-bottom: 9.5%;
-    }
-    .sponsors__item_silver .sponsors__logo div{
-        right: 61px;
-        left: 61px;
-    }
-    .sponsors__item_bronze {
-        padding: 0 56px 33px;
-    }
-    .sponsors__item_bronze .sponsors__logo{
-        width: 19.4%;
-        padding-bottom: 5.7%;
-    }
-    .sponsors__item_bronze .sponsors__logo div{
-        right: 34px;
-        left: 34px;
     }
     /* ------------ /sponsors ------------ */
 
@@ -4281,9 +4129,9 @@ input.subscribe__email{
         width: 100%;
     }
     .features__item {
-        display: table-cell;
-        width: 35.49%;
-        height: 177px;
+        width: 35.79%;
+        height: 291px;
+        padding-top: 105px;
     }
     .features__item:nth-child(1) {
         text-align: right;
@@ -4490,6 +4338,31 @@ input.subscribe__email{
     }
     /* ------------ /switcher ------------ */
 
+    /* ------------ register-now ------------ */
+    .register-now .site__centered {
+        padding: 104px 0 88px;
+    }
+    .register-now .site__title span {
+        display: block;
+    }
+    /* ------------ /register-now ------------ */
+
+    /* ------------ registration ------------ */
+    .registration {
+        padding: 78px 0 96px 0;
+    }
+    .registration .site__title {
+        margin-bottom: 52px;
+    }
+    .registration__wrap {
+        max-width: 1141px;
+        margin: 0 auto;
+    }
+    .registration__text {
+        max-width: 680px;
+    }
+    /* ------------ /registration ------------ */
+
 }
 
 @media (min-width: 1200px) {
@@ -4500,12 +4373,6 @@ input.subscribe__email{
         margin-left: 22px;
     }
     /* --------------- /site --------------- */
-
-    /* --------------- tickets --------------- */
-    .tickets__layout{
-        width: auto;
-    }
-    /* --------------- /tickets --------------- */
 
     /* --------------- speakers --------------- */
     .speakers__item{
@@ -4525,13 +4392,67 @@ input.subscribe__email{
     }
     /* ------------ /social-feed ------------ */
 
-    /*--------------hero---------------*/
-    .hero__slider .swiper-button-next,
-    .hero__slider .swiper-button-prev {
-        display: block;
+    /*--------------hero--------------*/
+    .hero__centered {
+        z-index: 1;
+        width: 1200px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
-    /*--------------/hero---------------*/
+    /*--------------/hero--------------*/
 
+    /*--------------countdown-timer-----------*/
+    .countdown-timer span {
+        margin-bottom: 1px;
+    }
+    /*--------------/countdown-timer-----------*/
+
+    /*----------------tickets---------------*/
+    .tickets__layout{
+        width: 1200px;
+    }
+    /*----------------/tickets---------------*/
+
+}
+
+@media (min-width: 1440px) {
+
+    /* --------------- tickets --------------- */
+    .tickets{
+        padding: 50px 0 14px;
+    }
+    .tickets__layout{
+        width: auto;
+    }
+    .tickets__item {
+        width: auto;
+        padding: 0;
+    }
+    .tickets__item-inner {
+        display: inline-block;
+        width: 399px;
+        padding: 40px 61px 35px 63px;
+        text-align: left;
+    }
+    .tickets__item:nth-child(1),
+    .tickets__item:nth-child(3) {
+        width: 35.6%;
+    }
+    .tickets__item:nth-child(1) {
+        text-align: right;
+    }
+    .tickets__item:nth-child(2) {
+        text-align: left;
+    }
+    .tickets__status{
+        margin-bottom: 33px;
+        font-size: 25px;
+    }
+    .tickets__list {
+        margin-bottom: 36px;
+    }
+    /* --------------- /tickets --------------- */
 }
 
 @media (min-width: 1170px) {

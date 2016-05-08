@@ -122,7 +122,7 @@ AresSelect.prototype = {
                 if( maxHeight > self.popup.find( 'li' ).eq( 0 ).outerHeight() * self.visible ){
                     self.popup.outerHeight(self.popup.find( 'li' ).eq( 0 ).outerHeight() * self.visible);
                     $('#ares-select__popup' + self.id).niceScroll({
-                        cursorcolor:"#ffd100",
+                        cursorcolor:"#f7f7f7",
                         cursoropacitymin: "1",
                         cursorborderradius: "5px",
                         cursorborder: "none",
