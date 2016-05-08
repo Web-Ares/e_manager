@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 /* --------------- Style to null --------------- */
 *{-webkit-text-size-adjust: none; }
 *{-moz-box-sizing:border-box;box-sizing:border-box;}html,body,div,span,h1,h2,h3,h4,h5,h6,p,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,a,footer,header,menu,nav,section,summary,time,mark,audio,video{-webkit-tap-highlight-color: rgba(0,0,0,0); border:0;outline:0;vertical-align:baseline;background:transparent;font-size:100%;margin:0;padding:0;}a{background:transparent;}table{border-collapse:collapse;border-spacing:0;}td,td img{vertical-align:top;}input,select,button,textarea{font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:0;}input[type="text"],input[type="password"],textarea,input[type="email"],input[type="phone"],input[type="number"]{font:12px Arial, Helvetica, sans-serif;padding:0;}input[type="checkbox"]{vertical-align:bottom;}input[type="radio"]{vertical-align:text-bottom;}sub{vertical-align:sub;font-size:smaller;}sup{vertical-align:super;font-size:smaller;}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block;}ul,ol{list-style:none;}html{overflow-y:scroll;overflow-x:auto;}html{height:100%;}body{line-height:1;color:#000;text-align:left;z-index:1;position:relative;}input [type='text']{padding:0;}textarea{resize:none;overflow:auto;}label,input[type="button"],input[type="submit"],button{cursor:pointer;}input[type="button"],input[type="reset"],input[type="submit"],button,input[type="text"],input[type="password"],textarea,input[type="email"],input[type="tel"],input[type="phone"],input[type="number"]{-webkit-appearance:none;}a,a:visited,a:hover,a:focus,a:active{text-decoration:none;}input[type="submit"]::-moz-focus-inner,button::-moz-focus-inner{border:0;padding:0;}input:invalid{outline:none;-moz-box-shadow:none;border:none;}::-ms-clear{display:none;}input,textarea,input[type="search"]:focus,:focus{outline:none;}
@@ -945,16 +947,26 @@
 .hero__slider .swiper-button-prev {
     display: none;
     position: absolute;
-    top: 50%;
-    margin-top: -11.5px;
+    /*right: 8.9%;*/
+    /* top: 5%; */
+    margin-top: 0;
+    /* margin-top: -24.5px; */
     width: 42px;
     height: 23px;
     background: url(../img/slider-arrow.png) no-repeat;
     background-size: contain;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
 }
 .hero__slider .swiper-button-prev {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    right: auto;
+    /*left: 8.8%;*/
+}
+.hero__slider .swiper-button-next:hover,
+.hero__slider .swiper-button-prev:hover {
+    opacity: .8;
 }
 .hero__slider .swiper-slide {
     padding-bottom: 100px;
@@ -1013,6 +1025,7 @@
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.5px;
+    font-family: 'Open Sans', sans-serif;
 }
 .time-schedule__save{
     margin: 0 auto;
@@ -1093,17 +1106,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    /* color: #000; */
     font-size: 11px;
     line-height: 11px;
     text-align: center;
     text-transform: uppercase;
-    background: #cbf1f1;
-    /* background: #ffee8d; */
-    background: -moz-linear-gradient(left,  #ffee8d 50%, #ffdc1a 50%);
-    /* background: -webkit-linear-gradient(left,  #ffee8d 50%,#ffdc1a 50%); */
-    /* background: linear-gradient(to right,  #ffee8d 50%,#ffdc1a 50%); */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffee8d', endColorstr='#ffdc1a',GradientType=1 );
+    background-color: rgb( 203, 241, 241 );
+    box-shadow: 0 0 50px 0 rgb( 203, 241, 241 );
 }
 .countdown-timer>div{
     display: flex;
@@ -1114,7 +1122,7 @@
     margin: 0 auto;
 }
 .countdown-timer>div>div{
-    width: 25%;
+    width: 21.2%;
     height: 97px;
     padding: 25px 0 16px;
     color: #fff;
@@ -3627,6 +3635,9 @@ input.subscribe__email{
     /* --------------- /btn --------------- */
 
     /* --------------- site --------------- */
+    .site__header-top {
+        height: 78px;
+    }
     .site__footer {
         padding: 80px 71px 50px;
     }
@@ -3709,6 +3720,7 @@ input.subscribe__email{
     /* --------------- logo --------------- */
     .logo {
         /* left: 1px; */
+        left: 18px;
     }
     .logo_footer {
         top: auto;
@@ -3795,7 +3807,7 @@ input.subscribe__email{
         position: relative;
         top: 19px;
         margin: auto;
-        margin-right: -5px;
+        margin-right: -1px;
         /* font-weight: 400; */
     }
     .header-menu .header-menu__sub-items{
@@ -3915,11 +3927,25 @@ input.subscribe__email{
     .time-schedule .btn {
         margin: 0 0 56px;
     }
+
+    .hero__centered {
+        position: absolute;
+        /* z-index: 1; */
+        top: 45.9%;
+        left: 15px;
+        right: 15px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
     .hero__slider {
 
     }
     .hero__slider .swiper-slide {
-
+        padding-bottom: 65px;
+    }
+    .hero__slider .swiper-button-next,
+    .hero__slider .swiper-button-prev {
+        display: block;
     }
     .hero_slider .time-schedule .btn {
         margin: 0 0 102px;
@@ -3950,6 +3976,21 @@ input.subscribe__email{
         padding-bottom: 23px;
     }
     /* --------------- /time-schedule --------------- */
+
+    /*------------countdown-timer-----------*/
+    .countdown-timer {
+        /*position: relative;*/
+        width: 643px;
+        right: auto;
+        left: 50%;
+        /* top: 20px; */
+        bottom: -55px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin: 0 auto;
+        padding-right: 9px;
+    }
+    /*------------/countdown-timer-----------*/
 
     /* --------------- main-slider --------------- */
     .main-slider .swiper-button-prev,
@@ -4514,12 +4555,21 @@ input.subscribe__email{
     }
     /* ------------ /social-feed ------------ */
 
-    /*--------------hero---------------*/
-    .hero__slider .swiper-button-next,
-    .hero__slider .swiper-button-prev {
-        display: block;
+    /*--------------hero--------------*/
+    .hero__centered {
+        z-index: 1;
+        width: 1200px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
-    /*--------------/hero---------------*/
+    /*--------------/hero--------------*/
+
+    /*--------------countdown-timer-----------*/
+    .countdown-timer span {
+        margin-bottom: 1px;
+    }
+    /*--------------/countdown-timer-----------*/
 
 }
 
