@@ -8,7 +8,7 @@ $(function(){
             new Page ( $( this ) )
         } );
 
-        $.each( $( '.hero' ), function() {
+        $.each( $( '.hero_slider' ), function() {
             new HeroSlider ( $( this ) )
         } );
 

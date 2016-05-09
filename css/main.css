@@ -246,6 +246,28 @@
     display: block;
     margin: 0 auto 15px;
 }
+
+.site__title_inner {
+    position: relative;
+    margin: 0 0 15px;
+    font-size: 30px;
+    line-height: 34px;
+}
+.site__title_inner:after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    left: 50%;
+    bottom: -8px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+}
+
+
+
+/*--------------?-------------*/
 .site__title_logo {
     padding-top: 52px;
     position: relative;
@@ -271,9 +293,6 @@
     height: 34px;
     background-image: url("../img/site__title_media.png");
 }
-.site__title_white {
-    color: #fff;
-}
 .site__title_big{
     margin: 0 0 21px;
     font-size: 43px;
@@ -290,6 +309,9 @@
     width: 54px;
     height: 5px;
 }
+/*--------------?-------------*/
+
+
 .site__title_2{
     margin: 0 0 33px;
     padding: 17px 0 0;
@@ -320,8 +342,9 @@
     background: #fff;
 }
 .site__title_subtitle {
-    padding-bottom: 22px;
-    font: 700 26px/42px 'Montserrat Slab', sans-serif;
+    /* padding-bottom: 22px; */
+    font: 700 24px/42px 'Montserrat', sans-serif;
+    margin-bottom: 11px;
 }
 .site__form {
 }
@@ -680,59 +703,39 @@
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
-    background: #41c5f6;
-    text-align: center;
+    text-align: left;
 }
 .label_big{
-    padding: 8px 13px;
+    padding: 20px 13px 11px;
     margin: 0 0 4px;
     cursor: pointer;
+    font-size: 17px;
+    line-height: 14px;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
+span.label.label_big {}
 .label_big:hover{
     opacity: 0.6;
 }
 .label_1{
-    background: #345cc2;
+    background: #41c5f6;
 }
 .label_2{
-    background: #9b54d1;
+    background: #345cc2;
 }
 .label_3{
-    background: #ff8e42;
-}
-.label_4{
-    background: #ff4242;
-}
-.label_5{
-    background: #ffdc1a;
-}
-.label_6{
-    background: #34c2a6;
-}
-.label_7{
-    background: #4396ea;
-}
-.label_8{
-    background: #ff8b1a;
-}
-.label_9{
-    background: #3469c2;
-}
-.label_10{
-    background: #8643ea;
-}
-.label_11{
     background: #82cb2b;
 }
-.label_12{
+.label_4{
     background: #eb212e;
 }
-.label_13{
+.label_5{
     background: #00b295;
 }
-.label_14{
+.label_6{
     background: #f6b300;
 }
 /* --------------- /label --------------- */
@@ -823,6 +826,7 @@
 }
 .header-menu .btn{
     margin: 20px 0 0;
+    line-height: 1;
 }
 /* --------------- /header-menu --------------- */
 
@@ -906,6 +910,19 @@
     line-height: 22px;
     background-color: #f9f9f9;
 }
+.hero_inner {
+    background: #cbf1f1;
+}
+.hero_inner .hero__layout {
+
+    padding: 137px 0 50px;
+}
+.hero_video .site__centered {
+    padding-bottom: 100px;
+}
+.hero_video .hero__layout{
+    padding: 95px 0 0;
+}
 .hero__layout{
     position: relative;
     z-index: 1;
@@ -913,7 +930,6 @@
 }
 .hero__slider {
     margin: 0 -15px;
-
 }
 .hero__slider .swiper-button-next,
 .hero__slider .swiper-button-prev {
@@ -946,8 +962,8 @@
 }
 .hero__video{
     position: relative;
-    padding-bottom: 57%;
-    margin: 5px auto 46px;
+    padding-bottom: 56.1%;
+    margin: 5px auto 36px;
     max-width: 594px;
 }
 .hero__video>*{
@@ -971,6 +987,8 @@
 
 /* --------------- time-schedule --------------- */
 .time-schedule{
+    /* position: absolute; */
+    /* bottom: 0; */
     padding: 0 0 28px;
 }
 .time-schedule__pic{
@@ -1038,6 +1056,7 @@
 }
 .time-schedule .btn{
     margin: 0 0 32px;
+    line-height: 1;
 }
 /* --------------- /time-schedule --------------- */
 
@@ -1516,7 +1535,6 @@
     background: rgba(0,0,0,0.7);
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1830,6 +1848,7 @@
     margin: 0 auto;
     padding: 18px 10px;
     font-size: 18px;
+    line-height: 1;
 }
 /* --------------- /tickets --------------- */
 
@@ -1837,24 +1856,34 @@
 .where{
     position: relative;
     z-index: 1;
-    height: 646px;
-    font-size: 16px;
-    line-height: 20px;
+    background: #cbf1f1;
+    padding: 0 0 0;
+}
+.where .site__centered {
+    max-width: 1200px;
+    height: 1161px;
+}
+.where .site__title {
+    margin: 0 0 1px;
+}
+.where__subinfo {
+    display: block;
+    margin: 0 0 84px;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: italic;
 }
 .where__layout{
-    height: 250px;
+    height: 201px;
     padding: 0 10px 0 0;
     margin: 0 0 3px;
 }
-.where__text{
-    margin: 0 0 28px;
-}
 .where__map{
     position: absolute;
-    top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 643px;
 }
 .where__map #map{
     width: 100%;
@@ -1862,27 +1891,20 @@
 }
 .where__popup{
     position: absolute;
-    right: 13px;
-    bottom: 31px;
-    left: 13px;
-    height: 400px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 518px;
     background: #fff;
-    padding: 43px 36px 10px;
+    padding: 56px 0 10px;
     text-align: center;
-    box-shadow: 0 0 15px 2px rgba(0,0,0,0.3);
 }
-.where__popup .label_big{
+.where__popup .label_big {
     display: block;
+    border-top: 1px solid #f3f3f3;
 }
-.where__links{
-    color: #b6b6b6;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.where_back{
-    display: none;
+.where__popup .label_big:last-of-type {
+    border-bottom: 1px solid #f3f3f3;
 }
 /* --------------- /where --------------- */
 
@@ -2123,7 +2145,7 @@ input.subscribe__email{
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Montserrat Slab', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .follow-us__item{
     display: inline-block;
@@ -2585,13 +2607,10 @@ input.subscribe__email{
     background: #ff7777;
 }
 .registration .site__title {
-
     color: #fff;
-
     margin-bottom: 37px;
 }
 .registration__wrap {
-
     margin-bottom: 33px;
 }
 .registration__text {
@@ -2707,6 +2726,25 @@ input.subscribe__email{
     .site__footer .btn {
         margin-bottom: 68px;
     }
+
+
+    .site__title_inner {
+        position: relative;
+
+    }
+    .site__title_inner:after {
+        /* position: absolute; */
+        /* width: 30px; */
+        /* height: 2px; */
+        /* background: #fff; */
+        /* left: 50%; */
+        /* bottom: 0; */
+        /* -webkit-transform: translateX(-50%); */
+        /* transform: translateX(-50%); */
+        /* content: ''; */
+    }
+
+
     .site__title_small{
         padding: 0 0 22px;
         margin: 0 0 16px;
@@ -2728,12 +2766,16 @@ input.subscribe__email{
         line-height: 24px;
     }
     .site__title_subtitle {
-        padding-bottom: 18px;
-        font: 700 26px/42px 'Montserrat Slab', sans-serif;
+        /* padding-bottom: 18px; */
+        /* font: 700 26px/42px 'Montserrat', sans-serif; */
+        margin-bottom: 12px;
     }
     .site__title_subtitle:after {
         bottom: 0;
     }
+
+
+
     .site__form {
         margin: 0 auto;
         max-width: 579px;
@@ -2822,9 +2864,9 @@ input.subscribe__email{
         line-height: 12px;
     }
     .label_big {
-        padding: 13px 13px;
+        padding: 17px 13px 7px;
         margin: 0 0 5px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 20px;
     }
     /* ------------ /label ------------ */
@@ -2833,6 +2875,20 @@ input.subscribe__email{
     .hero {
         font-size: 23px;
         line-height: 24px;
+    }
+    .hero_inner {
+        background: #cbf1f1;
+    }
+    .hero_inner .hero__layout {
+
+        padding: 165px 0 50px;
+
+    }
+    .hero_video .site__centered {
+        padding-bottom: 78px;
+    }
+    .hero_video .hero__layout{
+        padding: 95px 0 0;
     }
     .hero__layout{
         padding: 173px 0 0;
@@ -2844,8 +2900,9 @@ input.subscribe__email{
         padding: 223px 0 10px;
     }
     .hero__video{
-        padding-bottom: 46%;
-        margin: 15px auto 38px;
+        padding-bottom: 49.7%;
+        margin: 33px auto 49px;
+        max-width: 654px;
     }
     .hero__text{
         margin: 0 0 76px;
@@ -2948,7 +3005,6 @@ input.subscribe__email{
         letter-spacing: 0.1px;
     }
     .get-touch .site__centered {
-        /* background: #fff; */
         padding-top: 40px;
         padding-bottom: 36px;
     }
@@ -3335,23 +3391,20 @@ input.subscribe__email{
 
     /* --------------- where --------------- */
     .where{
-        height: 699px;
-        font-size: 20px;
-        line-height: 28px;
+        padding-bottom: 69px;
+    }
+    .where .site__centered {
+        height: 1249px;
+        padding: 0;
+        margin: 0 85px 0;
     }
     .where__popup{
-        width: 460px;
-        height: 541px;
-        left: 17px;
-        bottom: 80px;
-        padding: 70px 58px 10px;
+        top: 79px;
+        height: 527px;
+        padding: 63px 84px 10px;
     }
-    .where__text {
-        margin: 0 0 26px;
-    }
-    .where__layout{
-        height: 320px;
-        margin: 0 0 8px;
+    .where__subinfo {
+        margin: 0 0 84px;
     }
     .where__links {
         font-size: 20px;
@@ -3561,24 +3614,16 @@ input.subscribe__email{
 
     /* ------------ registration ------------ */
     .registration {
-
         padding: 44px 0 80px 0;
-
     }
     .registration .site__title {
-
         margin-bottom: 29px;
-
     }
     .registration__wrap {
-
         margin-bottom: 0;
-
     }
     .registration__text {
-
         line-height: 24px;
-
     }
     /* ------------ /registration ------------ */
 
@@ -3677,13 +3722,26 @@ input.subscribe__email{
     .site__title_white span{
         display: block;
     }
+
+
     .site__title_2{
         margin: 0 0 32px;
         padding: 23px 0 0;
     }
     .site__title_subtitle {
-        padding-bottom: 19px;
+        /* padding-bottom: 19px; */
     }
+    .site__title_inner {
+        position: relative;
+    }
+    .site__title_inner:after {
+        /* width: 30px; */
+        /* height: 2px; */
+        /* left: 50%; */
+        /* bottom: 0; */
+    }
+
+
     .site__form {
         max-width: none;
     }
@@ -3832,27 +3890,39 @@ input.subscribe__email{
         line-height: 14px;
     }
     .label_big{
-        padding: 13px 13px;
+        padding: 17px 5px 7px;
         margin: 0 0 5px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 20px;
+        text-align: left;
     }
     /* --------------- /label --------------- */
 
     /* --------------- hero --------------- */
+    .hero_inner {
+        background: #cbf1f1;
+    }
+    .hero_inner .hero__layout {
+
+        padding: 109px 0 54px;
+
+    }
     .hero__layout {
         padding: 131px 0 0;
     }
-    .hero_slider .hero__layout{
-        padding: 202px 0 14px;
+    .hero_video .site__centered {
+        padding-bottom: 66px;
     }
     .hero_video .hero__layout{
-        padding: 122px 0 14px;
+        padding: 178px 0 0;
+    }
+    .hero_video .time-schedule {
+        padding-bottom: 23px;
     }
     .hero__video {
-        padding-bottom: 35%;
-        margin: 0 auto 72px;
-        max-width: 712px;
+        padding-bottom: 42.7%;
+        margin: 0 auto 51px;
+        max-width: 910px;
     }
     .hero_small{
         text-align: left;
@@ -3905,9 +3975,6 @@ input.subscribe__email{
         position: absolute;
         right: 20px;
         bottom: 25px;
-    }
-    .hero_video .time-schedule {
-        padding-bottom: 23px;
     }
     /* --------------- /hero --------------- */
 
@@ -4328,8 +4395,6 @@ input.subscribe__email{
     .sponsors_exhibitors .sponsors__items {
         text-align: center;
         padding-top: 23px;
-
-        /* padding-right: 15px; */
     }
     .sponsors_exhibitors .sponsors__logo{
         width: 19.3%;
@@ -4345,8 +4410,40 @@ input.subscribe__email{
     /* ------------ /sponsors ------------ */
 
     /* --------------- where --------------- */
+    .where__subinfo {
+        margin: 0 0 48px;
+    }
     .where__popup{
-        left: 10.5%;
+        /* left: 10.5%; */
+    }
+    /* --------------- where --------------- */
+    .where{
+        padding: 59px 0 38px;
+    }
+    .where .site__centered {
+        height: 642px;
+        margin: 0 auto;
+    }
+    .where__map {
+        right: 0;
+        left: auto;
+        width: 50%;
+        top: 0;
+        height: 100%;
+    }
+    .where__popup{
+        padding: 88px 80px 10px 90px;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+    }
+    .where__subinfo {
+        margin: 0 0 76px;
+    }
+    .where__links {
+        font-size: 20px;
+        line-height: 20px;
     }
     /* --------------- /where --------------- */
 
