@@ -855,13 +855,20 @@ $(function(){
 
                 $.each( msg.items, function() {
 
-                    var newBlock = $( '<div class="news__item"><article class="news__article hidden">' +
-                        '<div class="news__picture" style="background-image:url( ' + this.picture +  ' )"></div>' +
-                        '<div class="news__content">' +
-                        '<time datetime="' + this.date + '" class="news__date">' + this.date + '</time>' +
-                        '<h2 class="news__title">' + this.title + '</h2>' +
-                        '<a href="' + this.href + '" class="btn btn_4">READ MORE</a>' +
-                        '</div></article></div>' );
+                    var newBlock = $( '<article class="news__article hidden">' +
+                                        '<a href="' + this.href + '">' +
+                                            '<div class="news__picture" style="background-image:url( ' + this.picture +  ' )"></div>' +
+                                            '<div class="news__content">' +
+                                                '<div>' +
+                                                    '<h2 class="news__title">' + this.title + '</h2>' +
+                                                    '<div class="news__text">'+
+                                                        '<p>' + this.info + '</p>'+
+                                                    '</div>' +
+                                                '</div>'+
+                                                '<time datetime="' + this.dataDate + '" class="news__date">' + this.date + '</time>' +
+                                            '</div>' +
+                                        '</a>' +
+                                    '</article>' );
 
                     _wrapper.append( newBlock );
 
