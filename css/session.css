@@ -1,6 +1,6 @@
 /*
     session styles
-    version: 22.02.2016
+    version: 09.05.2016
 
     hero
 
@@ -22,20 +22,15 @@
     width: 240px;
     height: 54px;
     margin: 0 auto 22px;
-    padding: 17px 0 0;
+    padding: 18px 0 0;
     background: #fff;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: #435965;
     font-size: 16px;
-    letter-spacing: -0.5px;
-}
-.time-schedule__session__place {
-
-}
-.time-schedule__session time {
-
+    letter-spacing: 0;
+    box-shadow: 0 0 50px 0 rgb( 203, 241, 241 );
 }
 .time-schedule__session__place i {
     padding-right: 4px;
@@ -56,7 +51,7 @@
     text-align: left;
 }
 .session__labels .label {
-    padding: 2px 13px 1px;
+    padding: 2px 9px 1px 11px;
     min-width: 71px;
     font-size: 12px;
     line-height: 13px;
@@ -79,32 +74,19 @@
 
     /*------------time-schedule------------*/
     .time-schedule__session {
-        /* display: inline-block; */
-        /* overflow: hidden; */
-        /* width: auto; */
-        /* padding: 0; */
         text-align: center;
         top: 88.3%;
     }
     .time-schedule__session__place {
         width: auto;
         padding: 15px 28px 12px;
-        /* border-right: 2px solid rgba(255, 255, 255, 0.3); */
-    }
-    .time-schedule__session time {
-        /* width: auto; */
-        /* padding: 15px 30px 12px; */
     }
     .time-schedule__session__place, .time-schedule__session time {
         display: inline-block !important;
         vertical-align: top;
-        /* float: left; */
-        /* text-align: center; */
         margin: 0 6px !important;
     }
     /*------------/time-schedule------------*/
-
-    /* ------------ hero ------------ */
 
     /* ------------ session ------------ */
     .session {
@@ -117,7 +99,7 @@
     }
     .session__labels {
         padding-left: 0;
-        padding-top: 30px;
+        padding-top: 29px;
         max-width: 560px;
         margin: auto;
         text-align: left;
@@ -142,9 +124,6 @@
     .session {
         padding: 120px 0 123px 0;
     }
-    .session .site__title_subtitle{
-        /* padding-bottom: 12px; */
-    }
     .session__text {
         max-width: 775px;
         margin: auto;
@@ -152,7 +131,7 @@
     /* ------------ /session ------------ */
 
     .speakers_session {
-        padding: 88px 0 56px;
+        padding: 84px 0 56px;
     }
 
 }
