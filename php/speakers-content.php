@@ -28,7 +28,7 @@ if ( $loadedCount == 4 ){
                             "name": "James Smith",
                             "post": "Founder of Smart Tech Co.",
                             "href": "#",
-                            "favorite": "speakers-favorite"
+                            "favorite": ""
                             },
                         {
                             "id":3,
@@ -77,7 +77,7 @@ if ( $loadedCount == 4 ){
                             "name": "James Smith",
                             "post": "Founder of Smart Tech Co.",
                             "href": "#",
-                            "favorite": "speakers-favorite"
+                            "favorite": ""
                             }
 
                     ]

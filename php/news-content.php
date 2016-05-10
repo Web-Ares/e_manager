@@ -19,7 +19,8 @@ if ( $loadedCount == 4 ){
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
                             "date": "17 April 2016",
-                            "data-date": "17 April 2016",
+                            "dataDate": "2016-04-17",
+                            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. ",
                             "href": "#"
                             },
                         {
@@ -27,7 +28,8 @@ if ( $loadedCount == 4 ){
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
                             "date": "17 April 2016",
-                            "data-date": "17 April 2016",
+                            "dataDate": "2016-04-17",
+                            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. ",
                             "href": "#"
                             },
                         {
@@ -35,7 +37,8 @@ if ( $loadedCount == 4 ){
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
                             "date": "17 April 2016",
-                            "data-date": "17 April 2016",
+                            "dataDate": "2016-04-17",
+                            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. ",
                             "href": "#"
                             },
                         {
@@ -43,7 +46,8 @@ if ( $loadedCount == 4 ){
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
                             "date": "17 April 2016",
-                            "data-date": "17 April 2016",
+                            "dataDate": "2016-04-17",
+                            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. ",
                             "href": "#"
                             }
 
@@ -68,7 +72,8 @@ if ( $loadedCount == 4 ){
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
                             "date": "17 April 2016",
-                            "data-date": "17 April 2016",
+                            "dataDate": "2016-04-17",
+                            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. ",
                             "href": "#"
                             },
                         {
@@ -76,7 +81,8 @@ if ( $loadedCount == 4 ){
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
                             "date": "17 April 2016",
-                            "data-date": "17 April 2016",
+                            "dataDate": "2016-04-17",
+                            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. ",
                             "href": "#"
                             }
             ]
