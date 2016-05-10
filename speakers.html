@@ -24,6 +24,7 @@
     <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>Title</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/speakers.css" />
 
@@ -43,9 +44,9 @@
                 <div class="site__centered">
 
                     <!-- logo -->
-                    <a href="#" class="logo">
-                        <img src="img/logo.png" width="145" height="45" alt="Fudge">
-                    </a>
+                    <h1 class="logo">
+                        <img src="img/logo.png" width="213" height="40" alt="event-manager">
+                    </h1>
                     <!-- /logo -->
 
                     <!-- menu-btn -->
@@ -59,56 +60,33 @@
 
                         <!-- header-menu__wrap -->
                         <div class="header-menu__wrap">
+
+                            <!--header-menu__layout-->
                             <div class="header-menu__layout">
                                 <ul>
                                     <li>
-                                        <a class="header-menu__item" href="#">ABOUT</a>
-                                    </li>
-                                    <li class="header-menu__drop-down">
                                         <a class="header-menu__item" href="#">SPEAKERS</a>
-
-                                        <!-- header-menu__sub-items -->
-                                        <ul class="header-menu__sub-items">
-                                            <li>
-                                                <a href="#">Menu item 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Menu item 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Menu item 3</a>
-                                            </li>
-                                        </ul>
-                                        <!-- header-menu__sub-items -->
-
                                     </li>
-                                    <li class="header-menu__drop-down">
-                                        <a class="header-menu__item" href="#">SCHEDULE</a>
-
-                                        <!-- header-menu__sub-items -->
-                                        <ul class="header-menu__sub-items">
-                                            <li>
-                                                <a href="#">Menu item 1</a>
-                                            </li>
-                                            <li>
-                                                <a class="active" href="#">Menu item 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Menu item 3</a>
-                                            </li>
-                                        </ul>
-                                        <!-- header-menu__sub-items -->
-
+                                    <li>
+                                        <a class="header-menu__item" href="#">AGENDA</a>
                                     </li>
                                     <li>
                                         <a class="header-menu__item" href="#">WHERE</a>
                                     </li>
                                     <li>
+                                        <a class="header-menu__item" href="#">SPONSORS</a>
+                                    </li>
+                                    <li>
                                         <a class="header-menu__item" href="#">CONTACT</a>
                                     </li>
                                 </ul>
-                                <a class="btn" href="#">REGISTER</a>
+
+                                <!--btn-->
+                                <a class="btn" href="#">REGISTER NOW</a>
+                                <!--/btn-->
+
                             </div>
+                            <!--/header-menu__layout-->
 
                         </div>
                         <!-- /header-menu__wrap -->
@@ -129,7 +107,7 @@
         <div class="site__content">
 
             <!-- hero -->
-            <section class="hero hero_speakers" style="background-image: url('pic/slider2.jpg')">
+            <section class="hero hero_inner">
 
                 <!-- hero__layout -->
                 <div class="hero__layout">
@@ -141,12 +119,14 @@
                         <div class="time-schedule">
 
                             <!-- site__title -->
-                            <h2 class="site__title site__title_big site__title_white">OUR AMAZING SPEAKERS</h2>
+                            <h2 class="site__title site__title_inner">
+                                <img src="pic/speakers-icon.png" width="23" height="40" alt="">
+                                SPEAKERS
+                            </h2>
                             <!-- /site__title -->
 
-                            <p class="site__desktop">Lorem ipsum dolor sit amet nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
-
-                            <p class="site__mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="hero__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies condimentum tristique. Sed quis urna velit. Aliquam suscipit dapibus molestie. Nam auctor, risus et
+                                varius dapibus, lorem leo dapibus nulla, id elementum tellus purus vitae augue.</div>
 
                         </div>
                         <!-- /time-schedule -->
@@ -161,21 +141,23 @@
             <!-- /hero -->
 
             <!-- speakers -->
-            <section class="speakers speakers_page">
+            <section class="speakers speakers_inner">
 
                 <!-- site__centered -->
                 <div class="site__centered">
 
                     <!-- site__title -->
-                    <h2 class="site__title">KEYNOTES</h2>
+                    <h2 class="site__title site__title_1">
+                        Keynotes
+                    </h2>
                     <!-- /site__title -->
-
-                    <p>Lorem ipsum dolor sit amet nullam in dui mauris. Vivamus hendrerit.</p>
 
                     <!-- speakers__layout -->
                     <div class="speakers__layout">
 
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -183,19 +165,34 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-001.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">Jane ROTENBERG</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Design Director and Co-founder of Stellar Artworks</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
+
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
+
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
-                        </div>
 
+                        </div>
+                        <!-- /speakers__item -->
+
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -203,19 +200,34 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-002.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">James Smith</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Smart Tech Co.</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
+
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
+
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
-                        </div>
 
+                        </div>
+                        <!-- /speakers__item -->
+
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -223,19 +235,34 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-003.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">DanielA Lewis</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Something Eventualy</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
+
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
+
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
-                        </div>
 
+                        </div>
+                        <!-- /speakers__item -->
+
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -243,30 +270,46 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-004.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">Robert J.</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Something Eventualy</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
+
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
+
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
+
                         </div>
+                        <!-- /speakers__item -->
+
                     </div>
                     <!-- /speakers__layout -->
 
                     <!-- site__title -->
-                    <h2 class="site__title">GROUP II</h2>
+                    <h2 class="site__title site__title_1">
+                        Group 1
+                    </h2>
                     <!-- /site__title -->
-
-                    <p>Lorem ipsum dolor sit amet nullam in dui mauris. Vivamus hendrerit.</p>
 
                     <!-- speakers__layout -->
                     <div class="speakers__layout">
 
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -274,19 +317,34 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-001.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">Jane ROTENBERG</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Design Director and Co-founder of Stellar Artworks</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
+
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
+
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
-                        </div>
 
+                        </div>
+                        <!-- /speakers__item -->
+
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -294,19 +352,34 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-002.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">James Smith</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Smart Tech Co.</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
+
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
+
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
-                        </div>
 
+                        </div>
+                        <!-- /speakers__item -->
+
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -314,19 +387,34 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-003.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">DanielA Lewis</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Something Eventualy</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
+
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
+
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
-                        </div>
 
+                        </div>
+                        <!-- /speakers__item -->
+
+                        <!-- speakers__item -->
                         <div class="speakers__item">
+
                             <!-- speakers__person -->
                             <a href="#" class="speakers__person">
 
@@ -334,108 +422,31 @@
                                 <div class="speakers__photo" style="background-image:url('pic/speaker-004.jpg')"></div>
                                 <!-- /speakers__photo -->
 
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">Robert J.</h3>
-                                <!-- /speakers__name -->
+                                <!-- speakers__info -->
+                                <div class="speakers__info">
+                                    <div>
+                                        <!-- speakers__name -->
+                                        <h2 class="speakers__name">JANE DOE</h2>
+                                        <!-- /speakers__name -->
 
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Something Eventualy</span>
-                                <!-- /speakers__post -->
+                                        <!-- speakers__post -->
+                                        <span class="speakers__post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <!-- /speakers__post -->
 
-                            </a>
-                            <!-- /speakers__person -->
-                        </div>
-                    </div>
-                    <!-- /speakers__layout -->
+                                        <!-- speakers__icon -->
+                                        <i class="speakers__icon fa fa-twitter" aria-hidden="true"></i>
+                                        <!-- /speakers__icon -->
 
-                    <!-- site__title -->
-                    <h2 class="site__title">GROUP II</h2>
-                    <!-- /site__title -->
-
-                    <p>Lorem ipsum dolor sit amet nullam in dui mauris. Vivamus hendrerit.</p>
-
-                    <!-- speakers__layout -->
-                    <div class="speakers__layout">
-
-                        <div class="speakers__item">
-                            <!-- speakers__person -->
-                            <a href="#" class="speakers__person">
-
-                                <!-- speakers__photo -->
-                                <div class="speakers__photo" style="background-image:url('pic/speaker-001.jpg')"></div>
-                                <!-- /speakers__photo -->
-
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">Jane ROTENBERG</h3>
-                                <!-- /speakers__name -->
-
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Design Director and Co-founder of Stellar Artworks</span>
-                                <!-- /speakers__post -->
+                                    </div>
+                                </div>
+                                <!-- /speakers__info -->
 
                             </a>
                             <!-- /speakers__person -->
+
                         </div>
+                        <!-- /speakers__item -->
 
-                        <div class="speakers__item">
-                            <!-- speakers__person -->
-                            <a href="#" class="speakers__person">
-
-                                <!-- speakers__photo -->
-                                <div class="speakers__photo" style="background-image:url('pic/speaker-002.jpg')"></div>
-                                <!-- /speakers__photo -->
-
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">James Smith</h3>
-                                <!-- /speakers__name -->
-
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Smart Tech Co.</span>
-                                <!-- /speakers__post -->
-
-                            </a>
-                            <!-- /speakers__person -->
-                        </div>
-
-                        <div class="speakers__item">
-                            <!-- speakers__person -->
-                            <a href="#" class="speakers__person">
-
-                                <!-- speakers__photo -->
-                                <div class="speakers__photo" style="background-image:url('pic/speaker-003.jpg')"></div>
-                                <!-- /speakers__photo -->
-
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">DanielA Lewis</h3>
-                                <!-- /speakers__name -->
-
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Something Eventualy</span>
-                                <!-- /speakers__post -->
-
-                            </a>
-                            <!-- /speakers__person -->
-                        </div>
-
-                        <div class="speakers__item">
-                            <!-- speakers__person -->
-                            <a href="#" class="speakers__person">
-
-                                <!-- speakers__photo -->
-                                <div class="speakers__photo" style="background-image:url('pic/speaker-004.jpg')"></div>
-                                <!-- /speakers__photo -->
-
-                                <!-- speakers__name -->
-                                <h3 class="speakers__name">Robert J.</h3>
-                                <!-- /speakers__name -->
-
-                                <!-- speakers__post -->
-                                <span class="speakers__post">Founder of Something Eventualy</span>
-                                <!-- /speakers__post -->
-
-                            </a>
-                            <!-- /speakers__person -->
-                        </div>
                     </div>
                     <!-- /speakers__layout -->
 
@@ -446,7 +457,7 @@
             <!-- /speakers -->
 
             <!-- get-touch -->
-            <section class="get-touch">
+            <section class="get-touch get-touch_1">
 
                 <!-- site__centered -->
                 <div class="site__centered">
@@ -472,133 +483,31 @@
             <!-- site__centered -->
             <div class="site__centered">
 
-                <!-- site__footer-logo -->
-                <div class="site__footer-logo">
-
-                    <!-- logo -->
-                    <span class="logo logo_footer">
-                        <img src="img/logo.png" width="145" height="45" alt="Fudge">
-                    </span>
-                    <!-- /logo -->
-
-                    <!-- site__footer-txt -->
-                    <div class="site__footer-txt">Sed molestie augue sit amet leo consequat posuere. Vestibulum anipsum primis in faucibus orc.</div>
-                    <!-- /site__footer-txt -->
-
-                </div>
-                <!-- /site__footer-inner -->
+                <!-- logo-footer -->
+                <span class="logo-footer">
+                    <img src="img/logo_footer.png" alt="Event Manager">
+                </span>
+                <!-- /logo-footer -->
 
                 <!-- footer-menu -->
-                <div class="footer-menu">
+                <ul class="footer-menu">
 
-                    <dl>
+                    <li><a href="#" class="footer-menu__link">SPEAKERS</a></li>
+                    <li><a href="#" class="footer-menu__link">AGENDA</a></li>
+                    <li><a href="#" class="footer-menu__link">WHERE</a></li>
+                    <li><a href="#" class="footer-menu__link">SPONSORS</a></li>
+                    <li><a href="#" class="footer-menu__link">CONTACT</a></li>
 
-                        <dt>NAVIGATION</dt>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 1</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 2</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 3</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                    </dl>
-
-                    <dl>
-
-                        <dt>NAVIGATION</dt>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 1</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 2</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 3</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 4</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                    </dl>
-
-                    <dl>
-
-                        <dt>NAVIGATION</dt>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 1</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 2</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 3</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                        <dd>
-
-                            <!-- footer-menu__link -->
-                            <a href="#" class="footer-menu__link">LINK ITEM 4</a>
-                            <!-- /footer-menu__link -->
-
-                        </dd>
-
-                    </dl>
-
-                </div>
+                </ul>
                 <!-- /footer-menu -->
+
+                <!-- btn -->
+                <a href="#" class="btn btn_1">REGISTER NOW</a>
+                <!-- /btn -->
+
+                <!-- site__footer-made -->
+                <span class="site__footer-made">Made in USA</span>
+                <!-- /site__footer-made -->
 
             </div>
             <!-- /site__centered -->
