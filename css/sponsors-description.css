@@ -13,22 +13,6 @@
     padding: 119px 0 69px;
 }
 
-/*-------------description------------*/
-.description {
-    text-align: center;
-}
-.description .site__title {
-    font-size: 25px;
-    line-height: 29px;
-    margin: 0 0 20px;
-    padding: 0;
-    letter-spacing: -0.6px;
-}
-.description p {
-    margin: 0 0 24px;
-}
-/*-------------/description------------*/
-
 /*----------sponsors-description---------*/
 .sponsors-description__represent {
     padding: 56px 0 0;
@@ -151,17 +135,6 @@
         padding: 145px 0 67px;
     }
 
-    /*--------------description-------------*/
-    .description .site__title {
-        font-size: 24px;
-        margin: 0 0 20px;
-    }
-    .description p {
-        white-space: pre-line;
-        letter-spacing: 0.4px;
-    }
-    /*--------------/description-------------*/
-
     /*----------sponsors-description---------*/
     .sponsors-description__represent,
     .sponsors-description__represent_exhibitor {
@@ -211,12 +184,6 @@
     .hero_inner-session .hero__layout {
         padding: 137px 0 67px;
     }
-
-    /*---------------description-------------*/
-    .description {
-        padding: 0 0 44px;
-    }
-    /*---------------/description-------------*/
 
     /*----------sponsors-description---------*/
     .sponsors-description__represent,

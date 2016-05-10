@@ -2709,6 +2709,23 @@ input.subscribe__email{
 }
 /* ------------ /registration ------------ */
 
+/*-------------description------------*/
+.description {
+    text-align: center;
+}
+.description .site__title {
+    font-size: 25px;
+    line-height: 29px;
+    margin: 0 0 20px;
+    padding: 0;
+    letter-spacing: -0.6px;
+}
+.description p {
+    max-width: 746px;
+    margin: 0 auto 24px;
+}
+/*-------------/description------------*/
+
 @media (min-width: 460px) {
 
     /* ------------ media-gallery ------------ */
@@ -3748,6 +3765,17 @@ input.subscribe__email{
         line-height: 24px;
     }
     /* ------------ /registration ------------ */
+
+    /*--------------description-------------*/
+    .description .site__title {
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+    .description p {
+        white-space: pre-line;
+        letter-spacing: 0.4px;
+    }
+    /*--------------/description-------------*/
 
 }
 
@@ -4804,6 +4832,12 @@ input.subscribe__email{
         max-width: 680px;
     }
     /* ------------ /registration ------------ */
+
+    /*---------------description-------------*/
+    .description {
+        padding: 0 0 44px;
+    }
+    /*---------------/description-------------*/
 
 }
 
