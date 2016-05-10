@@ -530,7 +530,7 @@
     box-shadow: none;
 }
 .btn_5{
-    width: 144px;
+    width: 144px!important;
     height: 60px;
     font-size: 18px;
     border-color: #435a65;
@@ -3428,15 +3428,28 @@ input.subscribe__email{
 
     /* ------------ subscribe ------------ */
     .subscribe {
-        height: 182px;
+        height: 342px;
     }
     .subscribe__title{
         width: auto;
+        margin-bottom: 14px;
     }
     input.subscribe__email{
         display: inline-block;
-        width: 415px;
+        width: 342px;
+        margin-right: -4px;
         padding: 0 20px;
+        border-right: none;
+    }
+    .subscribe__content{
+        width: 545px;
+        margin-bottom: 41px;
+    }
+    .subscribe__content_mobile{
+        display: none;
+    }
+    .subscribe__content_desktop{
+        display: block;
     }
     /* ------------ /subscribe ------------ */
 
@@ -4746,6 +4759,19 @@ input.subscribe__email{
     }
     /*----------------/tickets---------------*/
 
+    /* ------------ subscribe ------------ */
+    .subscribe {
+        height: 466px;
+        padding-top: 133px;
+    }
+    .subscribe__title{
+        margin-bottom: 21px;
+    }
+    .subscribe__content{
+        width: 620px;
+        margin-bottom: 46px;
+    }
+    /* ------------ /subscribe ------------ */
 }
 
 @media (min-width: 1440px) {
