@@ -7,7 +7,7 @@
 
 /*
     main styles
-    version: 15.02.2016
+    version: 08.05.2016
 
     placeholder
 
@@ -932,7 +932,6 @@ span.label.label_big {}
     background: #cbf1f1;
 }
 .hero_inner .hero__layout {
-
     padding: 137px 0 50px;
 }
 .hero_video .site__centered {
@@ -940,6 +939,12 @@ span.label.label_big {}
 }
 .hero_video .hero__layout{
     padding: 95px 0 0;
+}
+.hero__subtitle {
+
+    display: block;
+
+    padding-top: 4px;
 }
 .hero__layout{
     position: relative;
@@ -974,9 +979,6 @@ span.label.label_big {}
     padding-bottom: 100px;
     background-position: center bottom;
     background-size: cover;
-}
-.hero_slider .hero__layout{
-    padding: 114px 0 13px;
 }
 .hero__video{
     position: relative;
@@ -1668,8 +1670,8 @@ span.label.label_big {}
     padding: 15px 0 21px;
 }
 /*.schedule__concurrent{*/
-    /*padding: 0;*/
-    /*border-top: none;*/
+/*padding: 0;*/
+/*border-top: none;*/
 /*}*/
 /* --------------- /schedule --------------- */
 
@@ -1976,6 +1978,7 @@ span.label.label_big {}
 .where__popup .label_big {
     display: block;
     border-top: 1px solid #f3f3f3;
+    background: none;
 }
 .where__popup .label_big:last-of-type {
     border-bottom: 1px solid #f3f3f3;
@@ -2056,6 +2059,7 @@ span.label.label_big {}
 /* ------------ features ------------ */
 .features {
     padding-top: 21px;
+    padding-bottom: 16px;
 }
 .features__item {
     display: block;
@@ -2429,8 +2433,8 @@ input.subscribe__email{
 
 /*--------------media------------*/
 .media {
-    padding: 60px 0 40px;
-    background: #f3f3f3;
+    padding: 67px 0 43px;
+    background: #f7f7f7;
     text-align: center;
 }
 .media .site__title {
@@ -2442,11 +2446,13 @@ input.subscribe__email{
     line-height: 38px;
     text-align: center;
 }
-.media iframe {
+.media__list-item {
     display: inline-block;
-    width: 288px;
-    height: 239px;
-    margin: 0 4px 22px;
+    width: 272px;
+    margin: 0 4px 13px;
+}
+.media__list-item img {
+    width: 100%;
 }
 /*--------------/media------------*/
 
@@ -2464,6 +2470,7 @@ input.subscribe__email{
 /*-----------instagramm-pics------------*/
 .instagramm-pics {
     margin-bottom: 0;
+    padding-top: 30px;
 }
 .instagramm-pics:after {
     display: inline-block;
@@ -2474,9 +2481,9 @@ input.subscribe__email{
     vertical-align: top;
     position: relative;
     display: block;
-    width: 291px;
-    height: 291px;
-    margin: 0 auto 15px;
+    width: 264px;
+    height: 263px;
+    margin: 0 auto 25px;
     background: #ededed;
 }
 .instagramm-pics__item_long {
@@ -2503,7 +2510,7 @@ input.subscribe__email{
     top: 50%;
     left: 50%;
     color: #d4d4d4;
-    font-size: 48px;
+    font-size: 45px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -2812,17 +2819,6 @@ input.subscribe__email{
         position: relative;
 
     }
-    .site__title_inner:after {
-        /* position: absolute; */
-        /* width: 30px; */
-        /* height: 2px; */
-        /* background: #fff; */
-        /* left: 50%; */
-        /* bottom: 0; */
-        /* -webkit-transform: translateX(-50%); */
-        /* transform: translateX(-50%); */
-        /* content: ''; */
-    }
 
 
     .site__title_small{
@@ -2940,8 +2936,6 @@ input.subscribe__email{
     .label {
         padding: 3px 13px;
         min-width: 71px;
-        font-size: 14px;
-        line-height: 14px;
     }
     .label_big {
         padding: 17px 13px 7px;
@@ -2960,9 +2954,7 @@ input.subscribe__email{
         background: #cbf1f1;
     }
     .hero_inner .hero__layout {
-
-        padding: 165px 0 50px;
-
+        padding: 161px 0 50px;
     }
     .hero_video .site__centered {
         padding-bottom: 78px;
@@ -2970,14 +2962,16 @@ input.subscribe__email{
     .hero_video .hero__layout{
         padding: 95px 0 0;
     }
+    .hero__subtitle {
+        padding-top: 3px;
+        font-size: 19px;
+        letter-spacing: -0.5px;
+    }
     .hero__layout{
         padding: 173px 0 0;
     }
     .hero__slider .swiper-slide {
         padding-bottom: 117px;
-    }
-    .hero_slider .hero__layout{
-        padding: 223px 0 10px;
     }
     .hero__video{
         padding-bottom: 49.7%;
@@ -3014,9 +3008,6 @@ input.subscribe__email{
     }
     .time-schedule .btn {
         margin: 0 0 56px;
-    }
-    .hero_slider .time-schedule .btn {
-        margin: 0 0 123px;
     }
     .hero_video .time-schedule {
         padding-bottom: 66px;
@@ -3426,7 +3417,7 @@ input.subscribe__email{
     }
     .sponsors__filters{
         max-width: 724px;
-        margin: 0 auto 49px;
+        margin: -21px auto 49px;
     }
     .sponsors__filters .ares-select{
         margin: 0 auto;
@@ -3461,7 +3452,7 @@ input.subscribe__email{
     }
 
     .sponsors_exhibitors{
-        padding: 42px 0 0;
+        padding: 42px 0 14px;
     }
     .sponsors_exhibitors .sponsors__items:after {
         display: inline-block;
@@ -3556,7 +3547,7 @@ input.subscribe__email{
     .features {
         display: table;
         width: 100%;
-        padding-top: 0;
+        padding: 0;
     }
     .features__item {
         display: table-cell;
@@ -3662,7 +3653,7 @@ input.subscribe__email{
 
     /*--------------media------------*/
     .media {
-        padding: 65px 0 40px 0;
+        padding: 96px 0 49px 0;
     }
     .media .site__title {
         margin: 0 0 44px;
@@ -3671,26 +3662,31 @@ input.subscribe__email{
         font-size: 20px;
         margin-bottom: 58px;
     }
-    .media iframe {
-        width: 326px;
+    .media__list {
+        padding-top: 34px;
+        text-align: left;
+    }
+    .media__list-item {
+        width: 335px;
         height: 273px;
-        margin: 0 16px 22px;
+        margin: 0 -8px 28px 25px;
     }
     /*--------------/media------------*/
 
     /*-------------instagramm-pics-----------*/
     .instagramm-pics {
-        margin-top: -46px;
-        margin-bottom: 14px;
+        margin-top: 79px;
+        margin-bottom: 40px;
         text-align: justify;
+        padding: 30px 23px 0;
     }
     .instagramm-pics__item {
-        width: 47.6%;
+        width: 47.4%;
         height: auto;
-        padding-bottom: 47.6%;
+        padding-bottom: 47.5%;
         display: inline-block;
         vertical-align: top;
-        margin: 0 0 15px;
+        margin: 0 0 30px;
     }
     /*-------------/instagramm-pics-----------*/
 
@@ -3854,17 +3850,8 @@ input.subscribe__email{
         margin: 0 0 32px;
         padding: 23px 0 0;
     }
-    .site__title_subtitle {
-        /* padding-bottom: 19px; */
-    }
     .site__title_inner {
         position: relative;
-    }
-    .site__title_inner:after {
-        /* width: 30px; */
-        /* height: 2px; */
-        /* left: 50%; */
-        /* bottom: 0; */
     }
 
 
@@ -4012,8 +3999,6 @@ input.subscribe__email{
     .label {
         padding: 3px 13px;
         min-width: 88px;
-        font-size: 14px;
-        line-height: 14px;
     }
     .label_big{
         padding: 17px 5px 7px;
@@ -4029,9 +4014,7 @@ input.subscribe__email{
         background: #cbf1f1;
     }
     .hero_inner .hero__layout {
-
         padding: 109px 0 54px;
-
     }
     .hero__layout {
         padding: 131px 0 0;
@@ -4076,9 +4059,6 @@ input.subscribe__email{
     .hero__slider .swiper-button-next,
     .hero__slider .swiper-button-prev {
         display: block;
-    }
-    .hero_slider .time-schedule .btn {
-        margin: 0 0 102px;
     }
     .hero_small .time-schedule .site__title {
         padding: 0 0 30px;
@@ -4431,7 +4411,6 @@ input.subscribe__email{
         margin-bottom: 64px;
     }
     .contact-us__address {
-
         padding-left: 135px;
     }
     .contact-us__address > dl {
@@ -4745,12 +4724,17 @@ input.subscribe__email{
 
     /*--------------media------------*/
     .media {
-        padding: 66px 0 51px 0;
+        padding: 96px 0 100px 0;
     }
-    .media iframe {
-        width: 425px;
-        height: 353px;
-        margin: 0 25px 22px;
+    .media__list {
+        padding-top: 0;
+        margin-top: -9px;
+        text-align: center;
+    }
+    .media__list-item {
+        width: 333px;
+        height: 277px;
+        margin: 0 8px 22px;
     }
     /*--------------/media------------*/
 
@@ -4765,8 +4749,9 @@ input.subscribe__email{
 
     /*----------instagramm-pics-----------*/
     .instagramm-pics {
-        margin-top: 3px;
+        margin-top: 0;
         margin-bottom: 42px;
+        padding: 2px 79px 22px;
     }
     .instagramm-pics__item {
         width: 30%;
@@ -4922,13 +4907,9 @@ input.subscribe__email{
 @media (min-width: 1170px) {
 
     /*------------instagramm-pics----------*/
-    .instagramm-pics {
-        margin-bottom: -17px;
-    }
-
     .instagramm-pics__item {
-        width: 360px;
-        height: 360px;
+        width: 330px;
+        height: 330px;
         padding: 0;
     }
     /*------------/instagramm-pics----------*/
