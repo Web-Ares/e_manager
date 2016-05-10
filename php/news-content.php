@@ -18,28 +18,32 @@ if ( $loadedCount == 4 ){
                             "id":1,
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
-                            "date": "17 Feb. 2016",
+                            "date": "17 April 2016",
+                            "data-date": "17 April 2016",
                             "href": "#"
                             },
                         {
                             "id":2,
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
-                            "date": "17 Feb. 2016",
+                            "date": "17 April 2016",
+                            "data-date": "17 April 2016",
                             "href": "#"
                             },
                         {
                             "id":3,
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
-                            "date": "17 Feb. 2016",
+                            "date": "17 April 2016",
+                            "data-date": "17 April 2016",
                             "href": "#"
                             },
                         {
                             "id":4,
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
-                            "date": "17 Feb. 2016",
+                            "date": "17 April 2016",
+                            "data-date": "17 April 2016",
                             "href": "#"
                             }
 
@@ -63,14 +67,16 @@ if ( $loadedCount == 4 ){
                             "id":5,
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
-                            "date": "17 Feb. 2016",
+                            "date": "17 April 2016",
+                            "data-date": "17 April 2016",
                             "href": "#"
                             },
                         {
                             "id":6,
                             "title": "A New Conference. Be Inspired, Get Creative.",
                             "picture": "pic/news-01.jpg",
-                            "date": "17 Feb. 2016",
+                            "date": "17 April 2016",
+                            "data-date": "17 April 2016",
                             "href": "#"
                             }
             ]
