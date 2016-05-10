@@ -529,6 +529,14 @@
     border-color: #ebebeb;
     box-shadow: none;
 }
+.btn_5{
+    width: 144px;
+    height: 60px;
+    font-size: 18px;
+    border-color: #435a65;
+    background-color: #435a65;
+    box-shadow: none;
+}
 /* --------------- /btn --------------- */
 
 /*--------------content------------*/
@@ -2031,35 +2039,41 @@ span.label.label_big {}
 
 /* ------------ subscribe ------------ */
 .subscribe{
-    height: 339px;
-    padding-top: 41px;
-    background-color: #ffdc1a;
+    height: 404px;
+    padding-top: 73px;
     text-align: center;
 }
 .subscribe__title{
-    width: 292px;
-    margin: 0 auto 22px;
-    font: 600 20px/28px 'Montserrat Slab', serif;
+    margin: 0 auto 30px;
+    font: 600 24px/28px 'Montserrat', serif;
     text-transform: uppercase;
 }
 .subscribe .site__form{
     background: none;
 }
+.subscribe__content{
+    width: 290px;
+    margin: 0 auto 33px;
+    line-height: 22px;
+}
+.subscribe__content_desktop{
+    display: none;
+}
 input.subscribe__email{
     display: block;
     width: 292px;
     height: 60px;
-    margin: 0 auto 23px;
+    margin: 0 auto 16px;
     padding: 0 17px;
-    border: 1px solid transparent;
+    border: 2px solid #f3f3f3;
     background-color: #fff;
-    font: 18px 'Montserrat', sans-serif;
+    font: 16px 'Open Sans', sans-serif;
     box-shadow: 0 0 5px rgba(0,0,0,0);
     -webkit-transition: box-shadow 0.3s ease, border 0.3s ease;
     transition: box-shadow 0.3s ease, border 0.3s ease;
 }
 .subscribe__email.form-validation__error {
-    border-color: #ff0000;
+    border-color: #f00;
 }
 .subscribe__email::-webkit-input-placeholder {
     color: #b5b5b5;
