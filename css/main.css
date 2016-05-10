@@ -273,7 +273,9 @@
     transform: translateX(-50%);
     content: '';
 }
-
+.site__title_1 {
+    margin: 0 0 42px;
+}
 
 
 /*--------------?-------------*/
@@ -531,14 +533,22 @@
     font-size: 15px;
     line-height: 15px;
 }
+.btn_4:hover {
+    background: #d4cece;
+    border-color: #ebebeb;
+    box-shadow: none;
+}
 .btn_4-1 {
     width: 157px;
     height: 45px;
     padding: 13px 10px;
 }
-.btn_4:hover {
-    background: #d4cece;
-    border-color: #ebebeb;
+.btn_4-2 {
+    border: 2px solid #b1d9d9;
+}
+.btn_4-2:hover {
+    background: #b1d9d9;
+    border-color: #9ec6c6;
     box-shadow: none;
 }
 .btn_5{
@@ -1007,6 +1017,13 @@ span.label.label_big {}
     font-size: 16px;
     line-height: 20px;
 }
+.hero__info{
+    margin: 0 auto;
+    max-width: 670px;
+    padding: 13px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+}
 /* --------------- /hero --------------- */
 
 /* --------------- time-schedule --------------- */
@@ -1160,6 +1177,9 @@ span.label.label_big {}
 .speakers__layout {
     max-width: 320px;
     margin: 0 auto;
+}
+.speakers_inner .speakers__layout {
+    margin-bottom: 43px;
 }
 .speakers p {
     margin: 0 auto 30px;
@@ -1315,11 +1335,17 @@ span.label.label_big {}
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
+.get-touch_1 {
+    background: #fff;
+}
 .get-touch .site__centered {
     background: #fff;
     padding-top: 8px;
     padding-bottom: 18px;
     box-shadow: 0 5px 30px 0 rgb( 203, 241, 241 );
+}
+.get-touch_1 .site__centered {
+    box-shadow: none;
 }
 .get-touch__title {
     margin: 0 0 5px;
@@ -1348,7 +1374,7 @@ span.label.label_big {}
     line-height: 22px;
 }
 .schedule .site__title {
-    margin: 0 0 62px;
+    margin: 0 0 31px;
 }
 .schedule .site__centered {
     padding: 0;
@@ -1391,8 +1417,8 @@ span.label.label_big {}
 }
 .schedule__filters .ares-select__item{
     padding: 8px 16px 8px 5px;
-    background: transparent;
     letter-spacing: -0.5px;
+    background: #fff;
 }
 .schedule__filters .ares-select__popup li:hover,
 .schedule__filters .ares-select__popup li.active{
@@ -1411,12 +1437,11 @@ span.label.label_big {}
 }
 .schedule__item{
     position: relative;
-    padding: 21px 15px 10px;
+    padding: 21px 22px 10px;
     border-top: 1px solid #f3f3f3;
     text-align: center;
 }
 .schedule__item:first-child{
-    /*padding-top: 18px;*/
     -webkit-transition: box-shadow .3s;
     transition: box-shadow .3s;
 }
@@ -1489,13 +1514,12 @@ span.label.label_big {}
 .schedule__concurrent{
     position: relative;
     z-index: 1;
-    /*padding: 20px 0 0;*/
     border-top: 1px solid #f3f3f3;
 }
 .schedule__concurrent:after{
     position: absolute;
     top: 32px;
-    left: 15px;
+    left: 18px;
     bottom: 26px;
     width: 3px;
     background: #ff7777;
@@ -1661,22 +1685,72 @@ span.label.label_big {}
 .schedule_inner{
     padding: 41px 0 70px;
 }
-.schedule_inner .schedule__item:first-child{
-    border-top: 2px solid #f3f3f3;
-}
 .schedule_inner .schedule__filters {
-    margin: 0 0 37px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+    max-width: 380px;
+    margin: 0 auto -2px;
+}
+.schedule_inner .schedule__date-btns {
+    margin: 0 auto 22px;
 }
 .schedule_inner .schedule__item{
     padding: 34px 0;
 }
 .schedule_inner .schedule__details {
-    padding: 15px 0 21px;
+    padding: 18px 0 3px;
 }
-/*.schedule__concurrent{*/
-/*padding: 0;*/
-/*border-top: none;*/
-/*}*/
+.schedule_inner .schedule__filters .ares-select {
+    width: 50%;
+    height: 44px;
+    border: 2px solid #f3f3f3;
+    margin: 0 -2px 0 0;
+}
+.schedule_inner .schedule__filters .ares-select:first-child{
+    border-left: none;
+}
+.schedule_inner .schedule__filters .ares-select:last-child{
+    border-right: none;
+}
+.schedule_inner .schedule__filters .ares-select__item {
+    padding: 13px 16px 13px 11px;
+}
+.schedule_inner .schedule__time {
+    margin: 0 0 16px;
+}
+.schedule_inner .schedule__event {
+    padding: 0 56px;
+    line-height: 20px;
+}
+.schedule_inner .schedule__speaker {
+    width: 32.5%;
+    margin: 0 5px 12px;
+}
+.schedule_inner .schedule__speaker-pic{
+    padding-bottom: 102%;
+}
+.schedule_inner .schedule__text {
+    margin: 0 0 22px;
+}
+.schedule_inner .schedule__labels {
+    margin: 0 15px 28px;
+}
 /* --------------- /schedule --------------- */
 
 /* ------------ contact-us ------------ */
@@ -1784,6 +1858,7 @@ span.label.label_big {}
 }
 .sponsors__item{
     padding: 0 0 23px;
+
 }
 .sponsors__logo{
     display: inline-block;
@@ -1991,50 +2066,115 @@ span.label.label_big {}
 
 /* --------------- news --------------- */
 .news {
-    padding: 75px 0 46px;
-    background-color: #faf5e0;
+    padding: 54px 0 48px;
+    background-color: #cbf1f1;
     text-align: center;
 }
-.news p {
-    margin-bottom: 41px;
-    line-height: 22px;
-    letter-spacing: .5px;
+.news .site__centered {
+    padding: 0;
 }
 .news__layout{
-    padding-bottom: 15px;
+    padding-bottom: 18px;
+    padding-top: 24px;
 }
 .news__item {
+     display: block;
+ }
+.news__article{
+    display: block;
+    position: relative;
+    height: 532px;
+    margin: 0 auto 10px;
+}
+.news__article a {
     display: block;
 }
-.news__article{
-    width: 260px;
-    margin: 0 auto 27px;
-    background-color: #fff;
+.news__article a:hover .news__content {
+    background: rgba(255, 255, 255, 0.7);
 }
 .news__picture {
-    width: inherit;
-    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 49%;
     margin-bottom: 12px;
     background-position: center;
     background-size: cover;
 }
 .news__content {
-    padding: 0 24px 19px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    position: absolute;
+    top: 51%;
+    left: 0;
+    width: 100%;
+    height: 49%;
+    padding: 0 7px;
+    font-size: 16px;
+    line-height: 20px;
+    background: #fff;
+    text-align: center;
+    color: #435a65;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+.news__content>div{
+    position: relative;
+    overflow: hidden;
+    max-height: 70.5%;
+    padding-bottom: 35px;
+}
+.news__content>div:after {
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    width: 72px;
+    height: 1px;
+    background: #ebebeb;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+}
+.news__text {
+    overflow: hidden;
+    max-height: 103px;
 }
 .news__date {
     display: block;
-    margin-bottom: 10px;
-    color: #ffdc1a;
-    font-size: 16px;
-    letter-spacing: .3px;
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Montserrat', serif;
+    text-transform: uppercase;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .news__title {
-    margin: 0 3px 33px;
-    font-size: 20px;
-    font-family: 'Montserrat Slab', sans-serif;
+    margin: 0 3px 34px;
+    font-size: 24px;
+    line-height: 27px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 /* --------------- /news --------------- */
 
@@ -2807,6 +2947,9 @@ input.subscribe__email{
     .btn_4 {
         width: 139px;
     }
+    .btn_4-1 {
+        width: 157px;
+    }
     /* ------------ /btn ------------ */
 
     /* --------------- site --------------- */
@@ -3046,6 +3189,9 @@ input.subscribe__email{
     .speakers {
         padding: 67px 0 60px;
     }
+    .speakers_inner {
+        padding: 35px 0 60px;
+    }
     .speakers p {
         margin-bottom: 77px;
     }
@@ -3137,7 +3283,10 @@ input.subscribe__email{
 
     /* --------------- schedule --------------- */
     .schedule {
-        padding: 83px 0 51px;
+        padding: 39px 0 51px;
+    }
+    .schedule .site__title {
+        margin: 0 0 44px;
     }
     .schedule__filters{
         display: -webkit-flex;
@@ -3284,21 +3433,24 @@ input.subscribe__email{
         border: none;
         padding: 8px 36px 20px;
     }
-    .schedule__concurrent .schedule__item:first-child{
-        padding: 22px 36px 8px;
-    }
     .schedule_inner{
-        padding: 53px 0 70px;
+        padding: 35px 0 70px;
     }
     .schedule_inner .schedule__items{
         text-align: center;
     }
     .schedule_inner .schedule__item{
-        padding: 28px 0;
+        padding: 36px 0;
         text-align: center;
     }
-    .schedule_inner .schedule__item:first-child {
-        padding: 28px 0;
+    .schedule_inner .schedule__concurrent .schedule__item {
+        border-top: none;
+    }
+    .schedule_inner .schedule__item{
+        border-top: 1px solid #f3f3f3;
+    }
+    .schedule_inner .schedule__date-btns {
+        margin: 0 auto 17px;
     }
     .schedule_inner .schedule__date-btns a{
         margin-left: 4px;
@@ -3307,11 +3459,17 @@ input.subscribe__email{
         margin-left: 0;
     }
     .schedule_inner .schedule__filters {
-        margin: 0 0 46px;
+        margin: 0 auto 44px;
+    }
+    .schedule_inner .schedule__filters .ares-select:first-child{
+        border-left: 2px solid #f3f3f3;
+    }
+    .schedule_inner .schedule__filters .ares-select:last-child{
+        border-right: 2px solid #f3f3f3;
     }
     .schedule_inner .schedule__time{
         display: block;
-        margin: 0 0 5px;
+        margin: 0 0 15px;
         width: 100%;
     }
     .schedule_inner .schedule__event {
@@ -3324,19 +3482,27 @@ input.subscribe__email{
         margin: 0 0 32px;
     }
     .schedule_inner .schedule__details {
-        padding: 7px 0 9px;
+        padding: 11px 0 2px;
+    }
+    .schedule_inner .schedule__info {
+        max-width: 630px;
+        margin: 0 auto;
     }
     .schedule_inner .schedule__main-place {
-        margin: 0 0 24px;
+        margin: 0 0 17px;
     }
     .schedule_inner .schedule__speaker {
-        width: 16.3%;
+        width: 13.5%;
+        margin: 0 11px 12px;
+    }
+    .schedule_inner .schedule__speaker-pic {
+        margin: 0 0 14px;
     }
     .schedule_inner .schedule__concurrent-title {
         display: block;
     }
     .schedule_inner .schedule__concurrent:after{
-        display: none;
+        left: 4%;
     }
     /* --------------- /schedule --------------- */
 
@@ -3430,9 +3596,6 @@ input.subscribe__email{
     .sponsors__filters .ares-select{
         margin: 0 auto;
     }
-    .sponsors__items {
-        text-align: justify;
-    }
     .sponsors__logo{
         width: 55%;
         padding-bottom: 24.7%;
@@ -3481,23 +3644,36 @@ input.subscribe__email{
 
     /* --------------- news --------------- */
     .news {
-        padding: 83px 0 87px;
+        padding: 54px 0 78px;
     }
-    .news p {
-        margin-bottom: 50px;
-        font-size: 20px;
+    .news .site__centered {
+        padding: 0 15px;
     }
     .news__layout {
-        text-align: left;
-    }
-    .news__item{
-        display: inline-block;
-        vertical-align: top;
-        width: 49%;
-        text-align: center;
+        max-width: 595px;
+        margin: 0 auto;
+        padding-bottom: 14px;
     }
     .news__article {
-        margin: 0 auto 31px;
+        height: 667px;
+        margin: 0 auto 15px;
+    }
+    .news__content {
+        padding: 0 13%;
+    }
+    .news__content>div {
+        max-height: 68.5%;
+        padding-bottom: 27px;
+        margin-top: -13px;
+    }
+    .news__text {
+        max-height: 143px;
+    }
+    .news__title {
+        margin: 0 3px 14px;
+    }
+    .news__date{
+        bottom: 43px;
     }
     /* --------------- /news --------------- */
 
@@ -3771,12 +3947,6 @@ input.subscribe__email{
 }
 
 @media (min-width: 930px) {
-
-    /* --------------- news --------------- */
-    .news__item{
-        width: 33%;
-    }
-    /* --------------- /news --------------- */
 
     /* ------------ social-feed ------------ */
     .social-feed__item {
@@ -4154,6 +4324,9 @@ input.subscribe__email{
     .speakers {
         padding: 67px 0 69px;
     }
+    .speakers_inner {
+        padding: 114px 0 39px;
+    }
     .speakers__layout {
         display: -webkit-flex;
         display: -moz-flex;
@@ -4224,29 +4397,41 @@ input.subscribe__email{
     /* --------------- /get-touch --------------- */
 
     /* --------------- schedule --------------- */
-    .schedule .site__title{
-        margin: 0 0 48px;
+    .schedule {
+        padding: 59px 0 54px;
+    }
+    .schedule .site__title {
+        margin: 0 0 44px;
     }
     .schedule__date-btns{
-        margin: 0 0 34px 0;
+        margin: 0 0 31px 0;
     }
     .schedule__date-btn{
         margin: 0 2px;
+    }
+    .schedule__filters {
+        margin: 0 0 32px;
     }
     .schedule__info .btn {
         width: 156px;
     }
     .schedule__items{
-        padding: 0 6px;
-        margin: 0 auto 26px;
+        padding: 0 15px;
+        margin: 0 auto 19px;
     }
     .schedule__item{
-        padding: 24px 30px 17px;
-        transition: opacity 0.3s ease, transform 0.3s ease;
+        padding: 25px 49px 24px;
         -webkit-transition: opacity 0.3s ease, transform 0.3s ease;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .schedule__concurrent .schedule__item {
+        padding: 34px 49px 20px;
+    }
+    .schedule__concurrent .schedule__item:first-child {
+        padding: 22px 49px 8px;
     }
     .schedule__concurrent:after {
-        left: 12.5%;
+        left: 15%;
     }
     .schedule__time {
         width: 12.9%;
@@ -4286,6 +4471,7 @@ input.subscribe__email{
     }
     .schedule__event {
         padding: 0 0 0 4px;
+        line-height: 23px;
     }
     .schedule__details {
         padding: 8px 0 18px 13.5%;
@@ -4310,6 +4496,7 @@ input.subscribe__email{
     .schedule__info{
         display: inline-block;
         vertical-align: top;
+        max-width: 100%;
         width: 41%;
         padding: 4px 0 0;
         direction: ltr;
@@ -4330,22 +4517,25 @@ input.subscribe__email{
         -webkit-transform: scale(0);
         transform: scale(0);
     }
+    .schedule_inner {
+        padding: 49px 0 54px;
+    }
     .schedule_inner .schedule__item:first-child,
     .schedule_inner .schedule__item{
-        padding: 23px 0;
+        padding: 30px 0 21px;
     }
     .schedule_inner .schedule__date-btns {
-        margin: 0 0 33px 0;
+        margin: 0 0 26px 0;
     }
     .schedule_inner .schedule__date-btns a,
     .schedule_inner .schedule__date-btns a:first-child{
         margin-left: 2px;
     }
     .schedule_inner .schedule__filters {
-        margin: 0 0 36px;
+        margin: 0 auto 47px;
     }
     .schedule_inner .schedule__items {
-        padding: 0 30px;
+        padding: 0 65px;
         text-align: left;
     }
     .schedule_inner .schedule__item{
@@ -4362,13 +4552,13 @@ input.subscribe__email{
         padding: 0 0 0 5px;
     }
     .schedule_inner .schedule__details{
-        padding: 8px 0 10px 14%;
+        padding: 9px 0 10px 14%;
     }
     .schedule_inner .schedule__main-place {
-        margin: 0 0 22px;
+        margin: 0 0 18px;
     }
     .schedule_inner .schedule__text {
-        margin: 0 0 22px;
+        margin: 0 0 15px;
     }
     .schedule_inner .label {
         padding: 2px 7px;
@@ -4377,7 +4567,7 @@ input.subscribe__email{
         line-height: 12px;
     }
     .schedule_inner .schedule__speaker {
-        width: 31.8%;
+        width: 27.5%;
     }
     .schedule_inner .schedule__concurrent-title {
         display: none;
@@ -4387,7 +4577,14 @@ input.subscribe__email{
         left: 10.2%;
     }
     .schedule_inner .schedule__concurrent{
-        border-top: 2px solid #f3f3f3;
+        border-top: 1px solid #f3f3f3;
+    }
+    .schedule_inner .schedule__labels {
+        margin: 0 0 21px;
+    }
+    .schedule_inner .schedule__speakers-group {
+        width: 54.3%;
+        padding: 0 0 0 13.6%;
     }
     /* --------------- /schedule --------------- */
 
@@ -4426,9 +4623,6 @@ input.subscribe__email{
     /* ------------ /connect ------------ */
 
     /* --------------- news --------------- */
-    .news__item {
-        margin: 0 0 31px;
-    }
     .news__article{
         transition: box-shadow .3s ease, opacity 0.3s ease, transform 0.3s ease;
         -webkit-transition: box-shadow .3s ease, opacity 0.3s ease, transform 0.3s ease;
@@ -4457,13 +4651,13 @@ input.subscribe__email{
         margin: 0 0 39px;
     }
     .sponsors__item{
-        padding: 0 27px 9px;
+        padding: 0 0 9px;
         max-width: 895px;
         margin: 0 auto;
     }
     .sponsors__logo{
-        width: 46.5%;
-        padding-bottom: 21.5%;
+        width: 43.5%;
+        padding-bottom: 20.5%;
         margin: 0 auto 40px;
     }
     .sponsors__item_gold .sponsors__logo div{
@@ -4471,12 +4665,12 @@ input.subscribe__email{
         left: 0;
     }
     .sponsors__item_silver .sponsors__logo{
-        width: 29.4%;
-        padding-bottom: 13%;
+        width: 32.5%;
+        padding-bottom: 11.6%;
     }
     .sponsors__item_silver .sponsors__logo div{
-        right: 5px;
-        left: 5px;
+        right: 2px;
+        left: 2px;
     }
     .sponsors__item_bronze {
         padding: 0 12px 33px;
@@ -4486,8 +4680,8 @@ input.subscribe__email{
         padding-bottom: 7%;
     }
     .sponsors__item_bronze .sponsors__logo div{
-        right: 15px;
-        left: 15px;
+        right: 9px;
+        left: 9px;
     }
     .sponsors_exhibitors {
         padding: 54px 0 19px;
@@ -4573,6 +4767,40 @@ input.subscribe__email{
         text-align: center;
     }
     /* ------------ /features ------------ */
+
+    /* ------------ news ------------ */
+    .news {
+        padding: 54px 0 61px;
+    }
+    .news__layout {
+        max-width: 100%;
+        padding-bottom: 14px;
+        padding-top: 26px;
+    }
+    .news__content {
+        padding: 0 7%;
+    }
+    .news__article {
+        height: 326px;
+        margin: 0 auto 9px;
+    }
+    .news__picture {
+        width: 50%;
+        height: 100%;
+    }
+    .news__content {
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+    }
+    .news__article:nth-child(even) .news__picture {
+        left: 50%;
+    }
+    .news__article:nth-child(even) .news__content {
+        left: 0;
+    }
+    /* ------------ /news ------------ */
 
     /* ------------ media-gallery ------------ */
     .media-gallery {
@@ -4803,11 +5031,12 @@ input.subscribe__email{
 
 @media (min-width: 1200px) {
 
-    /* --------------- news --------------- */
-    .news__item {
-        width: 24.5%;
+    /* --------------- site --------------- */
+    .site__form textarea {
+        width: 432px;
+        margin-left: 22px;
     }
-    /* --------------- /news --------------- */
+    /* --------------- /site --------------- */
 
     /* ------------ social-feed ------------ */
     .social-feed__item {
