@@ -246,6 +246,15 @@
     display: block;
     margin: 0 auto 15px;
 }
+.site__title-info {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: italic;
+    text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
 
 .site__title_inner {
     position: relative;
@@ -309,9 +318,6 @@
     width: 54px;
     height: 5px;
 }
-/*--------------?-------------*/
-
-
 .site__title_2{
     margin: 0 0 33px;
     padding: 17px 0 0;
@@ -513,16 +519,18 @@
 .btn_4 {
     width: 139px;
     height: 56px;
-    padding: 16px 10px;
+    padding: 18px 10px;
     color: #687c83;
     background: transparent;
     box-shadow: none;
     border: 2px solid #ebebeb;
     font-size: 15px;
+    line-height: 15px;
 }
 .btn_4-1 {
+    width: 157px;
     height: 45px;
-    padding: 11px 10px;
+    padding: 13px 10px;
 }
 .btn_4:hover {
     background: #d4cece;
@@ -703,7 +711,9 @@
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
-    text-align: left;
+    background: #41c5f6;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .label_big{
     padding: 20px 13px 11px;
@@ -1227,10 +1237,28 @@ span.label.label_big {}
     line-height: 24px;
 }
 .speakers__btns{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
     padding: 30px 0 0;
 }
-.speakers__btns>.btn:first-child{
-    margin: 0 -6px 0 0;
+.speakers__btns>.btn{
+    margin: 0 -2px 0 0;
 }
 .speakers-favorite:before{
     right: 0;
@@ -1305,6 +1333,9 @@ span.label.label_big {}
     font-size: 16px;
     line-height: 22px;
 }
+.schedule .site__title {
+    margin: 0 0 62px;
+}
 .schedule .site__centered {
     padding: 0;
 }
@@ -1349,6 +1380,11 @@ span.label.label_big {}
     background: transparent;
     letter-spacing: -0.5px;
 }
+.schedule__filters .ares-select__popup li:hover,
+.schedule__filters .ares-select__popup li.active{
+    background: #cbf1f1;
+    color: #000;
+}
 .schedule__filters-main-venue{
     width: 136px;
 }
@@ -1371,7 +1407,7 @@ span.label.label_big {}
     transition: box-shadow .3s;
 }
 .schedule__item-drop-down.opened{
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 40px 5px rgba(0,0,0,0.1);
 }
 .schedule__time{
     display: block;
@@ -1430,14 +1466,29 @@ span.label.label_big {}
     line-height: 36px;
     font-weight: 700;
 }
+.schedule__event_break {
+    font-size: 20px;
+}
 .schedule__item-drop-down .schedule__event{
     cursor: pointer;
 }
 .schedule__concurrent{
     position: relative;
     z-index: 1;
-    padding: 20px 0 0;
-    border-top: 2px solid #f3f3f3;
+    /*padding: 20px 0 0;*/
+    border-top: 1px solid #f3f3f3;
+}
+.schedule__concurrent:after{
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    bottom: 26px;
+    width: 3px;
+    background: #ff7777;
+    content: '';
+}
+.schedule__concurrent .schedule__item {
+    border: none;
 }
 .schedule__concurrent-title{
     display: block;
@@ -1468,7 +1519,7 @@ span.label.label_big {}
 }
 .schedule__details{
     position: relative;
-    padding: 40px 0 36px;
+    padding: 40px 0 46px;
 }
 .schedule__item-drop-down .schedule__details{
     display: none;
@@ -1501,19 +1552,19 @@ span.label.label_big {}
     color: #000;
 }
 .schedule__speakers-group{
-    margin: 0 0 11px;
+    margin: 0 0 12px;
 }
 .schedule__speaker{
     display: inline-block;
     vertical-align: top;
     position: relative;
     width: 36%;
-    margin: 0 11px 12px;
+    margin: 0 10px 12px;
     text-align: center;
 }
 .schedule__speaker-pic{
     position: relative;
-    padding-bottom: 102%;
+    padding-bottom: 100%;
     margin: 0 0 14px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1557,14 +1608,36 @@ span.label.label_big {}
     font-size: 16px;
     line-height: 22px;
 }
+.schedule__btns{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+}
+.schedule__btns .btn{
+    margin: 0 -2px 0 0;
+}
 .schedule__labels{
     max-height: 43px;
     overflow: hidden;
     margin: 0 15px 35px;
 }
 .schedule__coffee-break{
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 700;
     font-size: 16px;
     line-height: 16px;
 }
@@ -1586,10 +1659,10 @@ span.label.label_big {}
 .schedule_inner .schedule__details {
     padding: 15px 0 21px;
 }
-.schedule__concurrent{
-    padding: 0;
-    border-top: none;
-}
+/*.schedule__concurrent{*/
+    /*padding: 0;*/
+    /*border-top: none;*/
+/*}*/
 /* --------------- /schedule --------------- */
 
 /* ------------ contact-us ------------ */
@@ -1680,17 +1753,10 @@ span.label.label_big {}
     text-align: center;
 }
 .sponsors .site__title {
-    margin: 0 0 2px 0;
+    margin: 0 0 62px;
 }
 .sponsors .site__title_2 {
     margin: 0 0 33px;
-}
-.sponsors__subinfo {
-    display: block;
-    margin: 0 0 62px;
-    font-size: 14px;
-    line-height: 17px;
-    font-style: italic;
 }
 .sponsors p{
     margin: 0 0 34px;
@@ -2858,10 +2924,10 @@ input.subscribe__email{
 
     /* ------------ label ------------ */
     .label {
-        padding: 3px 8px;
+        padding: 3px 13px;
         min-width: 71px;
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 14px;
     }
     .label_big {
         padding: 17px 13px 7px;
@@ -3058,7 +3124,38 @@ input.subscribe__email{
 
     /* --------------- schedule --------------- */
     .schedule {
-        padding: 83px 0 70px;
+        padding: 83px 0 51px;
+    }
+    .schedule__filters{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        align-items: flex-start;
+    }
+    .schedule__filters .ares-select {
+        border-left: 2px solid #f3f3f3;
+        border-right: 2px solid #f3f3f3;
+        margin: 0 -2px 0 0;
+    }
+    .schedule__filters .ares-select:after {
+        right: 17px;
+    }
+    .schedule__filters .ares-select__item {
+        padding: 8px 27px 8px 15px;
     }
     .schedule__date-btns{
         max-width: 100%;
@@ -3083,15 +3180,16 @@ input.subscribe__email{
         margin: 0 0 35px;
     }
     .schedule__items{
-        margin: 0 0 27px;
+        margin: 0 0 21px;
         text-align: left;
     }
     .schedule__item{
         text-align: left;
-        padding: 24px 17px 17px;
+        padding: 24px 36px 20px;
     }
     .schedule__item:first-child {
         padding-top: 24px;
+        border-top: none;
     }
     .schedule__time{
         display: inline-block;
@@ -3131,49 +3229,50 @@ input.subscribe__email{
         display: inline-block;
         vertical-align: top;
         width: 85%;
-        padding: 0 0 0 27px;
+        padding: 0 0 0 57px;
+        font-size: 20px;
+        line-height: 25px;
     }
     .schedule__details {
-        padding: 8px 0 36px 18.5%;
+        padding: 8px 0 31px 22.8%;
     }
     .schedule__main-place {
-        margin: 0 0 23px;
+        margin: 0 0 25px;
     }
     .schedule__speakers-group {
-        margin: 0 0 19px;
+        margin: 0 0 13px;
     }
     .schedule__speaker{
-        width: 20.8%;
-        margin: 0 5px 10px 0;
+        width: 19.8%;
+        margin: 0 22px 10px 0;
     }
     .schedule__speaker-pic {
-        margin: 0 0 10px;
+        margin: 0 0 13px;
+        padding-bottom: 103%;
     }
     .schedule__text {
-        padding: 0 27% 0 0;
-        margin: 0 0 23px;
+        padding: 0 22% 0 0;
+        margin: 0 0 37px;
     }
     .schedule__labels {
         margin: 0 0 20px;
-        max-height: 39px;
+        max-height: 43px;
     }
     .schedule__concurrent{
         padding: 0 0 6px;
     }
     .schedule__concurrent:after{
-        position: absolute;
-        top: 32px;
-        left: 15%;
+        top: 26px;
+        left: 22%;
         bottom: 26px;
         width: 3px;
-        background: #ffdc1a;
-        content: '';
     }
     .schedule__concurrent .schedule__item{
         border: none;
+        padding: 8px 36px 20px;
     }
-    .schedule__btns{
-        text-align: center;
+    .schedule__concurrent .schedule__item:first-child{
+        padding: 22px 36px 8px;
     }
     .schedule_inner{
         padding: 53px 0 70px;
@@ -4130,14 +4229,20 @@ input.subscribe__email{
     /* --------------- /get-touch --------------- */
 
     /* --------------- schedule --------------- */
+    .schedule .site__title{
+        margin: 0 0 48px;
+    }
     .schedule__date-btns{
         margin: 0 0 34px 0;
     }
     .schedule__date-btn{
         margin: 0 2px;
     }
+    .schedule__info .btn {
+        width: 156px;
+    }
     .schedule__items{
-        max-width: 1005px;
+        padding: 0 6px;
         margin: 0 auto 26px;
     }
     .schedule__item{
@@ -4188,7 +4293,7 @@ input.subscribe__email{
         padding: 0 0 0 4px;
     }
     .schedule__details {
-        padding: 8px 0 18px 13.7%;
+        padding: 8px 0 18px 13.5%;
     }
     .schedule__layout{
         direction: rtl;
@@ -4196,13 +4301,13 @@ input.subscribe__email{
     .schedule__speakers-group{
         display: inline-block;
         vertical-align: top;
-        width: 51.5%;
-        padding: 1px 0 0 44px;
+        width: 47.3%;
+        padding: 0 0 0 10.6%;
         direction: ltr;
     }
     .schedule__speaker {
-        width: 31.8%;
-        margin: 0 0 10px 4px;
+        width: 28.8%;
+        margin: 0 0 10px 14px;
     }
     .schedule__speaker:nth-child(3n+1){
         margin-left: 0;
@@ -4210,18 +4315,19 @@ input.subscribe__email{
     .schedule__info{
         display: inline-block;
         vertical-align: top;
-        width: 48%;
+        width: 41%;
+        padding: 4px 0 0;
         direction: ltr;
     }
     .schedule__main-place {
-        margin: 0 0 22px;
+        margin: 0 0 17px;
     }
     .schedule__text {
         padding: 0;
         margin: 0 0 22px;
     }
     .schedule__labels {
-        margin: 0 0 20px;
+        margin: 0 0 33px;
         max-height: 43px;
     }
     .schedule__item.hidden {
@@ -4347,7 +4453,7 @@ input.subscribe__email{
     .sponsors{
         padding: 65px 0 25px;
     }
-    .sponsors__subinfo{
+    .sponsors .site__title{
         margin: 0 0 48px;
     }
     .sponsors .site__title_2 {
