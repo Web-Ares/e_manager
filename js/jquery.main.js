@@ -643,9 +643,17 @@ $(function(){
             },
             _loadNewItems = function(){
 
+                var path;
+
+                if ( _obj.hasClass( 'media-gallery_profile' ) ) {
+                    path = _obj.data( 'action' );
+                }else{
+                    path = _btnAction
+                }
+
                 _request.abort();
                 _request = $.ajax({
-                    url: _btnAction,
+                    url: path,
                     data: {
                         loadedGroup: _obj.attr( 'data-loaded-group' )
                     },
