@@ -16,11 +16,12 @@
     <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
 
-    <title>Event_Manager</title>
+    <title>Speaker_Profile</title>
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/speaker-profile.css" />
 
 </head>
 <body>
@@ -101,244 +102,54 @@
     <div class="site__content">
 
         <!-- hero -->
-        <section class="hero hero_slider">
+        <section class="hero hero_inner hero_inner-speaker">
 
             <!-- hero__layout -->
             <div class="hero__layout">
 
-                <!--swiper-container-->
-                <div class="hero__slider swiper-container">
+                <!-- site__centered -->
+                <div class="site__centered">
 
-                    <!--swiper-wrapper-->
-                    <div class="swiper-wrapper">
+                    <!-- speaker-info -->
+                    <div class="speaker-info">
 
-                        <!--swiper-slide-->
-                        <div class="swiper-slide" style="background-image: url('pic/hero-pic.jpg')">
+                        <!--speaker-info__pic-->
+                        <div class="speaker-info__pic">
+                            <img src="pic/john_doe.jpg" alt="john_doe">
+                        </div>
+                        <!--/speaker-info__pic-->
 
-                            <!-- time-schedule -->
-                            <div class="time-schedule">
+                        <!--speaker-info__inner-->
+                        <div class="speaker-info__inner">
 
-                                <!-- time-schedule__pic -->
-                                <div class="time-schedule__pic">
-                                    <img src="pic/em-sub-logo.png" width="90" height="90" alt="em">
-                                </div>
-                                <!-- /time-schedule__pic -->
+                            <!-- site__title -->
+                            <h2 class="site__title">JOHN DOE</h2>
+                            <!-- /site__title -->
 
-                                <!-- site__title -->
-                                <h2 class="site__title site__title_big">THE EVENT MANAGER</h2>
-                                <!-- /site__title -->
-
-                                <!-- time-schedule__place -->
-                                <time datetime="2016-05-01" class="time-schedule__place">
-                                    NEW YORK • MON 1 MAY 2016 • SALA PASTORE
-                                </time>
-                                <!-- /time-schedule__place -->
-
-                                <!--time-schedule__text-->
-                                <p class="time-schedule__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                </p>
-                                <!--/time-schedule__text-->
-
-                                <!-- btn -->
-                                <a href="#" class="btn btn_1">REGISTER NOW</a>
-                                <!-- /btn -->
-
-                                <!-- time-schedule__save -->
-                                <div class="time-schedule__save">
-
-                                    <a href="#"><i class="fa fa-google"></i></a>
-                                    <a href="#"><i class="fa fa-apple"></i></a>
-                                    <a href="#"><i class="fa fa-windows"></i></a>
-
-                                </div>
-                                <!-- /time-schedule__save -->
-
-                            </div>
-                            <!-- /time-schedule -->
-
-                            <!-- countdown-timer -->
-                            <div class="countdown-timer">
-                                <div data-finish="May 15, 2016">
-                                    <div class="countdown-timer__days">
-                                        <span>Days</span>
-                                        Days
-                                    </div>
-                                    <div class="countdown-timer__hours">
-                                        <span>hours</span>
-                                        hours
-                                    </div>
-                                    <div class="countdown-timer__minutes">
-                                        <span>min</span>
-                                        min
-                                    </div>
-                                    <div class="countdown-timer__seconds">
-                                        <span>sec</span>
-                                        sec
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /countdown-timer -->
+                            <!--speaker-info__text-->
+                            <p class="speaker-info__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <!--/speaker-info__text-->
 
                         </div>
-                        <!--/swiper-slide-->
+                        <!--/speaker-info__inner-->
 
-                        <!--swiper-slide-->
-                        <div class="swiper-slide" style="background-image: url('pic/hero-pic.jpg')">
+                        <!-- social -->
+                        <div class="social">
 
-                            <!-- time-schedule -->
-                            <div class="time-schedule">
-
-                                <!-- time-schedule__pic -->
-                                <div class="time-schedule__pic">
-                                    <img src="pic/em-sub-logo.png" width="90" height="90" alt="em">
-                                </div>
-                                <!-- /time-schedule__pic -->
-
-                                <!-- site__title -->
-                                <h2 class="site__title site__title_big">THE EVENT MANAGER</h2>
-                                <!-- /site__title -->
-
-                                <!-- time-schedule__place -->
-                                <time datetime="2016-05-01" class="time-schedule__place">
-                                    NEW YORK • MON 1 MAY 2016 • SALA PASTORE
-                                </time>
-                                <!-- /time-schedule__place -->
-
-                                <!--time-schedule__text-->
-                                <p class="time-schedule__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                </p>
-                                <!--/time-schedule__text-->
-
-                                <!-- btn -->
-                                <a href="#" class="btn btn_1">REGISTER NOW</a>
-                                <!-- /btn -->
-
-                                <!-- time-schedule__save -->
-                                <div class="time-schedule__save">
-
-                                    <a href="#"><i class="fa fa-google"></i></a>
-                                    <a href="#"><i class="fa fa-apple"></i></a>
-                                    <a href="#"><i class="fa fa-windows"></i></a>
-
-                                </div>
-                                <!-- /time-schedule__save -->
-
-                            </div>
-                            <!-- /time-schedule -->
-
-                            <!-- countdown-timer -->
-                            <div class="countdown-timer">
-                                <div data-finish="November 15, 2016">
-                                    <div class="countdown-timer__days">
-                                        <span>Days</span>
-                                        Days
-                                    </div>
-                                    <div class="countdown-timer__hours">
-                                        <span>hours</span>
-                                        hours
-                                    </div>
-                                    <div class="countdown-timer__minutes">
-                                        <span>min</span>
-                                        min
-                                    </div>
-                                    <div class="countdown-timer__seconds">
-                                        <span>sec</span>
-                                        sec
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /countdown-timer -->
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
 
                         </div>
-                        <!--/swiper-slide-->
-
-                        <!--swiper-slide-->
-                        <div class="swiper-slide" style="background-image: url('pic/hero-pic.jpg')">
-
-                            <!-- time-schedule -->
-                            <div class="time-schedule">
-
-                                <!-- time-schedule__pic -->
-                                <div class="time-schedule__pic">
-                                    <img src="pic/em-sub-logo.png" width="90" height="90" alt="em">
-                                </div>
-                                <!-- /time-schedule__pic -->
-
-                                <!-- site__title -->
-                                <h2 class="site__title site__title_big">THE EVENT MANAGER</h2>
-                                <!-- /site__title -->
-
-                                <!-- time-schedule__place -->
-                                <time datetime="2016-05-01" class="time-schedule__place">
-                                    NEW YORK • MON 1 MAY 2016 • SALA PASTORE
-                                </time>
-                                <!-- /time-schedule__place -->
-
-                                <!--time-schedule__text-->
-                                <p class="time-schedule__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                </p>
-                                <!--/time-schedule__text-->
-
-                                <!-- btn -->
-                                <a href="#" class="btn btn_1">REGISTER NOW</a>
-                                <!-- /btn -->
-
-                                <!-- time-schedule__save -->
-                                <div class="time-schedule__save">
-
-                                    <a href="#"><i class="fa fa-google"></i></a>
-                                    <a href="#"><i class="fa fa-apple"></i></a>
-                                    <a href="#"><i class="fa fa-windows"></i></a>
-
-                                </div>
-                                <!-- /time-schedule__save -->
-
-                            </div>
-                            <!-- /time-schedule -->
-
-                            <!-- countdown-timer -->
-                            <div class="countdown-timer">
-                                <div data-finish="January 1, 2017">
-                                    <div class="countdown-timer__days">
-                                        <span>Days</span>
-                                        Days
-                                    </div>
-                                    <div class="countdown-timer__hours">
-                                        <span>hours</span>
-                                        hours
-                                    </div>
-                                    <div class="countdown-timer__minutes">
-                                        <span>min</span>
-                                        min
-                                    </div>
-                                    <div class="countdown-timer__seconds">
-                                        <span>sec</span>
-                                        sec
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /countdown-timer -->
-
-                        </div>
-                        <!--/swiper-slide-->
+                        <!-- /social -->
 
                     </div>
-                    <!--/swiper-wrapper-->
-
-                    <!--hero__centered-->
-                    <div class="hero__centered">
-
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-
-                    </div>
-                    <!--/hero__centered-->
+                    <!-- /speaker-info -->
 
                 </div>
-                <!--/swiper-container-->
+                <!-- /site__centered -->
 
             </div>
             <!-- /hero__layout -->
@@ -346,24 +157,649 @@
         </section>
         <!-- /hero -->
 
-        <!-- media-gallery -->
-        <section class="media-gallery" data-loaded-group="0" data-loaded-type="all">
+        <!--speaker-profile-->
+        <div class="speaker-profile">
 
-            <!-- site__title -->
-            <h2 class="site__title site__title_white site__title_logo site__title_media">MEDIA</h2>
+            <!-- description -->
+            <div class="description">
 
-            <!-- media-gallery__cover -->
-            <div class="media-gallery__cover">
+                <!--site__centered-->
+                <div class="site__centered">
 
-                <!-- media-gallery__wrap -->
-                <div class="media-gallery__wrap"></div>
-                <!-- /gallery__wrap -->
+                    <!-- site__title -->
+                    <h3 class="site__title site__title_small">About</h3>
+                    <!-- /site__title -->
+
+                    <p>
+                        Lorem ipsum dolor sit amet nullam in dui mauris. Vivamus hendrerit arcu
+                        sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+
+                </div>
+                <!--/site__centered-->
 
             </div>
-            <!-- /media-gallery__cover -->
+            <!-- description -->
 
-        </section>
-        <!-- /media-gallery -->
+            <!-- media-gallery -->
+            <section class="media-gallery media-gallery_profile" data-action="php/gallery-content_profile.php" data-loaded-group="0" data-loaded-type="all">
+
+                <!-- site__title -->
+                <h2 class="site__title site__title_white site__title_logo site__title_media-grey">MEDIA</h2>
+
+                <!-- media-gallery__cover -->
+                <div class="media-gallery__cover">
+
+                    <!-- media-gallery__wrap -->
+                    <div class="media-gallery__wrap">
+
+
+                    </div>
+                    <!-- /gallery__wrap -->
+
+                </div>
+                <!-- /media-gallery__cover -->
+
+            </section>
+            <!-- /media-gallery -->
+
+            <!-- schedule -->
+            <section class="schedule more-content">
+
+                <!-- site__centered -->
+                <div class="site__centered">
+
+                    <!-- site__title -->
+                    <h2 class="site__title">
+                        <img src="pic/agenda-icon.png" width="33" height="33" alt="">
+                        MY SESSIONS
+                    </h2>
+                    <!-- /site__title -->
+
+                    <!-- schedule__items -->
+                    <div class="schedule__items more-content__wrapper schedule__items_profile">
+
+                        <!-- schedule__item -->
+                        <div class="schedule__item schedule__item-drop-down">
+
+                            <time class="schedule__time" datetime="09:00"><span>26 Tuesday</span> 9:00-11:00</time>
+
+                            <!--schedule__inner-->
+                            <div class="schedule__inner">
+                                <h2 class="schedule__event">User Experience and Radical Users</h2>
+                            </div>
+                            <!--/schedule__inner-->
+
+                            <!-- schedule__details -->
+                            <div class="schedule__details">
+
+                                <!-- schedule__main-place -->
+                                <a href="#" class="schedule__main-place">
+                                    <i class="fa fa-location-arrow"></i>
+                                    MAIN VENUE
+                                </a>
+                                <!-- /schedule__main-place -->
+
+                                <!-- schedule__close -->
+                                <a class="schedule__close" href="#"><i class="fa fa-times"></i></a>
+                                <!-- /schedule__close -->
+
+                                <!-- schedule__layout -->
+                                <div class="schedule__layout">
+
+                                    <!-- schedule__speakers-group -->
+                                    <div class="schedule__speakers-group">
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                    </div>
+                                    <!-- /schedule__speakers-group -->
+
+                                    <!-- schedule__info -->
+                                    <div class="schedule__info">
+
+                                        <!-- schedule__text -->
+                                        <div class="schedule__text">
+                                            In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollici...
+                                        </div>
+                                        <!-- /schedule__text -->
+
+                                        <!-- schedule__labels -->
+                                        <div class="schedule__labels">
+                                            <span class="label"># LABEL</span>
+                                            <span class="label label_1"># TECHNOLOGY</span>
+                                            <span class="label label_2"># PSYCHOLOGY</span>
+                                            <span class="label label_3"># MARKETING </span>
+                                            <span class="label label_4"># ENTERTAINMENT</span>
+                                        </div>
+                                        <!-- /schedule__labels -->
+
+                                        <a href="#" class="btn btn_4 btn_4-1">READ MORE</a>
+
+                                    </div>
+                                    <!-- /schedule__info -->
+
+                                </div>
+                                <!-- /schedule__layout -->
+
+                            </div>
+                            <!-- /schedule__details -->
+
+                        </div>
+                        <!-- /schedule__item -->
+
+                        <!-- schedule__item -->
+                        <div class="schedule__item schedule__item-drop-down">
+                            <time class="schedule__time" datetime="09:00"><span>27 friday</span> 9:00-11:00</time>
+
+                            <!--schedule__inner-->
+                            <div class="schedule__inner">
+                                <h2 class="schedule__event">User Experience and Radical Users</h2>
+                            </div>
+                            <!--/schedule__inner-->
+
+
+                            <!-- schedule__details -->
+                            <div class="schedule__details">
+
+                                <!-- schedule__main-place -->
+                                <a href="#" class="schedule__main-place">
+                                    <i class="fa fa-location-arrow"></i>
+                                    MAIN VENUE
+                                </a>
+                                <!-- /schedule__main-place -->
+
+                                <!-- schedule__close -->
+                                <a class="schedule__close" href="#"><i class="fa fa-times"></i></a>
+                                <!-- /schedule__close -->
+
+                                <!-- schedule__layout -->
+                                <div class="schedule__layout">
+
+                                    <!-- schedule__speakers-group -->
+                                    <div class="schedule__speakers-group">
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                    </div>
+                                    <!-- /schedule__speakers-group -->
+
+                                    <!-- schedule__info -->
+                                    <div class="schedule__info">
+
+                                        <!-- schedule__text -->
+                                        <div class="schedule__text">
+                                            In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollici...
+                                        </div>
+                                        <!-- /schedule__text -->
+
+                                        <!-- schedule__labels -->
+                                        <div class="schedule__labels">
+                                            <span class="label"># LABEL</span>
+                                            <span class="label label_1"># TECHNOLOGY</span>
+                                            <span class="label label_2"># PSYCHOLOGY</span>
+                                            <span class="label label_3"># MARKETING </span>
+                                            <span class="label label_4"># ENTERTAINMENT</span>
+                                        </div>
+                                        <!-- /schedule__labels -->
+
+                                        <a href="#" class="btn btn_4 btn_4-1">READ MORE</a>
+
+                                    </div>
+                                    <!-- /schedule__info -->
+
+                                </div>
+                                <!-- /schedule__layout -->
+
+                            </div>
+                            <!-- /schedule__details -->
+
+                        </div>
+                        <!-- /schedule__item -->
+
+                        <!-- schedule__item -->
+                        <div class="schedule__item schedule__item_today schedule__item-drop-down">
+                            <time class="schedule__time" datetime="09:00">9:00-11:00</time>
+
+                            <!--schedule__inner-->
+                            <div class="schedule__inner">
+                                <h2 class="schedule__event">Brand Simple and Marketing Principles</h2>
+                            </div>
+                            <!--/schedule__inner-->
+
+                            <!-- schedule__details -->
+                            <div class="schedule__details">
+
+                                <!-- schedule__main-place -->
+                                <a href="#" class="schedule__main-place">
+                                    <i class="fa fa-location-arrow"></i>
+                                    MAIN VENUE
+                                </a>
+                                <!-- /schedule__main-place -->
+
+                                <!-- schedule__close -->
+                                <a class="schedule__close" href="#"><i class="fa fa-times"></i></a>
+                                <!-- /schedule__close -->
+
+                                <!-- schedule__layout -->
+                                <div class="schedule__layout">
+
+                                    <!-- schedule__speakers-group -->
+                                    <div class="schedule__speakers-group">
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                    </div>
+                                    <!-- /schedule__speakers-group -->
+
+                                    <!-- schedule__info -->
+                                    <div class="schedule__info">
+
+                                        <!-- schedule__text -->
+                                        <div class="schedule__text">
+                                            In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollici...
+                                        </div>
+                                        <!-- /schedule__text -->
+
+                                        <!-- schedule__labels -->
+                                        <div class="schedule__labels">
+                                            <span class="label"># LABEL</span>
+                                            <span class="label label_1"># TECHNOLOGY</span>
+                                            <span class="label label_2"># PSYCHOLOGY</span>
+                                            <span class="label label_3"># MARKETING </span>
+                                            <span class="label label_4"># ENTERTAINMENT</span>
+                                        </div>
+                                        <!-- /schedule__labels -->
+
+                                        <a href="#" class="btn btn_4 btn_4-1">READ MORE</a>
+
+                                    </div>
+                                    <!-- /schedule__info -->
+
+                                </div>
+                                <!-- /schedule__layout -->
+
+                            </div>
+                            <!-- /schedule__details -->
+
+                        </div>
+                        <!-- /schedule__item -->
+
+                        <!-- schedule__item -->
+                        <div class="schedule__item schedule__item-drop-down">
+                            <time class="schedule__time" datetime="09:00"><span>28 saturday</span> 9:00-11:00</time>
+
+                            <!--schedule__inner-->
+                            <div class="schedule__inner">
+                                <h2 class="schedule__event">User Experience and Radical Users</h2>
+                            </div>
+                            <!--/schedule__inner-->
+
+
+                            <!-- schedule__details -->
+                            <div class="schedule__details">
+
+                                <!-- schedule__main-place -->
+                                <a href="#" class="schedule__main-place">
+                                    <i class="fa fa-location-arrow"></i>
+                                    MAIN VENUE
+                                </a>
+                                <!-- /schedule__main-place -->
+
+                                <!-- schedule__close -->
+                                <a class="schedule__close" href="#"><i class="fa fa-times"></i></a>
+                                <!-- /schedule__close -->
+
+                                <!-- schedule__layout -->
+                                <div class="schedule__layout">
+
+                                    <!-- schedule__speakers-group -->
+                                    <div class="schedule__speakers-group">
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                        <!-- schedule__speaker -->
+                                        <a href="#" class="schedule__speaker">
+
+                                            <!-- schedule__speaker-pic -->
+                                            <div class="schedule__speaker-pic" style="background-image: url('pic/speaker1.jpg')">
+                                                <span class="schedule__speaker-hover">
+                                                    VIEW
+                                                    PROFILE
+                                                    +
+                                                </span>
+                                            </div>
+                                            <!-- /schedule__speaker-pic -->
+
+                                            <h3 class="schedule__speaker-name">Jane
+                                                ROTENBERG</h3>
+
+                                        </a>
+                                        <!-- /schedule__speaker -->
+
+                                    </div>
+                                    <!-- /schedule__speakers-group -->
+
+                                    <!-- schedule__info -->
+                                    <div class="schedule__info">
+
+                                        <!-- schedule__text -->
+                                        <div class="schedule__text">
+                                            In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollici...
+                                        </div>
+                                        <!-- /schedule__text -->
+
+                                        <!-- schedule__labels -->
+                                        <div class="schedule__labels">
+                                            <span class="label"># LABEL</span>
+                                            <span class="label label_1"># TECHNOLOGY</span>
+                                            <span class="label label_2"># PSYCHOLOGY</span>
+                                            <span class="label label_3"># MARKETING </span>
+                                            <span class="label label_4"># ENTERTAINMENT</span>
+                                        </div>
+                                        <!-- /schedule__labels -->
+
+                                        <a href="#" class="btn btn_4 btn_4-1">READ MORE</a>
+
+                                    </div>
+                                    <!-- /schedule__info -->
+
+                                </div>
+                                <!-- /schedule__layout -->
+
+                            </div>
+                            <!-- /schedule__details -->
+
+                        </div>
+                        <!-- /schedule__item -->
+
+                    </div>
+                    <!-- /schedule__items -->
+
+                </div>
+                <!-- /site__centered -->
+
+            </section>
+            <!-- schedule -->
+
+        </div>
+        <!--/speaker-profile-->
 
     </div>
     <!-- /site__content -->
@@ -414,15 +850,10 @@
 <!-- /site -->
 
 <script src="js/jquery-2.1.3.min.js"></script>
-<script src="js/jquery.count-down.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"
-        async defer></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/swiper.min.js"></script>
-<script src="js/jquery.select.js"></script>
 <script src="js/jquery.main.js"></script>
-<script src="js/jquery.map.js"></script>
 
 </body>
 </html>
