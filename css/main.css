@@ -381,7 +381,8 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 .site__form textarea {
-    padding: 18px 25px;
+    padding: 20px 23px;
+    height: 141px;
 }
 .site__form fieldset {
     margin-bottom: 30px;
@@ -3834,43 +3835,12 @@ input.subscribe__email{
     .site__title_white span{
         display: block;
     }
-
-
     .site__title_2{
         margin: 0 0 32px;
         padding: 23px 0 0;
     }
     .site__title_inner {
         position: relative;
-    }
-
-
-    .site__form {
-        max-width: none;
-    }
-    .site__form fieldset {
-        text-align: center;
-    }
-    .site__form fieldset > * {
-        display: inline-block;
-        vertical-align: top;
-    }
-    .site__form textarea {
-        width: 282px;
-        margin-left: 22px;
-    }
-    .site__form-double {
-        text-align: left;
-    }
-    .site__form-double input {
-        width: 282px;
-        margin-bottom: 0;
-    }
-    .site__form-double input:last-child {
-        margin-left: 22px;
-    }
-    .site__form-double:after {
-        display: none;
     }
     /* --------------- /site --------------- */
 
@@ -4798,13 +4768,6 @@ input.subscribe__email{
 }
 
 @media (min-width: 1200px) {
-
-    /* --------------- site --------------- */
-    .site__form textarea {
-        width: 432px;
-        margin-left: 22px;
-    }
-    /* --------------- /site --------------- */
 
     /* --------------- news --------------- */
     .news__item {
