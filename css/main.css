@@ -326,6 +326,30 @@
     height: 32px;
     background-image: url("../img/news-icon.png");
 }
+.site__title_registration:before {
+    top: 3px;
+    width: 37px;
+    height: 35px;
+    background-image: url("../img/register-now-icon.png");
+}
+.site__title_tickets:before {
+    top: 3px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/ticket-icon.png");
+}
+.site__title_exhibitors:before {
+    top: 3px;
+    width: 39px;
+    height: 39px;
+    background-image: url("../img/exhibitors-icon.png");
+}
+.site__title_where:before {
+    top: 3px;
+    width: 27px;
+    height: 40px;
+    background-image: url("../img/where-icon.png");
+}
 .site__title_big{
     margin: 0 0 21px;
     font-size: 43px;
@@ -3460,13 +3484,16 @@ input.subscribe__email{
     }
     .schedule__concurrent:after{
         top: 26px;
-        left: 22%;
+        left: 166px;
         bottom: 26px;
         width: 3px;
     }
     .schedule__concurrent .schedule__item{
         border: none;
         padding: 8px 36px 20px;
+    }
+    .schedule__concurrent .schedule__item:first-child{
+        padding: 24px 36px 6px;
     }
     .schedule_inner{
         padding: 35px 0 70px;
