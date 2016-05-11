@@ -20,9 +20,9 @@ $(function(){
             new FormValidation ( $( this ) )
         } );
 
-        $.each( $('.main-slider' ), function() {
-            new SliderMain ( $( this ) );
-        } );
+        //$.each( $('.main-slider' ), function() {
+        //    new SliderMain ( $( this ) );
+        //} );
 
         $.each( $('.news' ), function() {
             new News ( $( this ) );
@@ -408,65 +408,65 @@ $(function(){
 
     };
 
-    var SliderMain = function( obj ) {
-
-        //private properties
-        var _self = this,
-            _sliderSwiper,
-            _slider = obj,
-            _items = _slider.find( '.swiper-slide'),
-            _window = $( window );
-
-        //private methods
-        var _addEvents = function() {
-
-                _window.on( {
-
-                    'load': function() {
-
-                        _setHeight();
-
-                    },
-                    'resize': function() {
-
-                        _setHeight();
-
-                    }
-
-                } );
-
-            },
-            _initSlider = function() {
-
-                _sliderSwiper = new Swiper( _slider, {
-
-                    paginationClickable: true,
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                    spaceBetween: 30
-
-                });
-
-            },
-            _setHeight = function() {
-
-                $.each( _items, function() {
-
-                    _items.height( _slider.height() )
-
-                } );
-
-            },
-            _init = function() {
-
-                _initSlider();
-                _addEvents();
-                _slider[ 0 ].obj = _self;
-
-            };
-
-        _init();
-    };
+    //var SliderMain = function( obj ) {
+    //
+    //    //private properties
+    //    var _self = this,
+    //        _sliderSwiper,
+    //        _slider = obj,
+    //        _items = _slider.find( '.swiper-slide'),
+    //        _window = $( window );
+    //
+    //    //private methods
+    //    var _addEvents = function() {
+    //
+    //            _window.on( {
+    //
+    //                'load': function() {
+    //
+    //                    _setHeight();
+    //
+    //                },
+    //                'resize': function() {
+    //
+    //                    _setHeight();
+    //
+    //                }
+    //
+    //            } );
+    //
+    //        },
+    //        _initSlider = function() {
+    //
+    //            _sliderSwiper = new Swiper( _slider, {
+    //
+    //                paginationClickable: true,
+    //                nextButton: '.swiper-button-next',
+    //                prevButton: '.swiper-button-prev',
+    //                spaceBetween: 30
+    //
+    //            });
+    //
+    //        },
+    //        _setHeight = function() {
+    //
+    //            $.each( _items, function() {
+    //
+    //                _items.height( _slider.height() )
+    //
+    //            } );
+    //
+    //        },
+    //        _init = function() {
+    //
+    //            _initSlider();
+    //            _addEvents();
+    //            _slider[ 0 ].obj = _self;
+    //
+    //        };
+    //
+    //    _init();
+    //};
 
     var MediaGallery = function( obj ) {
 
