@@ -492,6 +492,9 @@
 .site__desktop{
     display: none;
 }
+.site__inner-content {
+    padding: 50px 0;
+}
 /* --------------- /site --------------- */
 
 /* ------------ footer-menu ------------ */
