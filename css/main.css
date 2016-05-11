@@ -2729,7 +2729,7 @@ input.subscribe__email{
 }
 .facebook-content__interested{
     position: relative;
-    width: 260px;
+    width: 262px;
     margin: 0 auto 13px;
     padding: 42px 0 21px;
     color: #d4d4d4;
@@ -2739,7 +2739,7 @@ input.subscribe__email{
     font-family: 'Open Sans', sans-serif;
 }
 .facebook-content__going{
-    width: 254px;
+    width: 262px;
     margin: 0 auto 13px;
     padding: 44px 0 21px;
     color: #d4d4d4;
@@ -2748,20 +2748,49 @@ input.subscribe__email{
     text-align: center;
 }
 .facebook-content__wrap{
-    width: 254px;
+    width: 262px;
     margin: 0 auto 28px;
-    padding: 25px 21px 24px;
+    padding: 24px 23px 24px 24px;
     color: #b5b5b5;
     font-size: 16px;
     background-color: #fff;
     text-align: left;
 }
 .facebook-content__plugin{
-    margin-bottom: 4px;
+    margin-bottom: 18px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #e3e3e3;
     text-align: center;
     overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-wrap: wrap;
+    max-height: 156px;
+}
+.facebook-content__item {
+    display: block;
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #fff;
+}
+.facebook-content__item .fa {
+    position: absolute;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background: #578f06;
+    bottom: 0;
+    right: 0;
+    padding-top: 2px;
 }
 .facebook-content__link{
     display: block;
@@ -2779,7 +2808,7 @@ input.subscribe__email{
     display: block;
     position: relative;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     padding-left: 30px;
     white-space: nowrap;
     overflow: hidden;
@@ -3968,11 +3997,12 @@ input.subscribe__email{
         padding: 0 10px 0 0;
     }
     .facebook-content__wrap{
-        width: 260px;
-        margin: 0 0 0 14px;
+        width: 261px;
+        margin: 0 0 0 13px;
     }
     .facebook-content__plugin{
         width: 100%;
+        margin-bottom: 21px;
     }
     .facebook-content__statistics{
         display: flex;
@@ -5057,6 +5087,14 @@ input.subscribe__email{
     .facebook-content__send {
         margin-bottom: 2px;
         padding-left: 21px;
+    }
+    .facebook-content__item {
+        box-shadow: inset 0 0 7px rgba(0,0,0,0);
+        -webkit-transition: box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease;
+    }
+    .facebook-content__item:hover {
+        box-shadow: inset 0 0 7px rgba(0,0,0,0.8);
     }
     /*-----------/facebook-content------------*/
 
