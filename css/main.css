@@ -218,7 +218,7 @@
     text-align: center;
 }
 .site__footer .btn {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 }
 .site__footer-made {
     display: block;
@@ -497,10 +497,10 @@
 .footer-menu {
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
 }
 .footer-menu li {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
 }
 .footer-menu li:last-child {
     margin-bottom: 0;
@@ -855,7 +855,7 @@ span.label.label_big {}
     left: auto;
     width: 294px;
     height: 56px;
-    margin: 0 auto 28px;
+    margin: 0 auto 19px;
 }
 .logo-footer img {
     display: block;
@@ -1561,28 +1561,28 @@ span.label.label_big {}
     border: none;
 }
 /*.schedule__concurrent-title{*/
-    /*display: block;*/
-    /*position: relative;*/
-    /*z-index: 1;*/
-    /*padding: 20px 0 20px;*/
-    /*font-size: 16px;*/
-    /*line-height: 19px;*/
+/*display: block;*/
+/*position: relative;*/
+/*z-index: 1;*/
+/*padding: 20px 0 20px;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
 /*}*/
 /*.schedule__concurrent-title:before,*/
 /*.schedule__concurrent-title:after{*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*width: 2px;*/
-    /*height: 17px;*/
-    /*top: 0;*/
-    /*background: #ffdc1a;*/
-    /*-webkit-transform: translateX(-50%);*/
-    /*transform: translateX(-50%);*/
-    /*content: '';*/
+/*position: absolute;*/
+/*left: 50%;*/
+/*width: 2px;*/
+/*height: 17px;*/
+/*top: 0;*/
+/*background: #ffdc1a;*/
+/*-webkit-transform: translateX(-50%);*/
+/*transform: translateX(-50%);*/
+/*content: '';*/
 /*}*/
 /*.schedule__concurrent-title:after{*/
-    /*top: auto;*/
-    /*bottom: 0;*/
+/*top: auto;*/
+/*bottom: 0;*/
 /*}*/
 .schedule__concurrent .schedule__item:first-of-type{
     border-top: none;
@@ -1788,7 +1788,7 @@ span.label.label_big {}
 /* ------------ contact-us ------------ */
 .contact-us {
     text-align: center;
-    padding: 59px 0 33px;
+    padding: 59px 0 41px;
     background: #f3f3f3;
 }
 .contact-us p {
@@ -1808,7 +1808,7 @@ span.label.label_big {}
     margin-bottom: 0;
 }
 .contact-us__address dt {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     font-weight: 700;
     font-size: 18px;
     color: #435a65;
@@ -1820,7 +1820,7 @@ span.label.label_big {}
 }
 .contact-us__address dd {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 0;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -1833,7 +1833,7 @@ span.label.label_big {}
     padding-top: 6px;
 }
 .contact-us__form {
-    margin-bottom: 29px;
+    margin-bottom: 22px;
 }
 /* ------------ /contact-us ------------ */
 
@@ -2216,7 +2216,7 @@ span.label.label_big {}
 
 /* ------------ connect ------------ */
 .connect {
-    padding: 74px 0 91px;
+    padding: 80px 0 91px;
     background: #cbf1f1;
     color: #435a65;
     font-size: 16px;
@@ -2228,7 +2228,7 @@ span.label.label_big {}
     font-family: 'Open Sans', sans-serif;
 }
 .connect .site__title {
-    margin-bottom: 26px;
+    margin-bottom: 32px;
 }
 .connect .social {
     margin-left: -15px;
@@ -2583,7 +2583,7 @@ input.subscribe__email{
     overflow: hidden;
     display: block;
     position: relative;
-    padding: 28px 0;
+    padding: 27px 0;
     background: transparent;
     text-align: center;
     font-weight: 700;
@@ -2610,7 +2610,7 @@ input.subscribe__email{
     font-size: 36px;
 }
 .social-feed__txt {
-    margin-bottom: 9px;
+    margin-bottom: 5px;
     color: #435a65;
     font-size: 18px;
     font-style: italic;
@@ -2707,7 +2707,7 @@ input.subscribe__email{
 
 /*-----------facebook-content------------*/
 .facebook-content {
-    padding: 47px 0 33px;
+    padding: 48px 0 33px;
     background-color: #f3f3f3;
     overflow: hidden;
 }
@@ -2724,14 +2724,14 @@ input.subscribe__email{
     color: #000;
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 17px;
     font-family: 'Montserrat', sans-serif;
 }
 .facebook-content__interested{
     position: relative;
     width: 260px;
     margin: 0 auto 13px;
-    padding: 29px 0 21px;
+    padding: 42px 0 21px;
     color: #d4d4d4;
     font-size: 24px;
     background-color: #fff;
@@ -2741,7 +2741,7 @@ input.subscribe__email{
 .facebook-content__going{
     width: 254px;
     margin: 0 auto 13px;
-    padding: 29px 0 21px;
+    padding: 44px 0 21px;
     color: #d4d4d4;
     font-size: 24px;
     background-color: #fff;
@@ -2757,7 +2757,7 @@ input.subscribe__email{
     text-align: left;
 }
 .facebook-content__plugin{
-    margin-bottom: 12px;
+    margin-bottom: 4px;
     padding-bottom: 8px;
     border-bottom: 1px solid #e3e3e3;
     text-align: center;
@@ -2780,14 +2780,14 @@ input.subscribe__email{
     position: relative;
     width: 100%;
     margin-bottom: 5px;
-    padding-left: 20px;
+    padding-left: 30px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .facebook-content__send:before{
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 17px;
     height: 15px;
@@ -3054,7 +3054,7 @@ input.subscribe__email{
     }
     .site__form-double {
         text-align: justify;
-        margin-bottom: -19px;
+        margin-bottom: -29px;
     }
     .site__form-double:after {
         display: inline-block;
@@ -3079,13 +3079,13 @@ input.subscribe__email{
 
     /* ------------ footer-menu ------------ */
     .footer-menu {
-        margin-bottom: 28px;
+        margin-bottom: 32px;
         text-align: center;
     }
     .footer-menu li {
         display: inline-block;
         vertical-align: top;
-        margin-left: 20px;
+        margin-left: 31px;
     }
     .footer-menu li:first-child {
         margin-left: 0;
@@ -3105,7 +3105,7 @@ input.subscribe__email{
     .logo-footer {
         width: 406px;
         height: 77px;
-        margin-bottom: 52px;
+        margin-bottom: 43px;
     }
     /* ------------ /logo-footer ------------ */
 
@@ -3378,7 +3378,7 @@ input.subscribe__email{
         margin: 0 0 0 -4px;
     }
     /*.schedule__concurrent-title{*/
-        /*display: none;*/
+    /*display: none;*/
     /*}*/
     .schedule__filters {
         margin: 0 0 35px;
@@ -3578,18 +3578,18 @@ input.subscribe__email{
     }
     .contact-us__address {
         text-align: center;
-        padding-left: 68px;
+        padding-left: 87px;
     }
     .contact-us__address > dl {
         display: inline-block;
         vertical-align: top;
         margin-bottom: 0;
-        width: 30%;
+        width: 34%;
         text-align: left;
         max-width: none;
     }
     .contact-us__address > dl:last-child {
-        margin-left: 0;
+        margin-left: 45px;
     }
     .contact-us__form {
         margin: 0 0 51px;
@@ -3601,7 +3601,7 @@ input.subscribe__email{
 
     /* ------------ connect ------------ */
     .connect {
-        padding: 58px 0 32px;
+        padding: 64px 0 32px;
     }
     .connect p {
         margin-bottom: 65px;
@@ -3611,7 +3611,7 @@ input.subscribe__email{
         margin: 0 auto 20px;
     }
     .connect .site__title {
-        margin-bottom: 11px;
+        margin-bottom: 18px;
     }
     /* ------------ /connect ------------ */
 
@@ -3821,6 +3821,12 @@ input.subscribe__email{
         padding: 53px 8px 77px;
         font-size: 20px;
     }
+    .media-gallery__switcher {
+        margin-bottom: 56px;
+    }
+    .media-gallery .site__title {
+        margin-bottom: 43px;
+    }
     .media-gallery__wrap {
         display: -webkit-box;
         display: -moz-box;
@@ -3885,7 +3891,7 @@ input.subscribe__email{
 
     /* ------------ social-feed ------------ */
     .social-feed {
-        padding: 48px 0 60px;
+        padding: 50px 0 60px;
     }
     .social-feed__wrap {
         margin-bottom: 26px;
@@ -3901,10 +3907,10 @@ input.subscribe__email{
         margin: 0 auto 8px;
     }
     .social-feed__logo {
-        margin-bottom: 15px;
+        margin-bottom: 19px;
     }
     .social-feed__txt {
-        margin-bottom: 12px;
+        margin-bottom: 9px;
     }
     /* ------------ /social-feed ------------ */
 
@@ -4601,7 +4607,7 @@ input.subscribe__email{
         width: 27.5%;
     }
     /*.schedule_inner .schedule__concurrent-title {*/
-        /*display: none;*/
+    /*display: none;*/
     /*}*/
     .schedule_inner .schedule__concurrent:after{
         display: block;
@@ -4627,7 +4633,7 @@ input.subscribe__email{
         margin-bottom: 64px;
     }
     .contact-us__address {
-        padding-left: 135px;
+        padding-left: 118px;
     }
     .contact-us__address > dl {
         width: 24%;
@@ -4639,17 +4645,20 @@ input.subscribe__email{
     .contact-us__address dt {
         margin-bottom: 10px;
     }
+    .contact-us__address > dl:last-child {
+        margin-left: 0;
+    }
     /* ------------ /contact-us ------------ */
 
     /* ------------ connect ------------ */
     .connect {
-        padding: 96px 0 83px;
+        padding: 101px 0 83px;
     }
     .connect .site__centered {
         max-width: 720px;
     }
     .connect .site__title {
-        margin-bottom: 18px;
+        margin-bottom: 25px;
     }
     /* ------------ /connect ------------ */
 
@@ -4837,10 +4846,13 @@ input.subscribe__email{
 
     /* ------------ media-gallery ------------ */
     .media-gallery {
-        padding: 53px 4px 58px;
+        padding: 53px 4px 63px;
+    }
+    .media-gallery__switcher {
+        margin-bottom: 45px;
     }
     .media-gallery__cover {
-        margin-bottom: 47px;
+        margin-bottom: 37px;
     }
     .media-gallery__wrap {
         display: block;
@@ -4856,7 +4868,7 @@ input.subscribe__email{
     .media-gallery__item {
         margin: 0;
         width: 20%;
-        padding-bottom: 20%;
+        padding-bottom: 19%;
         border: 8px solid #435a65;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -4953,10 +4965,10 @@ input.subscribe__email{
 
     /* ------------ social-feed ------------ */
     .social-feed {
-        padding: 118px 0 60px;
+        padding: 118px 0 91px;
     }
     .social-feed__item {
-        margin: 0 0 31px;
+        margin: 0 0 28px;
         width: 33%;
     }
     .social-feed__txt {
@@ -4988,7 +5000,7 @@ input.subscribe__email{
         flex-wrap: wrap;
     }
     .social-feed__logo {
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
     /* ------------ /social-feed ------------ */
 
@@ -5042,6 +5054,10 @@ input.subscribe__email{
     .facebook-content__wrap {
         width: 570px;
     }
+    .facebook-content__send {
+        margin-bottom: 2px;
+        padding-left: 21px;
+    }
     /*-----------/facebook-content------------*/
 
     /* ------------ switcher ------------ */
@@ -5084,13 +5100,6 @@ input.subscribe__email{
 }
 
 @media (min-width: 1200px) {
-
-    /* --------------- site --------------- */
-    .site__form textarea {
-        width: 432px;
-        margin-left: 22px;
-    }
-    /* --------------- /site --------------- */
 
     /* ------------ social-feed ------------ */
     .social-feed__item {
