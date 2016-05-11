@@ -3651,7 +3651,7 @@ input.subscribe__email{
     }
     .sponsors__filters{
         max-width: 724px;
-        margin: -21px auto 49px;
+        margin: 28px auto 49px;
     }
     .sponsors__filters .ares-select{
         margin: 0 auto;
@@ -4722,6 +4722,11 @@ input.subscribe__email{
     .sponsors__item_bronze .sponsors__logo div{
         right: 9px;
         left: 9px;
+    }
+    .sponsors__filters {
+
+        margin: -21px auto 49px;
+
     }
     .sponsors_exhibitors {
         padding: 54px 0 19px;
