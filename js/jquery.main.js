@@ -20,10 +20,6 @@ $(function(){
             new FormValidation ( $( this ) )
         } );
 
-        //$.each( $('.main-slider' ), function() {
-        //    new SliderMain ( $( this ) );
-        //} );
-
         $.each( $('.news' ), function() {
             new News ( $( this ) );
         } );
@@ -52,11 +48,6 @@ $(function(){
             new BgVideo ( $( this ) );
         } );
 
-        $('.video-bg').YTPlayer({
-            videoId: 'GOewG8nem4o?list=PLIPgZfqr1JCx1vGoD4WSvtsd8UxgUo96_',
-            fitToBackground: true
-        });
-
     });
 
     var BgVideo = function( obj ) {
@@ -83,8 +74,19 @@ $(function(){
                 _obj.height(height);
 
             },
+            _addBgVideo = function () {
+
+                var path = _obj.data('video');
+
+               $('.video-bg').YTPlayer({
+                    videoId: path,
+                    fitToBackground: true
+                });
+
+            },
 
             _init = function() {
+                _addBgVideo();
                 _setHeight();
                 _addEvents();
                 _obj[ 0 ].obj = _self;
