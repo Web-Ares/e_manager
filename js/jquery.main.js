@@ -48,7 +48,52 @@ $(function(){
             new AddMoreSocial ( $( this ) );
         } );
 
+        $.each( $( '.hero_bg-video' ), function() {
+            new BgVideo ( $( this ) );
+        } );
+
+        $('.video-bg').YTPlayer({
+            videoId: 'GOewG8nem4o?list=PLIPgZfqr1JCx1vGoD4WSvtsd8UxgUo96_',
+            fitToBackground: true
+        });
+
     });
+
+    var BgVideo = function( obj ) {
+
+        var _self = this,
+            _obj = obj,
+            _window = $(window);
+
+        var _addEvents = function() {
+
+                _window.on({
+
+                    resize: function(){
+                        _setHeight();
+                    }
+
+                })
+
+            },
+            _setHeight = function(){
+
+                var height = _window.height();
+
+                _obj.height(height);
+
+            },
+
+            _init = function() {
+                _setHeight();
+                _addEvents();
+                _obj[ 0 ].obj = _self;
+
+            };
+
+        _init();
+
+    };
 
     var HeroSlider = function( obj ) {
 
