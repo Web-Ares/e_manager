@@ -7,9 +7,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
 
-    <title>Event_Manager-index-video</title>
+    <title>Event_Manager_Bg-video</title>
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/select.css" />
     <link rel="stylesheet" href="css/main.css" />
 
 </head>
@@ -28,9 +27,9 @@
                 <div class="site__centered">
 
                     <!-- logo -->
-                    <a href="#" class="logo">
+                    <h1 class="logo">
                         <img src="img/logo.png" width="213" height="40" alt="event-manager">
-                    </a>
+                    </h1>
                     <!-- /logo -->
 
                     <!-- menu-btn -->
@@ -119,81 +118,77 @@
         <div class="site__content">
 
             <!-- hero -->
-            <section class="hero hero_video">
+            <section class="hero hero_bg-video">
+
+                <div class="video-bg"></div>
 
                 <!-- hero__layout -->
                 <div class="hero__layout">
 
-                    <!--site__centered-->
-                    <div class="site__centered">
+                    <!-- time-schedule -->
+                    <div class="time-schedule">
 
-                        <!-- hero__video -->
-                        <div class="hero__video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/P22gcb4YHso" frameborder="0" allowfullscreen></iframe>
+                        <!-- time-schedule__pic -->
+                        <div class="time-schedule__pic">
+                            <img src="pic/em-sub-logo.png" width="90" height="90" alt="em">
                         </div>
-                        <!-- /hero__video -->
+                        <!-- /time-schedule__pic -->
 
-                        <!-- time-schedule -->
-                        <div class="time-schedule">
+                        <!-- site__title -->
+                        <h2 class="site__title site__title_big">THE EVENT MANAGER</h2>
+                        <!-- /site__title -->
 
-                            <!-- site__title -->
-                            <h2 class="site__title site__title_big">THE EVENT MANAGER</h2>
-                            <!-- /site__title -->
+                        <!-- time-schedule__place -->
+                        <time datetime="2016-05-01" class="time-schedule__place">
+                            NEW YORK • MON 1 MAY 2016 • SALA PASTORE
+                        </time>
+                        <!-- /time-schedule__place -->
 
-                            <!-- time-schedule__place -->
-                            <time datetime="2016-05-01" class="time-schedule__place">
-                                NEW YORK • MON 1 MAY 2016 • SALA PASTORE
-                            </time>
-                            <!-- /time-schedule__place -->
+                        <!--time-schedule__text-->
+                        <p class="time-schedule__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        </p>
+                        <!--/time-schedule__text-->
 
-                            <!--time-schedule__text-->
-                            <p class="time-schedule__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            </p>
-                            <!--/time-schedule__text-->
+                        <!-- btn -->
+                        <a href="#" class="btn btn_1">REGISTER NOW</a>
+                        <!-- /btn -->
 
-                            <!-- btn -->
-                            <a href="#" class="btn btn_1">REGISTER NOW</a>
-                            <!-- /btn -->
+                        <!-- time-schedule__save -->
+                        <div class="time-schedule__save">
 
-                            <!-- time-schedule__save -->
-                            <div class="time-schedule__save">
-
-                                <a href="#"><i class="fa fa-google"></i></a>
-                                <a href="#"><i class="fa fa-apple"></i></a>
-                                <a href="#"><i class="fa fa-windows"></i></a>
-
-                            </div>
-                            <!-- /time-schedule__save -->
+                            <a href="#"><i class="fa fa-google"></i></a>
+                            <a href="#"><i class="fa fa-apple"></i></a>
+                            <a href="#"><i class="fa fa-windows"></i></a>
 
                         </div>
-                        <!-- /time-schedule -->
-
-                        <!-- countdown-timer -->
-                        <div class="countdown-timer">
-                            <div data-finish="May 15, 2016">
-                                <div class="countdown-timer__days">
-                                    <span>Days</span>
-                                    Days
-                                </div>
-                                <div class="countdown-timer__hours">
-                                    <span>hours</span>
-                                    hours
-                                </div>
-                                <div class="countdown-timer__minutes">
-                                    <span>min</span>
-                                    min
-                                </div>
-                                <div class="countdown-timer__seconds">
-                                    <span>sec</span>
-                                    sec
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /countdown-timer -->
+                        <!-- /time-schedule__save -->
 
                     </div>
-                    <!--/site__centered-->
+                    <!-- /time-schedule -->
+
+                    <!-- countdown-timer -->
+                    <div class="countdown-timer">
+                        <div data-finish="May 15, 2016">
+                            <div class="countdown-timer__days">
+                                <span>Days</span>
+                                Days
+                            </div>
+                            <div class="countdown-timer__hours">
+                                <span>hours</span>
+                                hours
+                            </div>
+                            <div class="countdown-timer__minutes">
+                                <span>min</span>
+                                min
+                            </div>
+                            <div class="countdown-timer__seconds">
+                                <span>sec</span>
+                                sec
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /countdown-timer -->
 
                 </div>
                 <!-- /hero__layout -->
@@ -324,13 +319,8 @@
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/jquery.count-down.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"
-            async defer></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery,youtube-bg.js"></script>
     <script src="js/jquery.main.js"></script>
-    <script src="js/jquery.map.js"></script>
 
 </body>
 </html>

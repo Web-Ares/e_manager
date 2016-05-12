@@ -49,11 +49,39 @@
                             <!--header-menu__layout-->
                             <div class="header-menu__layout">
                                 <ul>
-                                    <li>
+                                    <li class="header-menu__drop-down">
                                         <a class="header-menu__item" href="#">SPEAKERS</a>
+
+                                        <!-- header-menu__sub-items -->
+                                        <ul class="header-menu__sub-items">
+                                            <li>
+                                                <a href="#">Menu item 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu item 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu item 3</a>
+                                            </li>
+                                        </ul>
+                                        <!-- header-menu__sub-items -->
                                     </li>
-                                    <li>
+                                    <li class="header-menu__drop-down">
                                         <a class="header-menu__item" href="#">AGENDA</a>
+
+                                        <!-- header-menu__sub-items -->
+                                        <ul class="header-menu__sub-items">
+                                            <li>
+                                                <a href="#">Menu item 1</a>
+                                            </li>
+                                            <li>
+                                                <a class="active" href="#">Menu item 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu item 3</a>
+                                            </li>
+                                        </ul>
+                                        <!-- header-menu__sub-items -->
                                     </li>
                                     <li>
                                         <a class="header-menu__item" href="#">WHERE</a>
@@ -1635,6 +1663,11 @@
                             <option value="3">Menu item three</option>
                             <option value="4">Menu item four</option>
                         </select>
+
+                        <div class="sponsors__filters-form">
+                            <input type="text" name="search_exhibitors" id="search_exhibitors" placeholder="Search">
+                            <span><i class="fa fa-search"></i></span>
+                        </div>
                     </div>
                     <!-- /sponsors__filters -->
 
