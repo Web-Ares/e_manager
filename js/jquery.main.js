@@ -205,6 +205,7 @@ $(function(){
             _menuItems = _menu.find( '.header-menu__drop-down' ),
             _menuItemsLink = _menu.find( '.header-menu__item' ),
             _subMenu = _menu.find( '.header-menu__sub-items' ),
+            _openSubMenuBtn = _menu.find( '.header-menu__open-btn' ),
             _window = $( window ),
             _action = false,
             _lastPos,
@@ -222,6 +223,13 @@ $(function(){
                     }
                 } );
                 _menuItemsLink.on( {
+                    'click': function(){
+
+                        _slideSubMenu( $( this ) );
+
+                    }
+                } );
+                _openSubMenuBtn.on( {
                     'click': function(){
 
                         _slideSubMenu( $( this ) );
@@ -320,7 +328,7 @@ $(function(){
             _slideSubMenu = function( elem ) {
 
                 var curElem = elem,
-                    subMenu = curElem.next( '.header-menu__sub-items' );
+                    subMenu = curElem.nextAll( '.header-menu__sub-items' );
 
                 if( _window.width() < 992 && subMenu.length ) {
 
