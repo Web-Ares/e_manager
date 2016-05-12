@@ -611,6 +611,13 @@
     border-color: #9ec6c6;
     box-shadow: none;
 }
+.btn_4-3 {
+    width: auto;
+    height: 24px;
+    padding: 4px 4px;
+    font-size: 12px;
+    line-height: 12px;
+}
 .btn_5{
     width: 144px!important;
     height: 60px;
@@ -1627,21 +1634,26 @@ span.label.label_big {}
     color: #000;
 }
 .schedule__speakers-group{
-    margin: 0 -7px 12px;
+    margin: 0 0 25px;
+    text-align: center;
 }
 .schedule__speaker{
     overflow: hidden;
-    display: inline-block;
+    display: none;
     vertical-align: top;
     position: relative;
-    width: 40.6%;
-    margin: 0 4px 16px;
+    width: 36%;
+    margin: 0 10px 12px;
     text-align: center;
+}
+.schedule__speaker:nth-child(1),
+.schedule__speaker:nth-child(2){
+    display: inline-block;
 }
 .schedule__speaker-pic{
     position: relative;
-    padding-bottom: 62%;
-    margin: 0 0 9px;
+    padding-bottom: 100%;
+    margin: 0 0 14px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1671,7 +1683,7 @@ span.label.label_big {}
     opacity: 1;
 }
 .schedule__speaker-name{
-    font-size: 13px;
+    font-size: 14px;
     line-height: 18px;
     font-family: 'Montserrat', serif;
     font-weight: 700;
@@ -1776,11 +1788,15 @@ span.label.label_big {}
     padding: 0 56px;
     line-height: 20px;
 }
+.schedule_inner .schedule__speaker {
+    width: 32.5%;
+    margin: 0 5px 12px;
+}
+.schedule_inner .schedule__speaker-pic{
+    padding-bottom: 102%;
+}
 .schedule_inner .schedule__text {
     margin: 0 0 22px;
-}
-.schedule_inner .schedule__speakers-group {
-    margin: 0 16px 12px;
 }
 .schedule_inner .schedule__labels {
     margin: 0 15px 28px;
@@ -3033,6 +3049,9 @@ input.subscribe__email{
     .btn_4-1 {
         width: 157px;
     }
+    .btn_4-3 {
+        width: auto;
+    }
     .bnt_auto {
         width: auto;
         padding-left: 25px;
@@ -3508,14 +3527,19 @@ input.subscribe__email{
         margin: 0 0 25px;
     }
     .schedule__speakers-group {
-        margin: 0 0 13px;
+        margin: 0 0 30px;
+        text-align: left;
     }
     .schedule__speaker{
-        width: 22.2%;
-        margin: 0 2px 10px 0;
+        width: 19.8%;
+        margin: 0 22px 10px 0;
+    }
+    .schedule__speaker:nth-child(3) {
+        display: inline-block;
     }
     .schedule__speaker-pic {
         margin: 0 0 13px;
+        padding-bottom: 103%;
     }
     .schedule__text {
         padding: 0 22% 0 0;
@@ -3598,6 +3622,13 @@ input.subscribe__email{
     }
     .schedule_inner .schedule__main-place {
         margin: 0 0 17px;
+    }
+    .schedule_inner .schedule__speakers-group {
+        text-align: center;
+    }
+    .schedule_inner .schedule__speaker {
+        width: 13.5%;
+        margin: 0 11px 12px;
     }
     .schedule_inner .schedule__speaker-pic {
         margin: 0 0 14px;
@@ -4581,13 +4612,14 @@ input.subscribe__email{
     .schedule__speakers-group{
         display: inline-block;
         vertical-align: top;
-        width: 51.5%;
-        padding: 0 0 0 12%;
+        width: 47.3%;
+        padding: 0 0 0 10.6%;
         direction: ltr;
+        text-align: center;
     }
     .schedule__speaker {
-        width: 31.8%;
-        margin: 0 0 10px 1px;
+        width: 28.8%;
+        margin: 0 0 10px 14px;
     }
     .schedule__speaker:nth-child(3n+1){
         margin-left: 0;
@@ -4595,8 +4627,9 @@ input.subscribe__email{
     .schedule__info{
         display: inline-block;
         vertical-align: top;
-        width: 47.5%;
         max-width: 100%;
+        width: 41%;
+        padding: 4px 0 0;
         direction: ltr;
     }
     .schedule__main-place {
@@ -4664,6 +4697,12 @@ input.subscribe__email{
         font-size: 12px;
         line-height: 12px;
     }
+    .schedule_inner .schedule__speaker {
+        width: 27.5%;
+    }
+    /*.schedule_inner .schedule__concurrent-title {*/
+    /*display: none;*/
+    /*}*/
     .schedule_inner .schedule__concurrent:after{
         display: block;
         left: 10.2%;
@@ -4675,7 +4714,8 @@ input.subscribe__email{
         margin: 0 0 21px;
     }
     .schedule_inner .schedule__speakers-group {
-        margin: 0;
+        width: 54.3%;
+        padding: 0 0 0 13.6%;
     }
     /* --------------- /schedule --------------- */
 
